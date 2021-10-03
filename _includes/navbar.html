@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-themed sticky-top">
   <a class="navbar-brand" href="{{ site.baseurl }}/"
-    ><h5><b>{{ site.title }}</b></h5></a
+    ><h5><b>آرش حاتمی</b></h5></a
   >
 
   <button
@@ -17,6 +17,13 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
+      <a
+        class="nav-item nav-link"
+        href="https://arash-hatami.ir"
+        target="_blank"
+        >وبلاگ</a
+      >
+
       {%- assign html_pages = site.html_pages | sort: 'weight' -%} {%- assign
       filtered_pages = "" | split: "" -%} {%- for html_page in html_pages -%}
       {%- assign exclude = false -%} {%- for exclude_path in site.nav_exclude
