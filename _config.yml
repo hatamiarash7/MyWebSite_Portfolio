@@ -12,11 +12,8 @@ github_username: hatamiarash7
 #  - jemoji
 
 nav_exclude:
-  - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - pages/thanks.html
-  - pages/blog.html
 
 author:
   name: Arash Hatami
@@ -24,6 +21,10 @@ author:
   email: info@arash-hatami.ir
   linkedin: hatamiarash7
   github: hatamiarash7
+  gitlab: hatamiarash7
+  instagram: hatamiarash7
+  twitter: hatamiarash7
+  facebook: hatamiarash7
 
 permalink: /blog/:title
 
