@@ -36,7 +36,7 @@ collections:
 analytics:
   enabled: true
   google:
-    tracking_id: UA-65859337-10
+    tracking_id: G-GDJJDL2D5F
 
 defaults:
   - scope:
