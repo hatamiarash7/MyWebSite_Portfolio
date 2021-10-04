@@ -3,16 +3,6 @@
   text-align: right;
 }
 
-.card-title {
-  direction: rtl;
-  text-align: right;
-}
-
-.card-text {
-  direction: rtl;
-  text-align: right;
-}
-
 h1,
 h2,
 h3,
@@ -39,6 +29,17 @@ p {
 
 hr {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-title {
+  direction: rtl;
+  text-align: right;
+}
+
+.card-text {
+  direction: rtl;
+  text-align: justify;
+  text-align-last: right;
 }
 
 .center {
