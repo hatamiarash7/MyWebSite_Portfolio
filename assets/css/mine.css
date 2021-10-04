@@ -26,7 +26,8 @@ ul {
 
 h2,
 h3,
-h4 {
+h4,
+.colored {
   color: #007bff;
 }
 
@@ -50,6 +51,25 @@ hr {
 
 .post img:not(.emoji) {
   border-radius: 20px;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  border-color: #474747;
+  cursor: default !important;
+  color: #474747;
+}
+
+.btn:disabled:hover,
+.btn:disabled:active,
+.btn:disabled:focus,
+.btn[disabled]:hover,
+.btn[disabled]:focus,
+.btn[disabled]:active {
+  background-color: transparent !important;
+  color: #474747 !important;
+  border-color: #474747 !important;
+  box-shadow: none !important;
 }
 
 .btn-group-lg > .btn,
