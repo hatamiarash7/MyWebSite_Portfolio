@@ -18,7 +18,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul {
   direction: rtl;
   text-align: right;
 }
@@ -39,6 +40,10 @@ hr {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.center {
+  text-align: center !important;
+}
+
 .post {
   margin-bottom: 50px;
 }
@@ -54,4 +59,12 @@ hr {
 
 .project-title {
   margin-top: 40px;
+}
+
+[data-theme="dark"] body {
+  background-color: #191b1f;
+}
+
+[data-theme="dark"] .navbar {
+  background: #191b1f;
 }
