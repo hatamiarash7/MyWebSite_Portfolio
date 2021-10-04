@@ -33,13 +33,10 @@ collections:
     output: true
     permalink: /projects/:name
 
-disqus:
-  shortname: your-short-name-disqus
-
 analytics:
   enabled: true
   google:
-    tracking_id: your-google-tracking-id
+    tracking_id: UA-65859337-10
 
 defaults:
   - scope:
