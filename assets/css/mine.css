@@ -1,0 +1,38 @@
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.card-title {
+  direction: rtl;
+  text-align: right;
+}
+
+.card-text {
+  direction: rtl;
+  text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  direction: rtl;
+}
+
+p {
+  text-align: justify;
+  text-align-last: right;
+}
+
+.post img:not(.emoji) {
+  border-radius: 25px;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  border-radius: 1rem;
+}
