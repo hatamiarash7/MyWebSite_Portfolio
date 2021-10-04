@@ -3,8 +3,12 @@ assign block_style = "" -%} {%- endif -%}
 
 <a
   class="m-1 btn btn-{{ include.style | default: 'outline-primary' }} btn-{{ include.size | default: 'md' }} {{ block_style }}"
-  href="{{ include.link | default: '#' }}"
   target="_blank"
+  {% if include.disabled == "1" %}
+  disabled title="موقتا غیرفعال است"
+  {%- else -%}
+  href="{{ include.link | default: '#' }}"
+  {%- endif -%}
 >
   {{ include.text | default: "Button" }}
 </a>
