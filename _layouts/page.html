@@ -5,4 +5,7 @@ layout: default
 <hr />
 <h1 class="project-title"><b>{{ page.name }}</b></h1>
 
-<div class="col-lg-10 mx-auto mt-5 post">{{ content }}</div>
+<div class="col-lg-10 mx-auto mt-5 post">
+  <p>{{ page.description }}</p>
+  {{ content }}
+</div>

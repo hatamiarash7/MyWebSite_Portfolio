@@ -4,8 +4,6 @@ tools: [Android, UI, RTL]
 description: با استفاده از این کتابخانه می توانید از Toast هایی شخصی سازی شده با قالب های پیشفرض در برنامه خود استفاده کنید.
 ---
 
-با استفاده از این کتابخانه می توانید از Toast هایی شخصی سازی شده با قالب های پیشفرض در برنامه خود استفاده کنید.
-
 <h1 class="center">
 <img src="https://raw.githubusercontent.com/hatamiarash7/RTL-Toast/master/assets/template.jpg"/>
 </h1>
