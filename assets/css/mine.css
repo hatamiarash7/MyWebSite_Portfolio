@@ -18,21 +18,40 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   direction: rtl;
+  text-align: right;
+}
+
+h2,
+h3,
+h4 {
+  color: #007bff;
 }
 
 p {
+  direction: rtl;
   text-align: justify;
   text-align-last: right;
 }
 
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.post {
+  margin-bottom: 50px;
+}
+
 .post img:not(.emoji) {
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .btn-group-lg > .btn,
 .btn-lg {
-  border-radius: 1rem;
+  border-radius: 0.75rem;
+}
+
+.project-title {
+  margin-top: 40px;
 }
