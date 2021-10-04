@@ -6,13 +6,13 @@ description: با استفاده از این کتابخانه می توانید 
 
 با استفاده از این کتابخانه می توانید از Toast هایی شخصی سازی شده با قالب های پیشفرض در برنامه خود استفاده کنید.
 
-<h1 align="center">
+<h1 class="center">
 <img src="https://raw.githubusercontent.com/hatamiarash7/RTL-Toast/master/assets/template.jpg"/>
 </h1>
 
 <br>
 
-<h2 align="center">
+<h2 class="center">
 {% include elements/button.html link="https://github.com/hatamiarash7/RTL-Toast" text="گیت هاب" size="lg"%}
 </h2>
 
