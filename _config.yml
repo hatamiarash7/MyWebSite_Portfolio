@@ -19,12 +19,14 @@ author:
   name: Arash Hatami
   image: assets/img/profile.jpg
   email: info@arash-hatami.ir
-  linkedin: hatamiarash7
-  github: hatamiarash7
-  gitlab: hatamiarash7
   instagram: hatamiarash7
+  linkedin: hatamiarash7
   twitter: hatamiarash7
   facebook: hatamiarash7
+  github: hatamiarash7
+  gitlab: hatamiarash7
+  keybase: hatamiarash7
+  stackoverflow: 4905220
 
 permalink: /blog/:title
 
