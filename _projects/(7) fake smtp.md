@@ -11,7 +11,8 @@ description: با استفاده از این پروژه می توانید یک �
 
 <div class="center badges">
 <img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/build-docker.yml/badge.svg" />
-<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/dockerhub.yml/badge.svg" /> <img src="https://img.shields.io/docker/image-size/hatamiarash7/fake-smtp" />
+<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/dockerhub.yml/badge.svg" />
+<img src="https://img.shields.io/docker/image-size/hatamiarash7/fake-smtp" />
 </div>
 
 <h2 class="center">
