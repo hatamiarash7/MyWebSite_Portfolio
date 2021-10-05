@@ -98,3 +98,9 @@ div.badges a:hover::after {
 [data-theme="dark"] .navbar {
   background: #191b1f;
 }
+
+@media screen and (min-width: 1200px) {
+  .bricklayer-column-sizer {
+    width: 33.3%;
+  }
+}
