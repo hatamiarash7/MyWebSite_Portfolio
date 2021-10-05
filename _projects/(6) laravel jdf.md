@@ -9,6 +9,11 @@ description: با استفاده از این کتابخانه به راحتی م
 <img src="https://socialify.git.ci/hatamiarash7/Laravel-JDF/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
 </h1>
 
+<div class="center badges">
+<img src="https://poser.pugx.org/hatamiarash7/jdf/v/stable" />
+<img src="https://poser.pugx.org/hatamiarash7/jdf/downloads" />
+</div>
+
 <h2 class="center">
 {% include elements/button.html link="https://github.com/hatamiarash7/Laravel-JDF" text="گیت هاب" size="lg" %}
 {% include elements/button.html link="https://packagist.org/packages/hatamiarash7/jdf" text="Packagist" size="lg" %}
