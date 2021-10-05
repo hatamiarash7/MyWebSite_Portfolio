@@ -1,6 +1,6 @@
 ---
 name: داشبورد Memcached
-tools: [Cache, UI, Dashboard]
+tools: [Cache, UI, Dashboard, PHP]
 image: https://socialify.git.ci/hatamiarash7/Memcached-Admin/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: این پروژه یک داشبورد مدیریتی برای سرور یا کلاستر Memcached شما می باشد. ساده و کامل طراحی شده و به راحتی قابل استفاده است.
 ---

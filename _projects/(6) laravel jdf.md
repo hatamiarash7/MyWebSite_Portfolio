@@ -1,6 +1,6 @@
 ---
 name: تاریخ شمسی Laravel
-tools: [Laravel, Date, Persian]
+tools: [Laravel, Date, Persian, PHP]
 image: https://socialify.git.ci/hatamiarash7/Laravel-JDF/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این کتابخانه به راحتی می توانید از تاریخ شمسی در پروژه لاراول خود استفاده کنید
 ---
