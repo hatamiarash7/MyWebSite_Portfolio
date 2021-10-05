@@ -54,6 +54,15 @@ hr {
   border-radius: 20px;
 }
 
+div.badges img {
+  display: inline !important;
+  border-radius: 0 !important;
+}
+
+div.badges a:hover::after {
+  width: 0 !important;
+}
+
 .btn:disabled,
 .btn[disabled] {
   border-color: #474747;

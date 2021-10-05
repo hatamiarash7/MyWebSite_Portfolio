@@ -9,6 +9,11 @@ description: با استفاده از این پروژه می توانید یک �
 <img src="https://socialify.git.ci/hatamiarash7/FakeSMTP/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
 </h1>
 
+<div class="center badges">
+<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/build-docker.yml/badge.svg" />
+<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/dockerhub.yml/badge.svg" /> <img src="https://img.shields.io/docker/image-size/hatamiarash7/fake-smtp" />
+</div>
+
 <h2 class="center">
 {% include elements/button.html link="https://github.com/hatamiarash7/FakeSMTP" text="گیت هاب" size="lg" %}
 {% include elements/button.html link="https://hub.docker.com/r/hatamiarash7/fake-smtp" text="داکر هاب" size="lg" %}
