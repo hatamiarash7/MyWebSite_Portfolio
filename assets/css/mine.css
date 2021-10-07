@@ -105,3 +105,10 @@ div.badges a:hover::after {
     width: 33.3%;
   }
 }
+
+.post blockquote {
+  border-left: none !important;
+  border-right: 0.25em solid #007bff;
+  color: #6c757d;
+  padding: 0 1em;
+}
