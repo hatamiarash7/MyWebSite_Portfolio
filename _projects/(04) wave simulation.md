@@ -1,6 +1,6 @@
 ---
 name: شبیه ساز امواج آب
-tools: [Simulating, JavaScript]
+tools: [Simulating, JavaScript, Visualization]
 image: ../assets/img/wave-simulation.jpg
 description: شبیه سازی سه بعدی امواج آب با جاوا اسکریپت
 ---
