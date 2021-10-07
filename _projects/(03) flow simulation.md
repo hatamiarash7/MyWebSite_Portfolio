@@ -1,6 +1,6 @@
 ---
 name: شبیه ساز ذرات
-tools: [Simulating, JavaScript]
+tools: [Simulating, JavaScript, Visualization]
 image: ../assets/img/flow-simulation.jpg
 description: شبیه سازی ذرات معلق در هوا با جاوا اسکریپت
 ---

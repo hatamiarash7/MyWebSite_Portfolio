@@ -1,7 +1,7 @@
 ---
 name: وب سایت کافه چی
 tools: [Website, Laravel, PHP]
-image: ../assets/img/chi1.jpg
+image: ../assets/img/chi1.webp
 description: طراحی وب سایت به سفارش کافه چی
 ---
 
