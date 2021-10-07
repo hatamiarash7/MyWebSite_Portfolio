@@ -40,7 +40,7 @@ description: این پروژه یک داشبورد مدیریتی برای سر�
 - ...
 
 <h1 class="center">
-<img src="../assets/img/memcached-admin.jpg"/>
+<img src="../assets/img/memcached-admin.webp"/>
 </h1><br>
 
 ## نصب
