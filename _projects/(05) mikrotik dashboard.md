@@ -1,12 +1,12 @@
 ---
 name: داشبورد میکروتیک
 tools: [Network, UI, Mikrotik, Dashboard]
-image: ../assets/img/mikrotik-dashboard.jpg
+image: ../assets/img/mikrotik-dashboard.webp
 description: این پروژه ، ابزاری برای مانیتورینگ و مدیریت دستگاه های میکروتیک می باشد که با زبان PHP نوشته شده است. همانند WinBox می توانید به صورت ریموت یا محلی به دستگاه متصل شده و آن را مدیریت کنید. همچنین با توجه به داشتن رابط کاربری گرافیکی و بهتر نسبت به WinBox مانیتورینگ دستگاه ساده تر خواهد بود
 ---
 
 <h1 class="center">
-<img src="../assets/img/mikrotik-dashboard.jpg"/>
+<img src="../assets/img/mikrotik-dashboard.webp"/>
 </h1><br>
 
 <h2 class="center">

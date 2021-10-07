@@ -1,12 +1,12 @@
 ---
 name: DNS Lookup
 tools: [Network, DNS]
-image: ../assets/img/dns-lookup.jpg
+image: ../assets/img/dns-lookup.webp
 description: رکوردهای دی ان اس (DNS) یکی از بخش‌های مهم زیرساخت اینترنت را تشکیل می‌دهند. مدیران سایت‌ها اغلب برای رفع نیازهای مختلف خود از رکوردهای DNS استفاده می‌کنند. خوشبختانه این رکوردها بدون نیاز به داشتن اطلاعات به‌راحتی قابل مدیریت هستند
 ---
 
 <h1 class="center">
-<img src="../assets/img/dns-lookup.jpg"/>
+<img src="../assets/img/dns-lookup.webp"/>
 </h1><br>
 
 <h2 class="center">
