@@ -40,11 +40,11 @@ description: رکوردهای دی ان اس (DNS) یکی از بخش‌های �
 ## نسخه اندروید
 
 <h1 class="center">
-<img src="../assets/img/dns-lookup-2.jpg"/>
+<img src="../assets/img/dns-lookup-2.webp"/>
 </h1>
 
 ## نسخه تحت وب
 
 <h1 class="center">
-<img src="../assets/img/dns-lookup-3.jpg"/>
+<img src="../assets/img/dns-lookup-3.webp"/>
 </h1>
