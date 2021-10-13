@@ -52,12 +52,14 @@ docker run hatamiarash7/webhook
 ```env
 SECRET=changeme
 DB_CONNECTION="mongodb://localhost:27017/webhook"
+PROVIDER=github
 SIGNATURE="X-Hub-Signature"
 LOG_LEVEL=info
 ```
 
 - `SECRET` : این مقدار باید در تنظیمات Webhook در نرم افزار مورد نظر گرفته شود. در بخش بعدی به آن خواهیم پرداخت.
 - `DB_CONNECTION` : از این متغیر برای اتصال به دیتابیس Mongo استفاده می شود. جهت اطلاعات بیشتر به [این لینک](https://docs.mongodb.com/manual/reference/connection-string/) مراجعه کنید.
+- `PROVIDER` : انتخاب فرستنده. برای مثال : github, gitea, ...
 - `SIGNATURE` : از این گزینه برای تعریف Header ارسال شده استفاده می شود و با توجه به مبدا متفاوت خواهد بود. مقدار دقیق را باید از بخش مستندات مربوط به نرم افزار مورد نظر پیدا کنید. نمونه ها :
   - **Github** :  X-Hub-Signature
   - **Gitlab** :  X-Gitlab-Token
