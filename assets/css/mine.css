@@ -112,3 +112,8 @@ div.badges a:hover::after {
   color: #6c757d;
   padding: 0 1em;
 }
+
+figcaption {
+  font-size: 14px;
+  color: #6c757d !important;
+}
