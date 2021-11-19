@@ -65,6 +65,6 @@ description: سرویس ارائه ویدئو های واقعیت مجازی ، 
 <h1 class="center">
 <figure>
 <img src="../assets/img/arb4.webp"/>
-<figcaption>صفحه مدیریت</figcaption>
+<figcaption>پنل مدیریت</figcaption>
 </figure>
 </h1>
