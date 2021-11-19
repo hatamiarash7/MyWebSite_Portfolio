@@ -1,6 +1,6 @@
 ---
 name: وب سایت Code Guide
-tools: [Website, HTML]
+tools: [Website, Jekyll]
 image: ../assets/img/cg1.webp
 description: استانداردهای لازم برای ایجاد کدهای HTML و CSS سازگار ، انعطاف پذیر و پایدار
 ---
@@ -20,10 +20,10 @@ description: استانداردهای لازم برای ایجاد کدهای HT
         <span class="colored">سال طراحی : </span>1399
     </li>
     <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>HTML
+        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Jekyll ( Ruby )
     </li>
     <li>
-        <span class="colored">تکنولوژی ها : </span> HTML - CSS
+        <span class="colored">تکنولوژی ها : </span> SASS
     </li>
 </ul>
 
