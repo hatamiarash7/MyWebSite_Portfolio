@@ -8,8 +8,8 @@ repository: hatamiarash7/MyWebSite_Portfolio
 twitter_username: hatamiarash7
 github_username: hatamiarash7
 
-#plugins:
-#  - jemoji
+plugins:
+  - jekyll-sitemap
 
 nav_exclude:
   - pages/404.html
