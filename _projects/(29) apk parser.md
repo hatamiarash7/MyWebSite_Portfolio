@@ -3,25 +3,17 @@ name: API استخراج اطلاعات فایل های APK
 tools: [Android, API, Parser]
 image: ../assets/img/apkparser_1.webp
 description: این پروژه یک APK Parser است که اطلاعات اصلی فایل های APK اندروید را استخراح کرده و به کاربر تحویل می دهد. پنل کاربری نداشته و به صورت API عمل می کند.
+developed_date: 1398
+lang: Python ( Django )
+techs: [Django Rest Framework, XML]
+open_source: خیر
 ---
 
 <h1 class="center">
 <img src="../assets/img/apkparser_1.webp"/>
 </h1>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1398
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Python ( Django )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> Django Rest Framework - XML و ...
-    </li>
-</ul>
+{% include project-info.html %}
 
 این پروژه یک API ساده و کامل جهت Parse کردن فایل های اندرویدی شما است. بدین صورت که فایل ( یا آدرس آن ) را به سامانه داده و مشخصات آن را دریافت می کنید. اطلاعاتی شامل :
 

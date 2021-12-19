@@ -3,6 +3,9 @@ name: مصورسازی صوت
 tools: [Audio, Visualization, JavaScript]
 image: ../assets/img/audio.webp
 description: پروژه ای جهت مصورسازی فایل های صوتی
+developed_date: 1397
+lang: JavaScript
+open_source: بله
 ---
 
 <h1 class="center">
@@ -11,10 +14,10 @@ description: پروژه ای جهت مصورسازی فایل های صوتی
 
 <h2 class="center">
 {% include elements/button.html link="https://github.com/hatamiarash7/AudioVisualization" text="گیت هاب" size="lg" %}
-{% include elements/button.html link="https://audiovisualization.arash-hatami.ir/" text="وب سایت ( دمو )" size="lg" %}
+{% include elements/button.html link="https://audiovisualization.arash-hatami.ir" text="وب سایت ( دمو )" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 این پروژه با استفاده از جاوا اسکریپت فایل های صوتی را مصور می کند و یک Visualizer دایره ای می سازد.
 

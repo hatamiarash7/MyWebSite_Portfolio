@@ -3,6 +3,10 @@ name: سامانه انتخابات
 tools: [Website, Laravel, PHP]
 image: ../assets/img/poll1.webp
 description: این پروژه به سفارش آموزشگاه شاهد حاج طوسی توسعه داده شده و سامانه ای جهت انتخابات انجمن اولیا مربیان می باشد
+developed_date: 1399
+lang: Laravel ( PHP )
+techs: [Redis, MySQL, Gulp, Sass, Webpack, TailWind]
+open_source: خیر
 ---
 
 <h1 class="center">
@@ -13,19 +17,7 @@ description: این پروژه به سفارش آموزشگاه شاهد حاج 
 {% include elements/button.html text="وب سایت" size="lg" disabled="1" %}
 </h2>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1399
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Laravel ( PHP )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> Redis - MySQL - Gulp - Sass - Webpack - TailWind و ...
-    </li>
-</ul>
+{% include project-info.html %}
 
 ## تصاویر
 

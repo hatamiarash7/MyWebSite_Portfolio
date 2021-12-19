@@ -3,6 +3,9 @@ name: Faker فارسی برای Laravel
 tools: [Laravel, PHP]
 image: https://socialify.git.ci/hatamiarash7/Laravel-PersianFaker/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: Seeding دیتابیس یکی از قابلیت های جالب در لاراول هست که همه دوستش داریم. بهرحال افزودن چندین رکورد در دیتابیس با نوشت تک تک اونها ، میتونه کار خسته کننده ای باشه و وقت زیادی ببره. اینجاست که کتابخانه ی Faker مطرح میشه
+developed_date: 1398
+lang: Laravel ( PHP )
+open_source: بله
 ---
 
 <h1 class="center">
@@ -13,7 +16,7 @@ description: Seeding دیتابیس یکی از قابلیت های جالب د�
 {% include elements/button.html link="https://github.com/hatamiarash7/Laravel-PersianFaker" text="گیت هاب" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 Faker یک کتابخانه ی php هست که برای تولید اطلاعات ساختگی با هدف تست ، طراحی شده. این کتابخانه میتونه برای تولید انواع اطلاعات به کار بیاد از جمله :
 

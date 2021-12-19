@@ -3,17 +3,20 @@ name: داشبورد میکروتیک
 tools: [Network, UI, Mikrotik, Dashboard]
 image: ../assets/img/mikrotik-dashboard.webp
 description: این پروژه ، ابزاری برای مانیتورینگ و مدیریت دستگاه های میکروتیک می باشد که با زبان PHP نوشته شده است. همانند WinBox می توانید به صورت ریموت یا محلی به دستگاه متصل شده و آن را مدیریت کنید. همچنین با توجه به داشتن رابط کاربری گرافیکی و بهتر نسبت به WinBox مانیتورینگ دستگاه ساده تر خواهد بود
+developed_date: 1398
+lang: PHP
+open_source: بله
 ---
 
 <h1 class="center">
 <img src="../assets/img/mikrotik-dashboard.webp"/>
-</h1><br>
+</h1>
 
 <h2 class="center">
 {% include elements/button.html link="https://github.com/hatamiarash7/Mikrotik_API" text="گیت هاب" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 روتر میکروتیک شما را قادر می‎سازد تا در کم ترین زمان ممکن بتوانید کلیه سرویس های شبکه را پیاده سازی کنید. سیستم عامل این دستگاه Router OS می‎باشد که به سادگی بر روی روتر نصب شده و قابل تنظیم است و همچنین برای اکثر سناریوهای شبکه قابلیت انعطاف زیادی دارد. کمپانی میکروتیک در حال حاضر یکی از برترین کمپانی های است که در زمینه ارائه خدمات شبکه فعالیت می‎کند و مشتریان این شرکت کمپانی های چون HP – Motorola – Siemens – Nasa و ... میباشد.
 

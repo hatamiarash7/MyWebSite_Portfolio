@@ -3,6 +3,10 @@ name: وب سایت Code Guide
 tools: [Website, Jekyll]
 image: ../assets/img/cg1.webp
 description: استانداردهای لازم برای ایجاد کدهای HTML و CSS سازگار ، انعطاف پذیر و پایدار
+developed_date: 1399
+lang: Jekyll ( Ruby )
+techs: [SASS]
+open_source: بله
 ---
 
 <h1 class="center">
@@ -13,19 +17,7 @@ description: استانداردهای لازم برای ایجاد کدهای HT
 {% include elements/button.html link="https://cg.arash-hatami.ir" text="وب سایت" size="lg" %}
 </h2>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1399
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Jekyll ( Ruby )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> SASS
-    </li>
-</ul>
+{% include project-info.html %}
 
 راهنمای کد مجموعه ای از استانداردها برای توسعه HTML و CSS سازگار، انعطاف پذیر و پایدار است. این از سالها تجربه در نوشتن کد در پروژه های با اندازه های مختلف ناشی می شود. این پایان همه چیز نیست، بلکه یک شروع است.
 

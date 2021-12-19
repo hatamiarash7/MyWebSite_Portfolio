@@ -3,6 +3,10 @@ name: وب سایت اربعین 360
 tools: [Website, Laravel, PHP, VR]
 image: ../assets/img/arb1.webp
 description: سرویس ارائه ویدئو های واقعیت مجازی ، به سفارش سراج ( سازمان فضای مجازی بسیج )
+developed_date: 1398
+lang: Laravel ( PHP )
+techs: [MySQL, SASS, Gulp, Webpack, Redis, FFMpeg]
+open_source: خیر
 ---
 
 <h1 class="center">
@@ -13,19 +17,7 @@ description: سرویس ارائه ویدئو های واقعیت مجازی ، 
 {% include elements/button.html text="وب سایت" size="lg" disabled="1" %}
 </h2>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1398
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Laravel ( PHP )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> MySQL - SASS - Gulp - Webpack - Redis و ...
-    </li>
-</ul>
+{% include project-info.html %}
 
 این پروژه یک سرویس ارائه ویدئوهای واقعیت مجازی با دسته بندی اربعین بوده که در سال 1398 به سفارش سازمان فضای مجازی بسیج طراحی شد. ویدئوهای این پروژه نیز به طور اختصاصی ضبط و تدوین شد.
 
