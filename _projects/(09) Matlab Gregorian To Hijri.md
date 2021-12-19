@@ -3,6 +3,8 @@ name: تاریخ شمسی Matlab
 tools: [Matlab, Date, Persian]
 image: https://socialify.git.ci/hatamiarash7/Matlab_GregorianToHijri/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این کتابخانه به راحتی می توانید از تاریخ شمسی در پروژه متلب خود استفاده کنید
+developed_date: 1400
+open_source: بله
 ---
 
 <h1 class="center">
@@ -13,7 +15,7 @@ description: با استفاده از این کتابخانه به راحتی م
 {% include elements/button.html link="https://github.com/hatamiarash7/Matlab_GregorianToHijri" text="گیت هاب" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 متلب توابع زیادی برای کار با زمان و تاریخ داره اما در حال حاضر از تاریخ هجری شمسی پشتیبانی نمیکنه. با استفاده از این کتابخانه می توانید به راحتی چنین قابلیتی رو به پروژه های خودتون اضافه کرده و ازش استفاده کنید.
 

@@ -3,6 +3,10 @@ name: سرور SMTP جعلی
 tools: [Email, Docker, Java]
 image: https://socialify.git.ci/hatamiarash7/FakeSMTP/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این پروژه می توانید یک سرور SMTP جعلی برای تست پروژه ها قبل از انتشار استفاده کنید.
+developed_date: 1399
+lang: Java
+techs: [Docker]
+open_source: بله
 ---
 
 <h1 class="center">
@@ -20,7 +24,7 @@ description: با استفاده از این پروژه می توانید یک �
 {% include elements/button.html link="https://hub.docker.com/r/hatamiarash7/fake-smtp" text="داکر هاب" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 ## داستان چیه ؟
 

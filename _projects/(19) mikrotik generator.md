@@ -3,6 +3,10 @@ name: تولید اسکریپت Hotspot میکروتیک
 tools: [Website, Django, Python, Mikrotik]
 image: ../assets/img/mikrotik1.webp
 description: این پروژه به سفارش مجموعه ای خصوصی طراحی شده و جهت تولید اسکریپت های میکروتیک برای تنظیم Hotspot استفاده می شود.
+developed_date: 1399
+lang: Django ( Python )
+techs: [Memcached, Celery, PostgreSQL, Nginx]
+open_source: خیر
 ---
 
 <h1 class="center">
@@ -13,21 +17,7 @@ description: این پروژه به سفارش مجموعه ای خصوصی طر
 {% include elements/button.html text="وب سایت" size="lg" disabled="1" %}
 </h2>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1400
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Django ( Python )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> Memcached - Celery - PostgreSQL - Nginx و ...
-    </li>
-</ul>
-
-<br>
+{% include project-info.html %}
 
 یکی از کاربردی ترین ویژگی های روتر میکروتیک ، ارائه Hotspot بوده که تمام نیازهای شما رو برطرف میکنه. شما میتونید برای کاربر های مختلف حساب کاربری ایجاد کنید و سطوح دسترسی و استفاده هم براشون در نظر بگیرید.
 

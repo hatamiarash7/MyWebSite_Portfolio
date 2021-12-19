@@ -3,17 +3,20 @@ name: شبیه ساز ذرات
 tools: [Simulating, JavaScript, Visualization]
 image: ../assets/img/flow-simulation.webp
 description: شبیه سازی ذرات معلق در هوا با جاوا اسکریپت
+developed_date: 1389
+lang: JavaScript
+open_source: خیر
 ---
 
 <h1 class="center">
 <img src="../assets/img/flow-simulation.webp"/>
-</h1><br>
+</h1>
 
 <h2 class="center">
 {% include elements/button.html text="نسخه تحت وب" size="lg" disabled="1" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 در این پروژه سعی شده است تا با استفاده از کتابخانه های جاوا اسکریپت حرکت فیزیکی ذرات معلق در هوا شبیه سازی شود.
 

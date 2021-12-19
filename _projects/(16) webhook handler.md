@@ -3,6 +3,10 @@ name: کنترل کننده Webhook
 tools: [Github, Gitlab, Gitea, Webhook, JavaScript]
 image: ../assets/img/webhook.webp
 description: وب‌هوک به یک Callback از جنس HTTP در سمت سرور گفته می‌شود که توسط برنامه‌نویس تعیین می‌شود. این درخواست غالبا با متد POST بوده و در هنگام بروز یک رخداد خاص صدا زده می‌شود. با این پروژه می توانید آن ها را مدیریت کنید.
+developed_date: 1399
+lang: JavaScript
+techs: [NodeJS, MongoDB]
+open_source: بله
 ---
 
 <h1 class="center">
@@ -13,7 +17,7 @@ description: وب‌هوک به یک Callback از جنس HTTP در سمت سر�
 {% include elements/button.html link="https://github.com/hatamiarash7/WebhookHandler" text="گیت هاب" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 ## تعریف
 
@@ -61,10 +65,10 @@ LOG_LEVEL=info
 - `DB_CONNECTION` : از این متغیر برای اتصال به دیتابیس Mongo استفاده می شود. جهت اطلاعات بیشتر به [این لینک](https://docs.mongodb.com/manual/reference/connection-string/) مراجعه کنید.
 - `PROVIDER` : انتخاب فرستنده. برای مثال : github, gitea, ...
 - `SIGNATURE` : از این گزینه برای تعریف Header ارسال شده استفاده می شود و با توجه به مبدا متفاوت خواهد بود. مقدار دقیق را باید از بخش مستندات مربوط به نرم افزار مورد نظر پیدا کنید. نمونه ها :
-  - **Github** :  X-Hub-Signature
-  - **Gitlab** :  X-Gitlab-Token
-  - **Gogs** :    X-Gogs-Signature
-  - **Gitea** :   HTTP_X_GITEA_SIGNATURE
+  - **Github** : X-Hub-Signature
+  - **Gitlab** : X-Gitlab-Token
+  - **Gogs** : X-Gogs-Signature
+  - **Gitea** : HTTP_X_GITEA_SIGNATURE
 
 ## استفاده
 

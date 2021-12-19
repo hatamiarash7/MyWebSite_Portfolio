@@ -3,6 +3,9 @@ name: جدول تناوبی عناصر
 tools: [HTML, CSS, Website]
 image: ../assets/img/periodic_1.webp
 description: نمایش جدول تناوبی عناصر به همراه عدد اتمی ، جرم و لایه الکترونی
+developed_date: 1400
+lang: HTML + CSS
+open_source: بله
 ---
 
 <h1 class="center">
@@ -14,16 +17,7 @@ description: نمایش جدول تناوبی عناصر به همراه عدد 
 {% include elements/button.html link="https://periodic.arash-hatami.ir" text="وب سایت ( دمو )" size="lg" %}
 </h2>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1400
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>HTML + CSS
-    </li>
-</ul>
+{% include project-info.html %}
 
 این پروژه که فقط با استفاده از CSS طراحی شده است جدول تناوبی عناصر را به شما نمایش می دهد. همچنین با کلیک کردن روی هر عنصر اطلاعاتی نیز در اختیار شما قرار می گیرد از جمله :
 

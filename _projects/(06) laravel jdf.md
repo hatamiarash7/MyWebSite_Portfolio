@@ -3,6 +3,9 @@ name: تاریخ شمسی Laravel
 tools: [Laravel, Date, Persian, PHP]
 image: https://socialify.git.ci/hatamiarash7/Laravel-JDF/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این کتابخانه به راحتی می توانید از تاریخ شمسی در پروژه لاراول خود استفاده کنید
+developed_date: 1397
+lang: Laravel ( PHP )
+open_source: بله
 ---
 
 <h1 class="center">
@@ -19,7 +22,7 @@ description: با استفاده از این کتابخانه به راحتی م
 {% include elements/button.html link="https://packagist.org/packages/hatamiarash7/jdf" text="Packagist" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 ## نصب
 

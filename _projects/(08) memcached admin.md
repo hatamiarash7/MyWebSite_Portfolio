@@ -3,6 +3,9 @@ name: داشبورد Memcached
 tools: [Cache, UI, Dashboard, PHP]
 image: https://socialify.git.ci/hatamiarash7/Memcached-Admin/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: این پروژه یک داشبورد مدیریتی برای سرور یا کلاستر Memcached شما می باشد. ساده و کامل طراحی شده و به راحتی قابل استفاده است.
+developed_date: 1399
+lang: PHP
+open_source: بله
 ---
 
 <h1 class="center">
@@ -20,7 +23,7 @@ description: این پروژه یک داشبورد مدیریتی برای سر�
 {% include elements/button.html link="https://hub.docker.com/r/hatamiarash7/memcached-admin" text="داکر هاب" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 این پروژه به شما اجازه میده که وضعیت سرور های Memcached خودتون رو به صورت زنده مشاهده کنید. مواردی از جمله :
 

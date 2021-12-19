@@ -3,6 +3,10 @@ name: وب سایت احد آزادی خواه
 tools: [Website, Laravel, PHP]
 image: ../assets/img/azadi1.webp
 description: پایگاه اطلاع رسانی نماینده مردم شریف ملایر در مجلس شورای اسلامی
+developed_date: 1398
+lang: Laravel ( PHP )
+techs: [Redis, MySQL, Python]
+open_source: خیر
 ---
 
 <h1 class="center">
@@ -13,19 +17,7 @@ description: پایگاه اطلاع رسانی نماینده مردم شریف
 {% include elements/button.html text="وب سایت" size="lg" disabled="1" %}
 </h2>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1398
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Laravel ( PHP )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> Redis - MySQL - Python و ...
-    </li>
-</ul>
+{% include project-info.html %}
 
 ## تصاویر
 

@@ -3,25 +3,17 @@ name: اپلیکیشن یادمان عشق
 tools: [Android, VR]
 image: ../assets/img/yad_0.webp
 description: اولین مجموعه واقعیت مجازی یادمان‌های دفاع مقدس ، به سفارش سراج ( سازمان فضای مجازی بسیج )
+developed_date: 1397
+lang: Android ( Java )
+techs: [Firebase, Volley, Lottie, Picasso, ButterKnife, Timber, Google VR SDK]
+open_source: خیر
 ---
 
 <h1 class="center">
 <img src="../assets/img/yad_0.webp"/>
 </h1>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1397
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Android ( Java )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> Firebase, Volley, Lottie, Picasso, ButterKnife - Timber - Google VR SDK و ...
-    </li>
-</ul>
+{% include project-info.html %}
 
 این پروژه در مهرماه 1397 به سفارش سراج انجام شد و اولین مجموعه واقعیت مجازی یادمان‌های دفاع مقدس بود که شامل تصاویر و ویدئوهای واقعیت مجازی از مناطق عملیاتی 8 سال دفاع مقدس است. مناطقی شامل فکه ، شلمچه ، طلائیه ، علقمه ، هویزه که به شرح زیر می باشد :
 

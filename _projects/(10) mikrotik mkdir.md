@@ -3,6 +3,8 @@ name: تابع Mkdir برای میکروتیک
 tools: [Mikrotik]
 image: https://socialify.git.ci/hatamiarash7/Mikrotik-Mkdir/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این کتابخانه می توانید تابع mkdir را در ترمینال دستگاه های میکروتیک خود استفاده کنید
+developed_date: 1399
+open_source: بله
 ---
 
 <h1 class="center">
@@ -13,7 +15,7 @@ description: با استفاده از این کتابخانه می توانید 
 {% include elements/button.html link="https://github.com/hatamiarash7/Mikrotik-Mkdir" text="گیت هاب" size="lg" %}
 </h2>
 
-<br>
+{% include project-info.html %}
 
 این پروژه شامل یک اسکریپت است که با استفاده از آن تابع گلوبال `mkdir$` به دستگاه میکروتیک اضافه شده و می توانید به سادگی در حافظه دستگاه پوشه ایجاد کنید.
 

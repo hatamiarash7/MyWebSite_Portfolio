@@ -3,6 +3,10 @@ name: وب سایت کافه چی
 tools: [Website, Laravel, PHP]
 image: ../assets/img/chi1.webp
 description: طراحی وب سایت به سفارش کافه چی
+developed_date: 1397
+lang: Laravel ( PHP )
+techs: [Gulp, Sass, Redis, MySQL]
+open_source: خیر
 ---
 
 <h1 class="center">
@@ -13,16 +17,4 @@ description: طراحی وب سایت به سفارش کافه چی
 {% include elements/button.html text="وب سایت" size="lg" disabled="1" %}
 </h2>
 
-<br>
-
-<ul>
-    <li>
-        <span class="colored">سال طراحی : </span>1397
-    </li>
-    <li>
-        <span class="colored">فریمورک / زبان برنامه نویسی : </span>Laravel ( PHP )
-    </li>
-    <li>
-        <span class="colored">تکنولوژی ها : </span> Gulp, Sass, Redis, MySQL
-    </li>
-</ul>
+{% include project-info.html %}
