@@ -5,7 +5,20 @@ image: ../assets/img/ho.webp
 description: هایپرآنلاین ، اولین فروشگاه اینترنتی در استان همدان
 developed_date: 1395
 lang: Laravel ( PHP ) - Android ( Java )
-techs: [JQuery, SweetAlert, MySQL, Redis, Volley, ButterKnife, Glide, Pushe, Pay.ir, SMS.ir, Telegram]
+techs:
+  [
+    JQuery,
+    SweetAlert,
+    MySQL,
+    Redis,
+    Volley,
+    ButterKnife,
+    Glide,
+    Pushe,
+    Pay.ir,
+    SMS.ir,
+    Telegram,
+  ]
 open_source: خیر
 ---
 
