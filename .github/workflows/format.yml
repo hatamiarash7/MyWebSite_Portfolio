@@ -22,7 +22,7 @@ jobs:
       - name: Format code
         uses: creyD/prettier_action@v4.2
         with:
-          prettier_options: --write **/*.{yml,md,html,scss,js}
+          prettier_options: --write **/*.{yml,md,scss,js}
           same_commit: false
           commit_message: "[CI] Format Code!"
           commit_description: "Format code using Prettier"
