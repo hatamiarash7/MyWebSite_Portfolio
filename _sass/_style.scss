@@ -606,10 +606,16 @@ body {
   border-radius: 15px;
   text-decoration: none !important;
   margin: 10px auto;
-  transition: transform 400ms;
+  transition: all 500ms;
 
   .card-img-top {
     border-radius: 15px 15px 0 0;
+    opacity: 0.95;
+    transition: all 500ms;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &:hover:not(.post) {
