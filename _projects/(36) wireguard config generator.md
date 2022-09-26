@@ -15,6 +15,8 @@ open_source: بله
 
 {% include project-info.html %}
 
+[![GitHub release](https://img.shields.io/github/release/hatamiarash7/WireGuard-Config-Generator.svg)](https://GitHub.com/hatamiarash7/WireGuard-Config-Generator/releases/) [![Pylint](https://github.com/hatamiarash7/WireGuard-Config-Generator/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/hatamiarash7/WireGuard-Config-Generator/actions/workflows/pylint.yml) [![CodeQL](https://github.com/hatamiarash7/WireGuard-Config-Generator/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/hatamiarash7/WireGuard-Config-Generator/actions/workflows/codeql-analysis.yml)
+
 این پروژه یک Parser مخصوص برای WireGuard است که با استفاده از آن می توانید فایل های Tunnel خودتون رو همیشه به روز نگه دارید. معمولا به روزرسانی این فایل ها کار دشواری به حساب میاد به خصوص وقتی که چندین Endpoint مختلف داشته باشید و بخواهید مدام آدرس های آی پی را از لیست حذف یا به آن اضافه کنید.
 
 فرض کنید که شما برای هر Endpoint نیاز به چنین فایل کانفیگی داشته باشید :
