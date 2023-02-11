@@ -7,6 +7,7 @@ url: "https://portfolio.arash-hatami.ir"
 repository: hatamiarash7/MyWebSite_Portfolio
 twitter_username: hatamiarash7
 github_username: hatamiarash7
+timezone: "Asia/Tehran"
 
 plugins:
   - jekyll-sitemap
@@ -34,11 +35,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-
-analytics:
-  enabled: true
-  google:
-    tracking_id: G-GDJJDL2D5F
 
 defaults:
   - scope:
