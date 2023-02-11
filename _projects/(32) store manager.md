@@ -1,5 +1,5 @@
 ---
-name: سیستم انبارداری
+title: سیستم انبارداری
 tools: [Android, Laravel]
 image: ../assets/img/store_1.webp
 description: سیستم انبارداری به سفارش دانشگاه ملی ملایر به همراه اپلیکیشن اندروید

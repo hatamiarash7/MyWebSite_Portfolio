@@ -1,5 +1,5 @@
 ---
-name: اپلیکیشن مدیریت کلاس هوشمند
+title: اپلیکیشن مدیریت کلاس هوشمند
 tools: [Android, IOT]
 image: ../assets/img/skyeye_1.webp
 description: مدیریت کلاس درسی دانشگاه با استفاده از IOT

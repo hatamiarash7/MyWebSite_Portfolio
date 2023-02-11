@@ -1,5 +1,5 @@
 ---
-name: کنترل کننده Webhook
+title: کنترل کننده Webhook
 tools: [Github, Gitlab, Gitea, Webhook, JavaScript]
 image: ../assets/img/webhook.webp
 description: وب‌هوک به یک Callback از جنس HTTP در سمت سرور گفته می‌شود که توسط برنامه‌نویس تعیین می‌شود. این درخواست غالبا با متد POST بوده و در هنگام بروز یک رخداد خاص صدا زده می‌شود. با این پروژه می توانید آن ها را مدیریت کنید.

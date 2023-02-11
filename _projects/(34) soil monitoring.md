@@ -1,5 +1,5 @@
 ---
-name: سامانه پایش وضعیت خاک
+title: سامانه پایش وضعیت خاک
 tools: [IOT, AVR, Android, Laravel]
 image: ../assets/img/soil-m-1.webp
 description: مانیتورینگ دما و رطوبت خاک جهت مدیریت هوشمند آبیاری

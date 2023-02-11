@@ -1,5 +1,5 @@
 ---
-name: تبدیل عکس ها به WEBP
+title: تبدیل عکس ها به WEBP
 tools: [Python, Convertor, Images]
 image: https://socialify.git.ci/hatamiarash7/Python-WebP/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این پروژه می توانید تصاویر خود را به صورت آفلاین به فرمت WebP تبدیل کنید.

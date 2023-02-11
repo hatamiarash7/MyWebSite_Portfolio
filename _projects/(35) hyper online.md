@@ -1,5 +1,5 @@
 ---
-name: فروشگاه اینترنتی هایپرآنلاین
+title: فروشگاه اینترنتی هایپرآنلاین
 tools: [Android, Laravel, PHP, Website, JavaScript]
 image: ../assets/img/ho.webp
 description: هایپرآنلاین ، اولین فروشگاه اینترنتی در استان همدان

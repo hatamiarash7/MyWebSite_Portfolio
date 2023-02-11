@@ -1,5 +1,5 @@
 ---
-name: API استخراج اطلاعات فایل های APK
+title: API استخراج اطلاعات فایل های APK
 tools: [Android, API, Parser]
 image: ../assets/img/apkparser_1.webp
 description: این پروژه یک APK Parser است که اطلاعات اصلی فایل های APK اندروید را استخراح کرده و به کاربر تحویل می دهد. پنل کاربری نداشته و به صورت API عمل می کند.

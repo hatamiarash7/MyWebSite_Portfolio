@@ -1,5 +1,5 @@
 ---
-name: تولید کانفیگ های WireGuard
+title: تولید کانفیگ های WireGuard
 tools: [WireGuard]
 image: https://socialify.git.ci/hatamiarash7/WireGuard-Config-Generator/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این پروژه می توانید همزمان برای چند Endpoint و آدرس های IP مختلف یک کانفیگ WireGuard تولید کنید

@@ -1,5 +1,5 @@
 ---
-name: اپلیکیشن یادمان عشق
+title: اپلیکیشن یادمان عشق
 tools: [Android, VR]
 image: ../assets/img/yad_0.webp
 description: اولین مجموعه واقعیت مجازی یادمان‌های دفاع مقدس ، به سفارش سراج ( سازمان فضای مجازی بسیج )
@@ -42,7 +42,7 @@ open_source: خیر
  <video width="320" height="615" controls>
   <source src="../assets/img/yad_8.webm" type="video/mp4">
 Your browser does not support the video tag.
-</video> 
+</video>
 </figure>
 </h1>
 

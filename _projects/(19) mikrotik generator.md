@@ -1,5 +1,5 @@
 ---
-name: تولید اسکریپت Hotspot میکروتیک
+title: تولید اسکریپت Hotspot میکروتیک
 tools: [Website, Django, Python, Mikrotik]
 image: ../assets/img/mikrotik1.webp
 description: این پروژه به سفارش مجموعه ای خصوصی طراحی شده و جهت تولید اسکریپت های میکروتیک برای تنظیم Hotspot استفاده می شود.

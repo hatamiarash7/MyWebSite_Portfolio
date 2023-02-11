@@ -1,5 +1,5 @@
 ---
-name: تاریخ شمسی Matlab
+title: تاریخ شمسی Matlab
 tools: [Matlab, Date, Persian]
 image: https://socialify.git.ci/hatamiarash7/Matlab_GregorianToHijri/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این کتابخانه به راحتی می توانید از تاریخ شمسی در پروژه متلب خود استفاده کنید

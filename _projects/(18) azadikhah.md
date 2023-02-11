@@ -1,5 +1,5 @@
 ---
-name: وب سایت احد آزادی خواه
+title: وب سایت احد آزادی خواه
 tools: [Website, Laravel, PHP]
 image: ../assets/img/azadi1.webp
 description: پایگاه اطلاع رسانی نماینده مردم شریف ملایر در مجلس شورای اسلامی

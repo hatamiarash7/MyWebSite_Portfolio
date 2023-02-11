@@ -1,5 +1,5 @@
 ---
-name: ایجاد لیست دایرکتوری با Nginx و Docker
+title: ایجاد لیست دایرکتوری با Nginx و Docker
 tools: [Docker, Nginx]
 image: ../assets/img/docker-directory-index.webp
 description: با استفاده از این پروژه می توانید با بهره مندی از Nginx یک لیست دایرکتوری ایجاد کنید

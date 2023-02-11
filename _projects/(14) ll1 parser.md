@@ -1,5 +1,5 @@
 ---
-name: تجزیه کننده گرامر LL1
+title: تجزیه کننده گرامر LL1
 tools: [Python, Parser]
 image: https://socialify.git.ci/hatamiarash7/LL1_Parser/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: در علوم کامپیوتر، تجزیه‌کنندهٔ ال‌ال یک پارسر بالا به پایین برای یک زیرمجموعه از گرامرهای مستقل از متن است. با استفاده از این پروژه می توانید چنین گرامر هایی را بررسی کنید.

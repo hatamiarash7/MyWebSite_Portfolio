@@ -1,5 +1,5 @@
 ---
-name: وب سایت اربعین 360
+title: وب سایت اربعین 360
 tools: [Website, Laravel, PHP, VR]
 image: ../assets/img/arb1.webp
 description: سرویس ارائه ویدئو های واقعیت مجازی ، به سفارش سراج ( سازمان فضای مجازی بسیج )

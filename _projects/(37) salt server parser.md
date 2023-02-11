@@ -1,5 +1,5 @@
 ---
-name: تولید کانفیگ های SSH از روی SaltStack
+title: تولید کانفیگ های SSH از روی SaltStack
 tools: [SaltStack, SSH]
 image: https://socialify.git.ci/hatamiarash7/Salt-Server-Parser/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این پروژه می توانید از روی فایل های SaltStack یک کانفیگ SSH بسازید

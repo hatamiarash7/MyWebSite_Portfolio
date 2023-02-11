@@ -1,5 +1,5 @@
 ---
-name: دانلود ایمیج های Docker
+title: دانلود ایمیج های Docker
 tools: [Docker, DevOps]
 image: https://socialify.git.ci/hatamiarash7/Docker-downloader/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این پروژه میتونید ایمیج های Docker رو دانلود کرده و به صورت آفلاین ذخیره و استفاده کنید.

@@ -1,5 +1,5 @@
 ---
-name: محاسبه DPI برای اندروید
+title: محاسبه DPI برای اندروید
 tools: [Website, Android, UI]
 image: ../assets/img/dpi-calc.webp
 description: با استفاده از این سامانه می توانید محاسبات DPI را بین سایزهای مختلف صفحه نمایش در اندروید انجام بدید

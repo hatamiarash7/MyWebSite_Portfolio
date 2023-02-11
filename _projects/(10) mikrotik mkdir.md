@@ -1,5 +1,5 @@
 ---
-name: تابع Mkdir برای میکروتیک
+title: تابع Mkdir برای میکروتیک
 tools: [Mikrotik]
 image: https://socialify.git.ci/hatamiarash7/Mikrotik-Mkdir/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این کتابخانه می توانید تابع mkdir را در ترمینال دستگاه های میکروتیک خود استفاده کنید

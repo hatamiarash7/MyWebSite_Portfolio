@@ -1,5 +1,5 @@
 ---
-name: وب سایت نشریه مرزهای دانش
+title: وب سایت نشریه مرزهای دانش
 tools: [Website, Laravel, PHP]
 image: ../assets/img/rah1.webp
 description: وب سایت طراحی شده به سفارش دانشگاه ملی ملایر برای نشریه مرزهای دانش

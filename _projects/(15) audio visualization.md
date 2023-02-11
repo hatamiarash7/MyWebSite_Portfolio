@@ -1,5 +1,5 @@
 ---
-name: مصورسازی صوت
+title: مصورسازی صوت
 tools: [Audio, Visualization, JavaScript]
 image: ../assets/img/audio.webp
 description: پروژه ای جهت مصورسازی فایل های صوتی

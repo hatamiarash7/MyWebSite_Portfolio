@@ -1,5 +1,5 @@
 ---
-name: جدول تناوبی عناصر
+title: جدول تناوبی عناصر
 tools: [HTML, CSS, Website]
 image: ../assets/img/periodic_1.webp
 description: نمایش جدول تناوبی عناصر به همراه عدد اتمی ، جرم و لایه الکترونی

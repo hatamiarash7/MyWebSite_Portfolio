@@ -1,5 +1,5 @@
 ---
-name: کنترل از راه دور موتور DC
+title: کنترل از راه دور موتور DC
 tools: [IOT, AVR, Android]
 image: ../assets/img/remote_dcm_1.webp
 description: کنترل موتور DC با استفاده از اپلیکیشن اندروید
@@ -59,6 +59,6 @@ open_source: خیر
  <video width="360" height="450" controls>
   <source src="../assets/img/remote_dcm_5.webm" type="video/mp4">
 Your browser does not support the video tag.
-</video> 
+</video>
 </figure>
 </h1>

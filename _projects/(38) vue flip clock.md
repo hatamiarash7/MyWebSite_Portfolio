@@ -1,5 +1,5 @@
 ---
-name: ساعت Flip برای Vue JS
+title: ساعت Flip برای Vue JS
 tools: [Vue, JavaScript, UI]
 image: ../assets/img/vue-flip-clock.jpg
 description: این پروژه یک ساعت Flip برای Vue JS است که می توانید آن را در وبسایت خود استفاده کنید

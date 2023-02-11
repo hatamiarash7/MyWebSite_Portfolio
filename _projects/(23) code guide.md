@@ -1,5 +1,5 @@
 ---
-name: وب سایت Code Guide
+title: وب سایت Code Guide
 tools: [Website, Jekyll]
 image: ../assets/img/cg1.webp
 description: استانداردهای لازم برای ایجاد کدهای HTML و CSS سازگار ، انعطاف پذیر و پایدار

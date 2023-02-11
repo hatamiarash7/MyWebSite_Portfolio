@@ -1,5 +1,5 @@
 ---
-name: کتابخانه Toast فارسی برای اندروید
+title: کتابخانه Toast فارسی برای اندروید
 tools: [Android, UI, RTL, Java]
 image: https://socialify.git.ci/hatamiarash7/RTL-Toast/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این کتابخانه می توانید از Toast هایی شخصی سازی شده با قالب های پیشفرض در برنامه خود استفاده کنید
