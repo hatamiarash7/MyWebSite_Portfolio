@@ -53,7 +53,7 @@ docker run hatamiarash7/webhook
 
 برای کار با پروژه نیاز به یک فایل `env.` دارید که باید به این صورت تنظیم بشه :
 
-```env
+```text
 SECRET=changeme
 DB_CONNECTION="mongodb://localhost:27017/webhook"
 PROVIDER=github

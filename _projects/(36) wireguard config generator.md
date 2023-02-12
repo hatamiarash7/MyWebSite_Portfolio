@@ -71,7 +71,7 @@ PersistentKeepalive = <PERSISTENT_KEEPALIVE>
 
 در نهایت باقی اطلاعات مورد نیاز Tunnel را در یک فایل env قرار دهید :
 
-```env
+```text
 PRIVATE_KEY=
 PUBLIC_KEY=
 ADDRESS=
