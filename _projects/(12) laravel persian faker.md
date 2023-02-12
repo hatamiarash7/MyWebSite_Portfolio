@@ -61,7 +61,7 @@ composer require hatamiarash7/persian-faker
 | `()PFaker::mobile`        |                                                                 شماره موبایل |
 | `()PFaker::telephone`     |                                                              شماره تلفن ثابت |
 | `()PFaker::email`         |                                                                   آدرس ایمیل |
-| `()PFaker::domain`        |                                   آدرس کامل سایت مانند : <https://www.test.ir> |
+| `()PFaker::domain`        |                                 آدرس کامل سایت مانند : <https://www.test.ir> |
 | `PFaker::age($min,$max)`  |                                                     سن بین اعداد $min و $max |
 | `PFaker::birthday($sign)` | تاریخ تولد با استفاده از علامت $sign برای تولید تاریخ مانند : year/month/day |
 | `()PFaker::address`       |                                                                    آدرس پستی |
