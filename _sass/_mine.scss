@@ -191,6 +191,42 @@ div.badges {
 pre,
 code.highlighter-rouge {
   border-radius: 10px;
+  position: relative;
+}
+
+pre.highlight {
+  & > button {
+    opacity: 0;
+    background-color: #30363d;
+    border-radius: 6px;
+    border: 1px #8b949e solid;
+    color: #c9d1d9;
+    transition-duration: 0.1s;
+    appearance: none;
+    top: 0 !important;
+    right: 0 !important;
+    position: absolute;
+    margin: 8px;
+
+    path {
+      fill: #8b949e;
+    }
+
+    svg.copied path {
+      fill: #3fb950;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    & > button {
+      opacity: 1;
+    }
+  }
 }
 
 figcaption {
