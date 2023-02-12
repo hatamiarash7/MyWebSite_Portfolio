@@ -451,13 +451,14 @@ body {
       display: block;
       height: 0.15em;
       margin-top: -0.15em;
-      width: 0;
+      width: 100%;
       background: #007bff;
-      transition: width 0.35s;
+      transition: transform 0.2s ease-in-out;
+      transform: scale(0);
     }
 
     &:hover::after {
-      width: 100%;
+      transform: scale(1);
     }
   }
 
