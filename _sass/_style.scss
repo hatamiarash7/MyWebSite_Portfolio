@@ -579,13 +579,14 @@ body {
 
 .nav-link::after,
 .navbar-brand::after {
-  width: 0;
-  transition: width 0.35s;
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
 }
 
 .nav-link:hover::after,
 .navbar-brand:hover::after {
-  width: 100%;
+  transform: scale(1);
 }
 
 .nav-item.active {
