@@ -493,9 +493,11 @@ body {
   }
 
   table:not(.highlight) {
-    display: block;
     overflow-x: auto;
     margin: 1rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
 
     td {
       border: 1px solid #ddd;
