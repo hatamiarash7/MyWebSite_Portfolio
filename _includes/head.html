@@ -1,10 +1,41 @@
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png' | relative_url }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png' | relative_url }}" />
+  <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}" />
+  <link rel="mask-icon" href="{{ '/assets/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#0e0e0e" />
+  <!-- Theme style -->
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://lib.arvancloud.ir/bootstrap/4.6.1/css/bootstrap.min.css" />
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://lib.arvancloud.ir/animate.css/4.1.1/animate.min.css" />
+  <!-- bricklayer CDN -->
+  <link rel="stylesheet" href="https://lib.arvancloud.ir/bricklayer/0.4.3/bricklayer.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <!-- Analytics -->
+  <script defer data-domain="portfolio.arash-hatami.ir" src="https://analytics.arash-hatami.ir/js/script.js"></script>
+  <meta name="google-site-verification" content="QZFeekX0NGg0RnQwiS-uqhMIdMgQ9KSX3AEJdm6wTJ8" />
   {%- if jekyll.environment == 'production' -%}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDJJDL2D5F"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-GDJJDL2D5F');
@@ -14,88 +45,4 @@
   description = page.description | default: site.description | strip_html |
   strip_newlines | truncate: 160 %} {% if page.title and page.collection ==
   'projects' %} {% assign title = page.title | escape %} {% endif %}
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome-1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ description }}" />
-
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}" />
-
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="{{ '/assets/apple-touch-icon.png' | relative_url }}"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="{{ '/assets/favicon-32x32.png' | relative_url }}"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="{{ '/assets/favicon-16x16.png' | relative_url }}"
-  />
-  <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}" />
-  <link
-    rel="mask-icon"
-    href="{{ '/assets/safari-pinned-tab.svg' | relative_url }}"
-    color="#5bbad5"
-  />
-  <link
-    rel="shortcut icon"
-    type="image/x-icon"
-    href="{{ '/assets/favicon.ico' | relative_url }}"
-  />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#0e0e0e" />
-
-  <!-- Theme style -->
-  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
-
-  <!-- Font Awesome CDN -->
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
-  />
-
-  <!-- Bootstrap CSS CDN -->
-  <link
-    rel="stylesheet"
-    href="https://lib.arvancloud.ir/bootstrap/4.6.1/css/bootstrap.min.css"
-  />
-
-  <!-- Animate CSS CDN -->
-  <link
-    rel="stylesheet"
-    href="https://lib.arvancloud.ir/animate.css/4.1.1/animate.min.css"
-  />
-
-  <!-- bricklayer CDN -->
-  <link
-    rel="stylesheet"
-    href="https://lib.arvancloud.ir/bricklayer/0.4.3/bricklayer.min.css"
-  />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-
-  <!-- Analytics -->
-  <script
-    defer
-    data-domain="portfolio.arash-hatami.ir"
-    src="https://analytics.arash-hatami.ir/js/plausible.js"
-  ></script>
-
-  <meta
-    name="google-site-verification"
-    content="QZFeekX0NGg0RnQwiS-uqhMIdMgQ9KSX3AEJdm6wTJ8"
-  />
 </head>
