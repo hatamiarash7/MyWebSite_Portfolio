@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.3"
+gem "ruby-lsp"
 
 group :jekyll_plugins do
   gem "jekyll-sitemap"
