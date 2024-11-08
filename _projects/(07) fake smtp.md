@@ -20,7 +20,7 @@ open_source: بله
 </div>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/FakeSMTP" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/FakeSMTP" text="گیت‌هاب" size="lg" %}
 {% include elements/button.html link="https://hub.docker.com/r/hatamiarash7/fake-smtp" text="داکر هاب" size="lg" %}
 </h2>
 

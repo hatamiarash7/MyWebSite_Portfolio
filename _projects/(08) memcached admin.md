@@ -19,7 +19,7 @@ open_source: بله
 </div>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/Memcached-Admin" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/Memcached-Admin" text="گیت‌هاب" size="lg" %}
 {% include elements/button.html link="https://hub.docker.com/r/hatamiarash7/memcached-admin" text="داکر هاب" size="lg" %}
 </h2>
 

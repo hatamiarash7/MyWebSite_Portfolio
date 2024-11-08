@@ -10,7 +10,7 @@ open_source: بله
 ---
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/ASN-By-Country" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/ASN-By-Country" text="گیت‌هاب" size="lg" %}
 </h2>
 
 {% include project-info.html %}

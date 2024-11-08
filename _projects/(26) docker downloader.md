@@ -13,7 +13,7 @@ open_source: بله
 </h1>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/Docker-downloader" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/Docker-downloader" text="گیت‌هاب" size="lg" %}
 {% include elements/button.html link="https://virgool.io/hatamiarash7/%D8%B2%DB%8C%D8%B1-%D8%AA%DB%8C%D8%BA-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-avqkbvfs9wed" text="پست وبلاگ" size="lg" %}
 </h2>
 

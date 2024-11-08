@@ -14,7 +14,7 @@ open_source: بله
 </h1>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/WebhookHandler" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/WebhookHandler" text="گیت‌هاب" size="lg" %}
 </h2>
 
 {% include project-info.html %}
@@ -72,7 +72,7 @@ LOG_LEVEL=info
 
 ## استفاده
 
-ابتدا در نرم افزار مورد نظر به قسمت تنظیمات Webhook مراجعه کنید. برای مثال در گیت هاب با چنین صفحه ای مواجه خواهید شد :
+ابتدا در نرم افزار مورد نظر به قسمت تنظیمات Webhook مراجعه کنید. برای مثال در گیت‌هاب با چنین صفحه ای مواجه خواهید شد :
 
 <h1 class="center">
 <img src="../assets/img/webhook2.webp"/>

@@ -13,7 +13,7 @@ open_source: بله
 </h1>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/Periodic-Table" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/Periodic-Table" text="گیت‌هاب" size="lg" %}
 {% include elements/button.html link="https://periodic.arash-hatami.ir" text="وب سایت ( دمو )" size="lg" %}
 </h2>
 

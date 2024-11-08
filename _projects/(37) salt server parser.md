@@ -10,7 +10,7 @@ open_source: بله
 ---
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/Salt-Server-Parser" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/Salt-Server-Parser" text="گیت‌هاب" size="lg" %}
 </h2>
 
 {% include project-info.html %}

@@ -22,7 +22,7 @@ open_source: بله
 </div>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/RTL-Toast" text="گیت هاب" size="lg"%}
+{% include elements/button.html link="https://github.com/hatamiarash7/RTL-Toast" text="گیت‌هاب" size="lg"%}
 </h2>
 
 {% include project-info.html %}

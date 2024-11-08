@@ -13,7 +13,7 @@ open_source: بله
 </h1>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/LL1_Parser" text="گیت هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/LL1_Parser" text="گیت‌هاب" size="lg" %}
 </h2>
 
 {% include project-info.html %}
