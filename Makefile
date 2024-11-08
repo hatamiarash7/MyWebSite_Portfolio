@@ -3,6 +3,6 @@ install:
 	bundle install
 
 run:
-	bundle exec jekyll serve
+	bundle exec jekyll serve --livereload
 
 .PHONY: install run
