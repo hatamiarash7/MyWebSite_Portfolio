@@ -62,7 +62,7 @@ GEM
       ffi (~> 1.0)
     rbs (3.6.1)
       logger
-    rexml (3.3.7)
+    rexml (3.3.9)
     rouge (4.4.0)
     ruby-lsp (0.21.3)
       language_server-protocol (~> 3.17.0)
