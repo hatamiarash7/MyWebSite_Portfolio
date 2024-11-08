@@ -2,23 +2,20 @@
 
 <ul>
   {%- if page.developed_date -%}
-  <li><span class="colored">سال طراحی : </span>{{ page.developed_date }}</li>
+  <li><span class="colored text-bold">سال طراحی : </span>{{ page.developed_date }}</li>
   {%- endif -%} {%- if page.lang -%}
   <li>
-    <span class="colored">فریمورک / زبان برنامه نویسی : </span>{{ page.lang }}
+    <span class="colored text-bold">فریمورک / زبان برنامه نویسی : </span>{{ page.lang }}
   </li>
   {%- endif -%} {%- if page.techs -%}
   <li>
-    <span class="colored">تکنولوژی ها : </span>{% for tech in page.techs %} {{
+    <span class="colored text-bold">تکنولوژی ها : </span>{% for tech in page.techs %} {{
     tech | append: " - " }} {% endfor %} ...
   </li>
   {%- endif -%} {%- if page.open_source -%}
   <li>
-    <span class="colored">متن باز : </span>
-    <span
-      style="color: {% if page.open_source=='بله' %} green {% else %} red {% endif %};"
-      >{{ page.open_source }}</span
-    >
+    <span class="colored text-bold">متن باز : </span>
+    <span style="color: {% if page.open_source=='بله' %} green {% else %} red {% endif %};">{{ page.open_source}}</span>
   </li>
   {%- endif -%}
 </ul>
