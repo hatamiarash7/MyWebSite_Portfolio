@@ -1,6 +1,6 @@
 ---
 title: لیست ASN های یک کشور
-tools: [BGP,ASN]
+tools: [BGP, ASN]
 image: https://socialify.git.ci/hatamiarash7/ASN-By-Country/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark
 description: با استفاده از این پروژه می توانید لیست تمامی ASN های یک کشور را دریافت کنید.
 developed_date: 1401
@@ -8,7 +8,7 @@ lang: Python
 techs: [LXML, BS4]
 open_source: بله
 ---
-    
+
 <h2 class="center">
 {% include elements/button.html link="https://github.com/hatamiarash7/ASN-By-Country" text="گیت‌هاب" size="lg" %}
 </h2>
