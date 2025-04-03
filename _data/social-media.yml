@@ -9,12 +9,12 @@ facebook:
   color: 3b5998
 
 github:
-  url: https://www.github.com/
+  url: https://github.com/
   icon: fab fa-github
   color: 333333
 
 gitlab:
-  url: https://www.gitlab.com/
+  url: https://gitlab.com/
   icon: fab fa-gitlab
   color: fca326
 
@@ -39,6 +39,6 @@ twitter:
   color: 1da1f2
 
 keybase:
-  url: https://www.keybase.io/
+  url: https://keybase.io/
   icon: fab fa-keybase
   color: 66ccff
