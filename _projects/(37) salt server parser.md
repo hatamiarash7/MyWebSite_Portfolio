@@ -15,7 +15,7 @@ open_source: بله
 
 {% include project-info.html %}
 
-[![GitHub release](https://img.shields.io/github/release/hatamiarash7/Salt-Server-Parser.svg)](https://GitHub.com/hatamiarash7/Salt-Server-Parser/releases/) [![Pylint](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/pylint.yml) [![CodeQL](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/codeql-analysis.yml)
+[![GitHub release](https://img.shields.io/github/v/release/hatamiarash7/Salt-Server-Parser.svg)](https://GitHub.com/hatamiarash7/Salt-Server-Parser/releases/) [![Pylint](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/pylint.yml) [![CodeQL](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/hatamiarash7/Salt-Server-Parser/actions/workflows/codeql-analysis.yml)
 
 این پروژه یک Parser مخصوص برای SaltStack بوده که با استفاده از اون میتونید فایل های کانفیگ مربوط به SSH تولید کنید.
 

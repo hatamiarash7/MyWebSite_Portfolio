@@ -15,7 +15,7 @@ open_source: بله
 
 {% include project-info.html %}
 
-[![GitHub release](https://img.shields.io/github/release/hatamiarash7/CheckFiltering.svg)](https://GitHub.com/hatamiarash7/CheckFiltering/releases/)
+[![GitHub release](https://img.shields.io/github/v/release/hatamiarash7/CheckFiltering.svg)](https://GitHub.com/hatamiarash7/CheckFiltering/releases/)
 
 فرایند شناسایی در این پروژه از طریق بررسی DNS انجام می‌شود. توجه کنید که قابلیت شناسایی اختلالات ناشی از فیلترینگ توسط این پروژه **شناسایی نخواهد شد**.
 

@@ -15,7 +15,7 @@ open_source: بله
 
 {% include project-info.html %}
 
-[![GitHub release](https://img.shields.io/github/release/hatamiarash7/Go-Chat.svg)](https://GitHub.com/hatamiarash7/Go-Chat/releases/) [![Release](https://github.com/hatamiarash7/Go-Chat/actions/workflows/release.yaml/badge.svg)](https://github.com/hatamiarash7/Go-Chat/actions/workflows/release.yaml) [![Image size](https://img.shields.io/docker/image-size/hatamiarash7/go-chat-server/latest?maxAge=30)](https://hub.docker.com/r/hatamiarash7/go-chat-server/)
+[![GitHub release](https://img.shields.io/github/v/release/hatamiarash7/Go-Chat.svg)](https://GitHub.com/hatamiarash7/Go-Chat/releases/) [![Release](https://github.com/hatamiarash7/Go-Chat/actions/workflows/release.yaml/badge.svg)](https://github.com/hatamiarash7/Go-Chat/actions/workflows/release.yaml) [![Image size](https://img.shields.io/docker/image-size/hatamiarash7/go-chat-server/latest?maxAge=30)](https://hub.docker.com/r/hatamiarash7/go-chat-server/)
 
 این پروژه یک سیستم ساده چت بوده که با یک کانال Pub/Sub کار می کند. تمامی پیام های ارسالی توسط کلاینت ها رمزنگاری شده و در سمت دیگر رمزگشایی می شوند.
 
