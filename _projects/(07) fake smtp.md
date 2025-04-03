@@ -14,8 +14,7 @@ open_source: بله
 </h1>
 
 <div class="center badges">
-<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/build-docker.yml/badge.svg" />
-<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/dockerhub.yml/badge.svg" />
+<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/publish.yml/badge.svg" />
 <img src="https://img.shields.io/docker/image-size/hatamiarash7/fake-smtp" />
 </div>
 
