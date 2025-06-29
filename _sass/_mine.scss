@@ -239,3 +239,22 @@ figcaption {
     width: 33.3%;
   }
 }
+
+// Yektanet
+
+.yn-heading,
+.yn-content,
+.yn-branding-label {
+  font-family: Vazirmatn RD FD !important;
+}
+
+.yn-item_title_wrapper {
+  color: #00baba !important;
+}
+
+[data-theme="dark"] {
+  .yn-item_title,
+  .yn-branding-label {
+    color: rgba(226, 226, 226, 0.87) !important;
+  }
+}
