@@ -242,6 +242,10 @@ figcaption {
 
 // Yektanet
 
+#pos-article-text-107710 {
+  margin-bottom: 20px;
+}
+
 .yn-heading,
 .yn-content,
 .yn-branding-label {
@@ -252,9 +256,24 @@ figcaption {
   color: #00baba !important;
 }
 
+.YN.yn-article-text .yn-item:hover .yn-item_title {
+  color: #00baba !important;
+}
+
+.yn-item_title {
+  transition: all 300ms;
+}
+
 [data-theme="dark"] {
+  .yn-heading,
   .yn-item_title,
   .yn-branding-label {
     color: rgba(226, 226, 226, 0.87) !important;
+  }
+}
+
+[data-theme="light"] {
+  .yn-heading {
+    color: #474747;
   }
 }
