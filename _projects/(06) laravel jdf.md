@@ -18,8 +18,8 @@ open_source: بله
 </div>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/Laravel-JDF" text="گیت‌هاب" size="lg" %}
-{% include elements/button.html link="https://packagist.org/packages/hatamiarash7/jdf" text="Packagist" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/Laravel-JDF" text="گیت‌هاب" size="lg" event="Github+Link" %}
+{% include elements/button.html link="https://packagist.org/packages/hatamiarash7/jdf" text="Packagist" size="lg" event="Download" %}
 </h2>
 
 {% include project-info.html %}

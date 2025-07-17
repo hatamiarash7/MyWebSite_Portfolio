@@ -14,8 +14,8 @@ open_source: خیر
 </h1><br>
 
 <h2 class="center">
-{% include elements/button.html link="https://cafebazaar.ir/app/ir.hatamiarash.dnslookup" text="نسخه اندروید" style="success" size="lg" %}
-{% include elements/button.html link="https://dns.arash-hatami.ir" text="نسخه تحت وب" size="lg" %}
+{% include elements/button.html link="https://cafebazaar.ir/app/ir.hatamiarash.dnslookup" text="نسخه اندروید" style="success" size="lg" event="Download" %}
+{% include elements/button.html link="https://dns.arash-hatami.ir" text="نسخه تحت وب" size="lg" event="Demo" %}
 </h2>
 
 {% include project-info.html %}

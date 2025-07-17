@@ -13,8 +13,8 @@ open_source: بله
 </h1>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/AudioVisualization" text="گیت‌هاب" size="lg" %}
-{% include elements/button.html link="https://audiovisualization.arash-hatami.ir" text="وب سایت ( دمو )" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/AudioVisualization" text="گیت‌هاب" size="lg" event="Github+Link" %}
+{% include elements/button.html link="https://audiovisualization.arash-hatami.ir" text="وب سایت ( دمو )" size="lg" event="Demo" %}
 </h2>
 
 {% include project-info.html %}

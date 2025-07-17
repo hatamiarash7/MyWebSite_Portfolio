@@ -14,7 +14,7 @@ open_source: بله
 </h1>
 
 <h2 class="center">
-{% include elements/button.html link="https://cg.arash-hatami.ir" text="وب سایت" size="lg" %}
+{% include elements/button.html link="https://cg.arash-hatami.ir" text="وب سایت" size="lg" event="Demo" %}
 </h2>
 
 {% include project-info.html %}

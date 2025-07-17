@@ -10,8 +10,8 @@ open_source: بله
 ---
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/vue-flip-clock" text="گیت‌هاب" size="lg" %}
-{% include elements/button.html link="https://codesandbox.io/s/vue-flip-clock-f3pr7e?fontsize=14&hidenavigation=1&theme=dark" text="دمو" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/vue-flip-clock" text="گیت‌هاب" size="lg" event="Github+Link" %}
+{% include elements/button.html link="https://codesandbox.io/s/vue-flip-clock-f3pr7e?fontsize=14&hidenavigation=1&theme=dark" text="دمو" size="lg" event="Demo" %}
 </h2>
 
 {% include project-info.html %}

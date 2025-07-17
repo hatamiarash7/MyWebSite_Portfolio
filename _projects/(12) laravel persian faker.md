@@ -13,7 +13,7 @@ open_source: بله
 </h1>
 
 <h2 class="center">
-{% include elements/button.html link="https://github.com/hatamiarash7/Laravel-PersianFaker" text="گیت‌هاب" size="lg" %}
+{% include elements/button.html link="https://github.com/hatamiarash7/Laravel-PersianFaker" text="گیت‌هاب" size="lg" event="Github+Link" %}
 </h2>
 
 {% include project-info.html %}

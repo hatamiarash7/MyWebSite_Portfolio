@@ -13,7 +13,7 @@ open_source: خیر
 </h1>
 
 <h2 class="center">
-{% include elements/button.html text="نسخه تحت وب" size="lg" disabled="1" %}
+{% include elements/button.html text="نسخه تحت وب" size="lg" disabled="1" event="Demo" %}
 </h2>
 
 {% include project-info.html %}
