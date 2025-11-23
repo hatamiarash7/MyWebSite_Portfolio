@@ -68,19 +68,6 @@
   />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-  <!-- Analytics -->
-  <script
-    defer
-    data-domain="portfolio.arash-hatami.ir"
-    src="https://analytics.arash-hatami.ir/js/script.outbound-links.tagged-events.js"
-  ></script>
-  <script>
-    window.plausible =
-      window.plausible ||
-      function () {
-        (window.plausible.q = window.plausible.q || []).push(arguments);
-      };
-  </script>
   <meta
     name="google-site-verification"
     content="QZFeekX0NGg0RnQwiS-uqhMIdMgQ9KSX3AEJdm6wTJ8"
@@ -125,6 +112,19 @@
       var l = t.createElement("script");
       (l.async = !0), (l.src = c), a.appendChild(l);
     })(window, document, "yektanet");
+  </script>
+   <!-- Analytics -->
+  <script
+    defer
+    data-domain="portfolio.arash-hatami.ir"
+    src="https://analytics.arash-hatami.ir/js/script.outbound-links.tagged-events.js"
+  ></script>
+  <script>
+    window.plausible =
+      window.plausible ||
+      function () {
+        (window.plausible.q = window.plausible.q || []).push(arguments);
+      };
   </script>
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="+V/Odrbv4Fn/qR2kFRMRoQ" async></script>
   {%- endif -%} {% assign title = page.title | default: site.title | escape %}
