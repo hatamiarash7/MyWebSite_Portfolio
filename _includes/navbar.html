@@ -16,7 +16,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
+    <div class="navbar-nav ms-auto">
       <a
         class="nav-item nav-link"
         href="https://arash-hatami.ir?utm_source=Portfolio"
@@ -49,7 +49,15 @@
         id="theme-toggler"
         class="nav-item nav-link"
         role="button"
+        tabindex="0"
+        aria-label="تغییر پوسته"
         onclick="toggleTheme()"
+        onkeydown="
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleTheme();
+          }
+        "
       ></span>
     </div>
   </div>

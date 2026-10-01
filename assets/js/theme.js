@@ -1,6 +1,5 @@
 const STORAGE_KEY = "theme";
 const THEME_ATTR = "data-theme";
-const QUERY_KEY = "(prefers-color-scheme: dark)";
 
 const themes = {
   LIGHT: "light",
@@ -10,24 +9,7 @@ const themes = {
 initTheme();
 
 function initTheme() {
-  const savedTheme = localStorage.getItem(STORAGE_KEY);
-
-  if (savedTheme) {
-    // Storage theme
-    setTheme(savedTheme);
-  } else if (window.matchMedia && window.matchMedia(QUERY_KEY).matches) {
-    // system theme
-    setTheme(themes.DARK);
-  } else {
-    // Default theme
-    setTheme(themes.DARK);
-  }
-
-  // Watch for system theme changes
-  window.matchMedia(QUERY_KEY).addEventListener("change", (e) => {
-    const newTheme = e.matches ? themes.DARK : themes.LIGHT;
-    setTheme(newTheme);
-  });
+  setTheme(savedTheme());
 }
 
 function toggleTheme() {
@@ -35,6 +17,12 @@ function toggleTheme() {
   const newTheme = theme === themes.DARK ? themes.LIGHT : themes.DARK;
   setTheme(newTheme);
   localStorage.setItem(STORAGE_KEY, newTheme);
+}
+
+function savedTheme() {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved === themes.LIGHT || saved === themes.DARK) return saved;
+  return themes.DARK;
 }
 
 function getTheme() {

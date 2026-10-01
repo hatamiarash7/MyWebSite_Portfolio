@@ -185,6 +185,12 @@ div.badges {
   .navbar {
     background: #0d1117;
   }
+
+  .yn-heading,
+  .yn-item_title,
+  .yn-branding-label {
+    color: rgba(226, 226, 226, 0.87) !important;
+  }
 }
 
 .highlight,
@@ -249,7 +255,9 @@ figcaption {
 .yn-heading,
 .yn-content,
 .yn-branding-label {
-  font-family: Vazirmatn RD FD !important;
+  font-family:
+    Vazirmatn RD FD,
+    sans-serif !important;
 }
 
 .yn-item_title_wrapper {
@@ -262,12 +270,4 @@ figcaption {
 
 .yn-heading {
   color: #323232;
-}
-
-[data-theme="dark"] {
-  .yn-heading,
-  .yn-item_title,
-  .yn-branding-label {
-    color: rgba(226, 226, 226, 0.87) !important;
-  }
 }

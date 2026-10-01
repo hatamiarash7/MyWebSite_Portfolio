@@ -7,11 +7,13 @@
   </li>
   {%- endif -%} {%- if page.lang -%}
   <li>
-    <span class="colored text-bold">فریمورک / زبان برنامه نویسی : </span>{{ page.lang }}
+    <span class="colored text-bold">فریمورک / زبان برنامه نویسی : </span>{{
+    page.lang }}
   </li>
   {%- endif -%} {%- if page.techs -%}
   <li>
-    <span class="colored text-bold">تکنولوژی ها : </span>{% for tech in page.techs %} {{ tech | append: " - " }} {% endfor %} ...
+    <span class="colored text-bold">تکنولوژی ها : </span>{% for tech in
+    page.techs %} {{ tech | append: " - " }} {% endfor %} ...
   </li>
   {%- endif -%} {%- if page.open_source -%}
   <li>

@@ -4,14 +4,16 @@
       <div id="dummy"></div>
       <div id="element">
         <img
-          src="{{ site.author.image }}"
+          src="{{ site.author.image | relative_url }}"
           alt="{{ site.title }}"
           class="circle-image wow animated zoomIn"
+          width="500"
+          height="500"
+          decoding="async"
+          fetchpriority="high"
           data-wow-delay=".1s"
         />
       </div>
     </div>
   </div>
 </div>
-
-<script src="https://lib.arvancloud.ir/jquery/3.6.0/jquery.min.js"></script>

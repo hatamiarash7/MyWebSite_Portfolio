@@ -7,10 +7,16 @@
     "keybase",
     "livereload",
     "markdownify",
+    "mswin",
     "Preproc",
     "stackoverflow",
     "vazir",
     "Vazirmatn",
+    "webp",
+    "writeups",
     "Yektanet"
-  ]
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

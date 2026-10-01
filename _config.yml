@@ -52,13 +52,17 @@ sass:
   style: compressed
 
 exclude:
-  - .sass-cache/
+  - .bundle/
+  - .github/
   - .jekyll-cache/
+  - .sass-cache/
+  - .vscode/
+  - AGENTS.md
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - LICENSE
+  - Makefile
   - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - README.md
+  - vendor/

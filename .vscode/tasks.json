@@ -3,8 +3,20 @@
   "tasks": [
     {
       "label": "jekyll",
-      "command": "bundle exec jekyll serve",
-      "type": "shell"
+      "type": "shell",
+      "command": "make run",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "jekyll",
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".",
+          "endsPattern": "Server address:"
+        }
+      }
     }
   ]
 }
