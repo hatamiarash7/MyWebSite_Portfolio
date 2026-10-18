@@ -17,13 +17,6 @@ pnpm-debug.log*
 # lighthouse
 .lighthouseci/
 
-# legacy jekyll output
-_site/
-.jekyll-cache/
-.jekyll-metadata
-.sass-cache/
-vendor/
-
 # editors
 .vscode/*.log
 .DS_Store

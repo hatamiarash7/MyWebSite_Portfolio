@@ -1,23 +1,20 @@
 {
   "cSpell.words": [
-    "disqus",
-    "endcapture",
-    "endcase",
-    "forloop",
-    "keybase",
-    "livereload",
-    "markdownify",
-    "mswin",
-    "Preproc",
+    "astro",
+    "healthz",
+    "iconify",
+    "lhci",
+    "plausible",
     "stackoverflow",
-    "titlecase",
     "vazir",
     "Vazirmatn",
     "webp",
-    "writeups",
     "Yektanet"
   ],
-  "[html]": {
+  "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "**/nginx/*.map": "nginx"
   }
 }
