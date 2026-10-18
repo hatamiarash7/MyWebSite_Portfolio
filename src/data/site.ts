@@ -15,7 +15,6 @@ export const site = {
 export const profile = {
   role: "مهندس DevOps و توسعه‌دهنده بک‌اند",
   eyebrow: "DevOps · Backend",
-  tagline: "زیرساخت پایدار می‌سازم و سرویس‌ها را از کد تا production می‌رسانم.",
   bio: "برنامه‌نویسی را از سال ۱۳۹۵ با اندروید و لاراول شروع کردم و امروز بیشتر وقتم صرف خودکارسازی زیرساخت، CI/CD، کانتینرها و شبکه می‌شود. ابزارهایی که برای حل مشکلات روزمره می‌سازم را تا جای ممکن متن‌باز منتشر می‌کنم.",
   handle: "hatamiarash7",
   email: "info@arash-hatami.ir",
