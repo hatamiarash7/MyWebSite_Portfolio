@@ -10,8 +10,8 @@ Jekyll 4 site. Page copy is Persian (RTL). The document language is English.
 
 ## Requirements
 
-- Ruby 3.3.6 (`.ruby-version`)
-- Bundler 2.3 or newer
+- Ruby 4 (`.ruby-version`)
+- Bundler 4
 
 ## Development
 
