@@ -78,7 +78,9 @@ const jsonLd = [
         role="group"
         aria-label="فیلتر بر اساس تکنولوژی"
       >
-        <button type="button" class="filter-chip" data-filter-tag="" aria-pressed="true">همه</button>
+        <button type="button" class="filter-chip" data-filter-tag="" aria-pressed="true">
+          همه
+        </button>
         {tags.map((tag) => (
           <button type="button" class="filter-chip" data-filter-tag={tag.name} aria-pressed="false">
             <span dir="ltr">{tag.name}</span>
