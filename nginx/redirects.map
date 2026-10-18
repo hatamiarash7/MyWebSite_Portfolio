@@ -1,0 +1,50 @@
+# Legacy Jekyll project URLs -> current Astro URLs (301).
+#
+# The Jekyll site published projects as /projects/<NN>-<slug>(.html). The Astro
+# site uses /projects/<slug>. nginx/default.conf normalizes the request path
+# (drops .html and the trailing slash) before looking it up here, so each
+# project needs only one line. Hits are logged to legacy-redirects.log; once
+# that log stays empty for a few months this file can be deleted.
+#
+# Format: <old path> <new path>;
+
+/projects/01-android-rtl-toast          /projects/android-rtl-toast;
+/projects/02-dns-lookup                 /projects/dns-lookup;
+/projects/05-mikrotik-dashboard         /projects/mikrotik-dashboard;
+/projects/06-laravel-jdf                /projects/laravel-jdf;
+/projects/07-fake-smtp                  /projects/fake-smtp;
+/projects/08-memcached-admin            /projects/memcached-admin;
+/projects/09-matlab-gregorian-to-hijri  /projects/matlab-gregorian-to-hijri;
+/projects/10-mikrotik-mkdir             /projects/mikrotik-mkdir;
+/projects/11-docker-directory-index     /projects/docker-directory-index;
+/projects/12-laravel-persian-faker      /projects/laravel-persian-faker;
+/projects/13-chicafe-website            /projects/chicafe-website;
+/projects/14-ll1-parser                 /projects/ll1-parser;
+/projects/15-audio-visualization        /projects/audio-visualization;
+/projects/16-webhook-handler            /projects/webhook-handler;
+/projects/17-poll                       /projects/poll;
+/projects/18-azadikhah                  /projects/azadikhah;
+/projects/19-mikrotik-generator         /projects/mikrotik-generator;
+/projects/20-wkmag                      /projects/wkmag;
+/projects/21-matlab2048                 /projects/matlab2048;
+/projects/22-arbaeen360                 /projects/arbaeen360;
+/projects/23-code-guide                 /projects/code-guide;
+/projects/24-dpi-calc                   /projects/dpi-calc;
+/projects/25-python-webp                /projects/python-webp;
+/projects/26-docker-downloader          /projects/docker-downloader;
+/projects/27-eskan-malayer              /projects/eskan-malayer;
+/projects/28-skyeyes                    /projects/skyeyes;
+/projects/29-apk-parser                 /projects/apk-parser;
+/projects/30-yademan-eshgh              /projects/yademan-eshgh;
+/projects/31-periodic-table             /projects/periodic-table;
+/projects/32-store-manager              /projects/store-manager;
+/projects/33-bluetooth-dc-motor         /projects/bluetooth-dc-motor;
+/projects/34-soil-monitoring            /projects/soil-monitoring;
+/projects/35-hyper-online               /projects/hyper-online;
+/projects/36-wireguard-config-generator /projects/wireguard-config-generator;
+/projects/37-salt-server-parser         /projects/salt-server-parser;
+/projects/38-vue-flip-clock             /projects/vue-flip-clock;
+/projects/39-asn-by-country             /projects/asn-by-country;
+/projects/40-ar-paas-action             /projects/ar-paas-action;
+/projects/41-go-chat                    /projects/go-chat;
+/projects/42-check-filtering            /projects/check-filtering;
