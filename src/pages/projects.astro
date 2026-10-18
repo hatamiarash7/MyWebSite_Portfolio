@@ -53,7 +53,7 @@ const jsonLd = [
       <p class="mt-4 text-fg-muted">{description}</p>
     </header>
 
-    <div class="mt-8 flex flex-col gap-4" data-filter-controls hidden>
+    <div class="mt-8 hidden flex-col gap-4 [@media(scripting:enabled)]:flex" data-filter-controls>
       <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <label class="relative block w-full sm:max-w-sm">
           <span class="sr-only">جستجو در پروژه‌ها</span>
@@ -71,7 +71,9 @@ const jsonLd = [
             data-filter-search
           />
         </label>
-        <p class="text-sm text-fg-subtle" role="status" aria-live="polite" data-filter-status></p>
+        <p class="text-sm text-fg-subtle" role="status" aria-live="polite" data-filter-status>
+          {toPersianDigits(projects.length)} پروژه
+        </p>
       </div>
       <div
         class="flex gap-2 [scrollbar-width:none] max-sm:-mx-5 max-sm:overflow-x-auto max-sm:px-5 sm:flex-wrap"
@@ -123,12 +125,11 @@ const jsonLd = [
   const normalize = (value: string) => value.toLocaleLowerCase().replaceAll("ي", "ی").replaceAll("ك", "ک");
 
   const root = document.querySelector<HTMLElement>("[data-project-filter]");
-  const controls = root?.querySelector<HTMLElement>("[data-filter-controls]");
   const search = root?.querySelector<HTMLInputElement>("[data-filter-search]");
   const status = root?.querySelector<HTMLElement>("[data-filter-status]");
   const empty = root?.querySelector<HTMLElement>("[data-filter-empty]");
 
-  if (root && controls && search && status && empty) {
+  if (root && search && status && empty) {
     const chips = [...root.querySelectorAll<HTMLButtonElement>("[data-filter-tag]")];
     const items = [...root.querySelectorAll<HTMLElement>("[data-project]")];
     const digits = new Intl.NumberFormat("fa-IR");
@@ -162,7 +163,6 @@ const jsonLd = [
     }
 
     search.addEventListener("input", apply);
-    controls.hidden = false;
     apply();
   }
 </script>

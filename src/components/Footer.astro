@@ -10,7 +10,10 @@ const year = new Intl.DateTimeFormat("fa-IR-u-ca-persian", { year: "numeric" }).
     <p>
       © {year}
       {site.name}. کد منبع این سایت
-      <a href={site.repository} class="text-fg-muted underline-offset-4 hover:text-accent hover:underline">
+      <a
+        href={site.repository}
+        class="text-fg-muted underline decoration-border-strong underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+      >
         در گیت‌هاب
       </a>
       در دسترس است.
