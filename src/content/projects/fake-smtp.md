@@ -18,15 +18,6 @@ links:
     kind: download
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/FakeSMTP/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
-<div class="center badges">
-<img src="https://github.com/hatamiarash7/FakeSMTP/actions/workflows/publish.yml/badge.svg" />
-<img src="https://img.shields.io/docker/image-size/hatamiarash7/fake-smtp" />
-</div>
-
 ## داستان چیه ؟
 
 امروزه تقریبا تمام پروژه های تحت وب با ایمیل سر و کار دارن. از تایید هویت کاربرها گرفته تا ارسال پیغام و موارد دیگه. موقعی که شما در حال توسعه پروژه هاتون هستید روند وقت گیریه که همزمان یه Mail Server هم راه اندازی کنید و ازش برای تست استفاده کنید. یه مشکل بزرگ دیگه اینه که موقع برنامه نویسی و تست ممکنه پشت سرهم نیاز به ارسال ایمیل داشته باشید و در نتیجه با مشکلات Rate Limit تو سرویس های ایمیل مواجه میشید. 🤐

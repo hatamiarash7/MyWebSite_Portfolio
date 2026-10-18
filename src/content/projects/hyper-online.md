@@ -26,10 +26,6 @@ stack:
   - Telegram
 ---
 
-<h1 class="center">
-<img src="../assets/img/ho.webp"/>
-</h1>
-
 هایپرآنلاین یک فروشگاه اینترنتی است که برای اولین بار در سال 1395 در همدان شروع به کار کرد. مجموعه فنی در نظر گرفته شده برای این فروشگاه شامل موارد زیر بود :
 
 - وب سایت
@@ -43,185 +39,85 @@ stack:
 
 ## وب سایت
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (1).webp"/>
-<figcaption>صفحه اصلی</figcaption>
-</figure>
-</h1>
+![صفحه اصلی](../../assets/projects/hyper-online/ho-market (1).webp)
+_صفحه اصلی_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (8).webp"/>
-<figcaption>صفحه دسته بندی ها</figcaption>
-</figure>
-</h1>
+![صفحه دسته بندی ها](../../assets/projects/hyper-online/ho-market (8).webp)
+_صفحه دسته بندی ها_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (7).webp"/>
-<figcaption>اضافه کردن محصول به سبد خرید</figcaption>
-</figure>
-</h1>
+![اضافه کردن محصول به سبد خرید](../../assets/projects/hyper-online/ho-market (7).webp)
+_اضافه کردن محصول به سبد خرید_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (6).webp"/>
-<figcaption>خلاصه سبد خرید</figcaption>
-</figure>
-</h1>
+![خلاصه سبد خرید](../../assets/projects/hyper-online/ho-market (6).webp)
+_خلاصه سبد خرید_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (5).webp"/>
-<figcaption>سبد خرید</figcaption>
-</figure>
-</h1>
+![سبد خرید](../../assets/projects/hyper-online/ho-market (5).webp)
+_سبد خرید_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (4).webp"/>
-<figcaption>پرداخت فاکتور</figcaption>
-</figure>
-</h1>
+![پرداخت فاکتور](../../assets/projects/hyper-online/ho-market (4).webp)
+_پرداخت فاکتور_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (3).webp"/>
-<figcaption>پروفایل کاربر</figcaption>
-</figure>
-</h1>
+![پروفایل کاربر](../../assets/projects/hyper-online/ho-market (3).webp)
+_پروفایل کاربر_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-market (2).webp"/>
-<figcaption>لیست سفارشات</figcaption>
-</figure>
-</h1>
+![لیست سفارشات](../../assets/projects/hyper-online/ho-market (2).webp)
+_لیست سفارشات_
 
 ## اپلیکیشن اندروید
 
 > به علت گسترده بودن صفحات این بخش فقط قسمتی از آن ها آورده شده است
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (1).webp"/>
-<figcaption>صفحه آغازین</figcaption>
-</figure>
-</h1>
+![صفحه آغازین](../../assets/projects/hyper-online/ho-app (1).webp)
+_صفحه آغازین_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (2).webp"/>
-<figcaption>بررسی روت بودن دستگاه ( به درخواست مدیر مجموعه )</figcaption>
-</figure>
-</h1>
+![بررسی روت بودن دستگاه ( به درخواست مدیر مجموعه )](../../assets/projects/hyper-online/ho-app (2).webp)
+_بررسی روت بودن دستگاه ( به درخواست مدیر مجموعه )_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (3).webp"/>
-<figcaption>صفحه اصلی</figcaption>
-</figure>
-</h1>
+![صفحه اصلی](../../assets/projects/hyper-online/ho-app (3).webp)
+_صفحه اصلی_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (4).webp"/>
-<figcaption>صفحه دسته بندی ها</figcaption>
-</figure>
-</h1>
+![صفحه دسته بندی ها](../../assets/projects/hyper-online/ho-app (4).webp)
+_صفحه دسته بندی ها_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (5).webp"/>
-<figcaption>اضافه کردن به سبد خرید</figcaption>
-</figure>
-</h1>
+![اضافه کردن به سبد خرید](../../assets/projects/hyper-online/ho-app (5).webp)
+_اضافه کردن به سبد خرید_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (6).webp"/>
-<figcaption>صفحه سبد خرید</figcaption>
-</figure>
-</h1>
+![صفحه سبد خرید](../../assets/projects/hyper-online/ho-app (6).webp)
+_صفحه سبد خرید_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (8).webp"/>
-<figcaption>صفحه ورود</figcaption>
-</figure>
-</h1>
+![صفحه ورود](../../assets/projects/hyper-online/ho-app (8).webp)
+_صفحه ورود_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (9).webp"/>
-<figcaption>صفحه ثبت نام</figcaption>
-</figure>
-</h1>
+![صفحه ثبت نام](../../assets/projects/hyper-online/ho-app (9).webp)
+_صفحه ثبت نام_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (7).webp"/>
-<figcaption>منو - قبل از ورود</figcaption>
-</figure>
-</h1>
+![منو - قبل از ورود](../../assets/projects/hyper-online/ho-app (7).webp)
+_منو - قبل از ورود_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (10).webp"/>
-<figcaption>منو - بعد از ورود</figcaption>
-</figure>
-</h1>
+![منو - بعد از ورود](../../assets/projects/hyper-online/ho-app (10).webp)
+_منو - بعد از ورود_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (11).webp"/>
-<figcaption>منو - بخش درباره</figcaption>
-</figure>
-</h1>
+![منو - بخش درباره](../../assets/projects/hyper-online/ho-app (11).webp)
+_منو - بخش درباره_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-app (12).webp"/>
-<figcaption>منو - بخش محصولات</figcaption>
-</figure>
-</h1>
+![منو - بخش محصولات](../../assets/projects/hyper-online/ho-app (12).webp)
+_منو - بخش محصولات_
 
 ## پنل مدیریت
 
 > به علت گسترده بودن صفحات این بخش فقط قسمتی از آن ها اورده شده است
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-admin (5).webp"/>
-<figcaption>داشبورد ( داده های آزمایشی می‎باشند )</figcaption>
-</figure>
-</h1>
+![داشبورد ( داده های آزمایشی می‎باشند )](../../assets/projects/hyper-online/ho-admin (5).webp)
+_داشبورد ( داده های آزمایشی می‎باشند )_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-admin (3).webp"/>
-<figcaption>مدیریت دسته بندی ها</figcaption>
-</figure>
-</h1>
+![مدیریت دسته بندی ها](../../assets/projects/hyper-online/ho-admin (3).webp)
+_مدیریت دسته بندی ها_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-admin (4).webp"/>
-<figcaption>بخش مالی ( داده های آزمایشی می‎باشند )</figcaption>
-</figure>
-</h1>
+![بخش مالی ( داده های آزمایشی می‎باشند )](../../assets/projects/hyper-online/ho-admin (4).webp)
+_بخش مالی ( داده های آزمایشی می‎باشند )_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-admin (2).webp"/>
-<figcaption>ارسال پیامک به مشتریان</figcaption>
-</figure>
-</h1>
+![ارسال پیامک به مشتریان](../../assets/projects/hyper-online/ho-admin (2).webp)
+_ارسال پیامک به مشتریان_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/ho-admin (1).webp"/>
-<figcaption>ارسال پیام پوش</figcaption>
-</figure>
-</h1>
+![ارسال پیام پوش](../../assets/projects/hyper-online/ho-admin (1).webp)
+_ارسال پیام پوش_

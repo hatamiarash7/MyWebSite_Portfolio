@@ -19,10 +19,6 @@ stack:
   - FFmpeg
 ---
 
-<h1 class="center">
-<img src="../assets/img/arb1.webp"/>
-</h1>
-
 این پروژه یک سرویس ارائه ویدئوهای واقعیت مجازی با دسته بندی اربعین بوده که در سال 1398 به سفارش سازمان فضای مجازی بسیج طراحی شد. ویدئوهای این پروژه نیز به طور اختصاصی ضبط و تدوین شد.
 
 ایده اصلی طراحی این وب سایت ، تجربه حضور در پیاده روی اربعین از راه دور بود که به رایگان و تنها با استفاده از یک عینک واقعیت مجازی و گوشی موبایل در اختیار هموطنانی که توانایی شرکت در این مراسم را ندارند قرار بگیرد.
@@ -31,36 +27,14 @@ stack:
 
 **توجه :** تصاویر قرار داده شده مربوط به نسخه آزمایشی می باشد
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/arb1.webp"/>
-<figcaption>صفحه اصلی</figcaption>
-</figure>
-</h1>
+![صفحه اصلی](../../assets/projects/arbaeen360/arb1.webp)
+_صفحه اصلی_
 
-<hr>
+![صفحه محتوا](../../assets/projects/arbaeen360/arb2.webp)
+_صفحه محتوا_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/arb2.webp"/>
-<figcaption>صفحه محتوا</figcaption>
-</figure>
-</h1>
+![صفحه پخش - پلیر مخصوص VR](../../assets/projects/arbaeen360/arb3.webp)
+_صفحه پخش - پلیر مخصوص VR_
 
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/arb3.webp"/>
-<figcaption>صفحه پخش - پلیر مخصوص VR</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/arb4.webp"/>
-<figcaption>پنل مدیریت</figcaption>
-</figure>
-</h1>
+![پنل مدیریت](../../assets/projects/arbaeen360/arb4.webp)
+_پنل مدیریت_

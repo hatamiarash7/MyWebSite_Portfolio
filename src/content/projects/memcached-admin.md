@@ -19,16 +19,6 @@ links:
     kind: download
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/Memcached-Admin/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
-<div class="center badges">
-<img src="https://github.com/hatamiarash7/Memcached-Admin/actions/workflows/docker-image.yml/badge.svg" />
-<img src="https://github.com/hatamiarash7/Memcached-Admin/actions/workflows/docker-publish.yml/badge.svg" />
-<img src="https://img.shields.io/docker/image-size/hatamiarash7/memcached-admin" />
-</div>
-
 این پروژه به شما اجازه میده که وضعیت سرور های Memcached خودتون رو به صورت زنده مشاهده کنید. مواردی از جمله :
 
 - عملیات های get, set, delete, increment, decrement, evictions, reclaimed
@@ -46,9 +36,7 @@ links:
 - جستجو
 - ...
 
-<h1 class="center">
-<img src="../assets/img/memcached-admin.webp"/>
-</h1><br>
+![داشبورد Memcached](../../assets/projects/memcached-admin/memcached-admin.webp)
 
 ## نصب
 

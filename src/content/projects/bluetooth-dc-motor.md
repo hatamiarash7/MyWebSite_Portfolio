@@ -15,10 +15,6 @@ stack:
   - Proteus
 ---
 
-<h1 class="center">
-<img src="../assets/img/remote_dcm_1.webp"/>
-</h1>
-
 این پروژه در قالب یکی از اجزای پروژه IOT بزرگتر طراحی و توسعه داده شد. در ابتدا یک کار ساده دانشجویی بود که در سال 1399 واگذار شد و با طرح دیگری ادغام شد. اولویت این پروژه پیاده سازی کامل بود و به همین دلیل از برد های الکترونیکی آماده مانند آردوینو و رزبری پای استفاده نشد.
 
 در نمونه اولیه تمامی قطعات روی برد بورد اسمبل شد و پس از واگذاری به صورت حرفه ای تر روی بورد های چندلایه پیاده سازی شد. اجزای تشکیل دهنده سیستم :
@@ -34,35 +30,18 @@ stack:
 
 ## شماتیک مدار
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/remote_dcm_2.webp"/>
-</figure>
-</h1>
+![کنترل از راه دور موتور DC](../../assets/projects/bluetooth-dc-motor/remote_dcm_2.webp)
 
 ## نسخه اولیه
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/remote_dcm_4.webp"/>
-</figure>
-</h1>
+![کنترل از راه دور موتور DC](../../assets/projects/bluetooth-dc-motor/remote_dcm_4.webp)
 
 ## اپلیکیشن اندروید
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/remote_dcm_3.webp"/>
-</figure>
-</h1>
+![کنترل از راه دور موتور DC](../../assets/projects/bluetooth-dc-motor/remote_dcm_3.webp)
 
 ## ویدئو تست نسخه اولیه
 
-<h1 class="center">
-<figure>
- <video width="360" height="450" controls>
-  <source src="../assets/img/remote_dcm_5.webm" type="video/mp4">
-Your browser does not support the video tag.
+<video controls preload="none" playsinline width="500" height="960" poster="/videos/bluetooth-dc-motor-remote_dcm_5.jpg">
+  <source src="/videos/bluetooth-dc-motor-remote_dcm_5.webm" type="video/webm" />
 </video>
-</figure>
-</h1>

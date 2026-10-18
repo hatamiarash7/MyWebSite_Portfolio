@@ -19,10 +19,6 @@ links:
     kind: demo
 ---
 
-<h1 class="center">
-<img src="../assets/img/periodic_1.webp"/>
-</h1>
-
 این پروژه که فقط با استفاده از CSS طراحی شده است جدول تناوبی عناصر را به شما نمایش می دهد. همچنین با کلیک کردن روی هر عنصر اطلاعاتی نیز در اختیار شما قرار می گیرد از جمله :
 
 - عدد اتمی
@@ -35,27 +31,11 @@ links:
 
 ## تصاویر
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/periodic_1.webp"/>
-<figcaption>صفحه اصلی</figcaption>
-</figure>
-</h1>
+![صفحه اصلی](../../assets/projects/periodic-table/periodic_1.webp)
+_صفحه اصلی_
 
-<hr>
+![انتخاب دسته بندی](../../assets/projects/periodic-table/periodic_2.webp)
+_انتخاب دسته بندی_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/periodic_2.webp"/>
-<figcaption>انتخاب دسته بندی</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/periodic_3.webp"/>
-<figcaption>جزئیات عنصر</figcaption>
-</figure>
-</h1>
+![جزئیات عنصر](../../assets/projects/periodic-table/periodic_3.webp)
+_جزئیات عنصر_

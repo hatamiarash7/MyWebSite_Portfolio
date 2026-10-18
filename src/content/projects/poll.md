@@ -18,30 +18,12 @@ stack:
   - Tailwind CSS
 ---
 
-<h1 class="center">
-<img src="../assets/img/poll1.webp"/>
-</h1>
-
 ## تصاویر
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/poll2.webp"/>
-<figcaption>صفحه انتخاب کاندید ها</figcaption>
-</figure>
-</h1>
+![صفحه انتخاب کاندید ها](../../assets/projects/poll/poll2.webp)
+_صفحه انتخاب کاندید ها_
 
-<hr>
+![سامانه انتخابات](../../assets/projects/poll/poll3.webp)
 
-<h1 class="center">
-<img src="../assets/img/poll3.webp"/>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/poll4.webp"/>
-<figcaption>نتایج نظرسنجی در پنل مدیریت</figcaption>
-</figure>
-</h1>
+![نتایج نظرسنجی در پنل مدیریت](../../assets/projects/poll/poll4.webp)
+_نتایج نظرسنجی در پنل مدیریت_

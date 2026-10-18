@@ -17,8 +17,6 @@ links:
     kind: repo
 ---
 
-[![GitHub release](https://img.shields.io/github/v/release/hatamiarash7/CheckFiltering.svg)](https://GitHub.com/hatamiarash7/CheckFiltering/releases/)
-
 فرایند شناسایی در این پروژه از طریق بررسی DNS انجام می‌شود. توجه کنید که قابلیت شناسایی اختلالات ناشی از فیلترینگ توسط این پروژه **شناسایی نخواهد شد**.
 
 ## روش نصب
@@ -39,7 +37,7 @@ pip install check-filter
 check-filter domain github.com
 ```
 
-![Single Domain](https://github.com/hatamiarash7/CheckFiltering/raw/master/.github/single.png)
+![Single Domain](../../assets/projects/check-filtering/single.png)
 
 ### بررسی چند دامنه
 
@@ -47,7 +45,7 @@ check-filter domain github.com
 check-filter domains github.com,google.com
 ```
 
-![Multiple Domain](https://github.com/hatamiarash7/CheckFiltering/raw/master/.github/multiple.png)
+![Multiple Domain](../../assets/projects/check-filtering/multiple.png)
 
 ### خواندن از فایل
 
@@ -74,4 +72,4 @@ stackoverflow.com
 check-filter file list
 ```
 
-![File](https://github.com/hatamiarash7/CheckFiltering/raw/master/.github/file.png)
+![File](../../assets/projects/check-filtering/file.png)

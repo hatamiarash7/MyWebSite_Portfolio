@@ -19,10 +19,6 @@ stack:
   - Google VR SDK
 ---
 
-<h1 class="center">
-<img src="../assets/img/yad_0.webp"/>
-</h1>
-
 این پروژه در مهرماه 1397 به سفارش سراج انجام شد و اولین مجموعه واقعیت مجازی یادمان‌های دفاع مقدس بود که شامل تصاویر و ویدئوهای واقعیت مجازی از مناطق عملیاتی 8 سال دفاع مقدس است. مناطقی شامل فکه ، شلمچه ، طلائیه ، علقمه ، هویزه که به شرح زیر می باشد :
 
 - ۲۱ تصویر ۳۶۰ درجه از شش یادمان شلمچه، طلائیه، علقمه، هویزه، معراج شهدای اهواز و یادمان شهید باقری
@@ -45,74 +41,29 @@ stack:
 
 این پروژه دارای یک اپلیکیشن آزمایشی تحت ویندوز نیز بود که پس از رونمایی در مدارس هم برای دانش آموزان به اجرا درآمد
 
-<h1 class="center">
-<figure>
- <video width="320" height="615" controls>
-  <source src="../assets/img/yad_8.webm" type="video/mp4">
-Your browser does not support the video tag.
+<video controls preload="none" playsinline width="720" height="900" poster="/videos/yademan-eshgh-yad_8.jpg">
+  <source src="/videos/yademan-eshgh-yad_8.webm" type="video/webm" />
 </video>
-</figure>
-</h1>
 
 ## تصاویر برنامه
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/yad_1.webp"/>
-<figcaption>صفحه Splash</figcaption>
-</figure>
-</h1>
+![صفحه Splash](../../assets/projects/yademan-eshgh/yad_1.webp)
+_صفحه Splash_
 
-<hr>
+![صفحه اصلی](../../assets/projects/yademan-eshgh/yad_2.webp)
+_صفحه اصلی_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/yad_2.webp"/>
-<figcaption>صفحه اصلی</figcaption>
-</figure>
-</h1>
+![صفحه Navigation](../../assets/projects/yademan-eshgh/yad_3.webp)
+_صفحه Navigation_
 
-<hr>
+![صفحه جزئیات محتوای تصویری](../../assets/projects/yademan-eshgh/yad_4.webp)
+_صفحه جزئیات محتوای تصویری_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/yad_3.webp"/>
-<figcaption>صفحه Navigation</figcaption>
-</figure>
-</h1>
+![نمایش تصویر 360 درجه](../../assets/projects/yademan-eshgh/yad_5.webp)
+_نمایش تصویر 360 درجه_
 
-<hr>
+![صفحه جزئیات محتوای ویدئویی VR](../../assets/projects/yademan-eshgh/yad_6.webp)
+_صفحه جزئیات محتوای ویدئویی VR_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/yad_4.webp"/>
-<figcaption>صفحه جزئیات محتوای تصویری</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/yad_5.webp"/>
-<figcaption>نمایش تصویر 360 درجه</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/yad_6.webp"/>
-<figcaption>صفحه جزئیات محتوای ویدئویی VR</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/yad_7.webp"/>
-<figcaption>رفتن به حالت VR و نمایش ویدئو</figcaption>
-</figure>
-</h1>
+![رفتن به حالت VR و نمایش ویدئو](../../assets/projects/yademan-eshgh/yad_7.webp)
+_رفتن به حالت VR و نمایش ویدئو_

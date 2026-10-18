@@ -17,8 +17,6 @@ links:
     kind: repo
 ---
 
-[![GitHub release](https://img.shields.io/github/v/release/hatamiarash7/ASN-By-Country.svg)](https://GitHub.com/hatamiarash7/ASN-By-Country/releases/) [![CodeQL](https://github.com/hatamiarash7/ASN-By-Country/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/hatamiarash7/ASN-By-Country/actions/workflows/codeql-analysis.yml)
-
 این پروژه یک Parser مخصوص جهت دریافت لیست تمامی ASN های یک کشور است. داده های این پروژه با استفاده از اطلاعات سایت [https://imtbs-tsp.eu](https://imtbs-tsp.eu) تولید میشود.
 
 لیست تولید شده توسط این پروژه را می توان در پروژه های دیگر استفاده کرد.

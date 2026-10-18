@@ -20,10 +20,6 @@ links:
     kind: repo
 ---
 
-<h1 class="center">
-<img src="../assets/img/webhook.webp"/>
-</h1>
-
 ## تعریف
 
 وب‌هوک به یک فراخوانی ( Callback ) از جنس HTTP در سمت سرور گفته می‌شود که توسط برنامه‌نویس تعیین می‌شود. این درخواست غالبا با متد POST بوده و در هنگام بروز یک رخداد خاص صدا زده می‌شود.
@@ -79,9 +75,7 @@ LOG_LEVEL=info
 
 ابتدا در نرم افزار مورد نظر به قسمت تنظیمات Webhook مراجعه کنید. برای مثال در گیت‌هاب با چنین صفحه ای مواجه خواهید شد :
 
-<h1 class="center">
-<img src="../assets/img/webhook2.webp"/>
-</h1>
+![کنترل کننده Webhook](../../assets/projects/webhook-handler/webhook2.webp)
 
 - در قسمت Payload URL باید آدرس این پروژه را بعد از اجرا وارد کنید. برای مثال : `http://webhook.domain.com/hook`
 - در قسمت Content Type گزینه `application/json` را انتخاب کنید. این گزینه نوع داده های ارسالی را مشخص میکند که این پروژه با Json کار می کند.

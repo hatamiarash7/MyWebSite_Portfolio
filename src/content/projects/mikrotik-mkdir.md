@@ -13,10 +13,6 @@ links:
     kind: repo
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/Mikrotik-Mkdir/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
 این پروژه شامل یک اسکریپت است که با استفاده از آن تابع گلوبال `mkdir$` به دستگاه میکروتیک اضافه شده و می توانید به سادگی در حافظه دستگاه پوشه ایجاد کنید.
 
 ```sh

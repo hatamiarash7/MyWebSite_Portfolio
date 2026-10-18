@@ -16,18 +16,7 @@ links:
     kind: repo
 ---
 
-<h1 class="center">
-<img src="https://raw.githubusercontent.com/hatamiarash7/RTL-Toast/master/assets/template.jpg"/>
-</h1>
-
-<div class="center badges">
-<a href="https://android-arsenal.com/details/1/7695" target="_blank">
-<img src="https://img.shields.io/badge/Android%20Arsenal-RTL%20Toast-brightgreen.svg?style=flat" />
-</a>
-<a href="https://jitpack.io/#hatamiarash7/RTL-Toast" target="_blank">
-<img src="https://img.shields.io/jitpack/v/github/hatamiarash7/rtl-toast.svg" />
-</a>
-</div>
+![کتابخانه Toast فارسی برای اندروید](../../assets/projects/android-rtl-toast/template.jpg)
 
 ## نصب
 

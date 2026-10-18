@@ -16,6 +16,4 @@ stack:
   - MySQL
 ---
 
-<h1 class="center">
-<img src="../assets/img/chi2.webp"/>
-</h1>
+![وب سایت کافه چی](../../assets/projects/chicafe-website/chi2.webp)

@@ -15,10 +15,6 @@ links:
     kind: repo
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/Matlab_GregorianToHijri/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
 متلب توابع زیادی برای کار با زمان و تاریخ داره اما در حال حاضر از تاریخ هجری شمسی پشتیبانی نمیکنه. با استفاده از این کتابخانه می توانید به راحتی چنین قابلیتی رو به پروژه های خودتون اضافه کرده و ازش استفاده کنید.
 
 ## نصب

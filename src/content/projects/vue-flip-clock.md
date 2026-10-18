@@ -20,13 +20,9 @@ links:
     kind: demo
 ---
 
-[![GitHub release](https://img.shields.io/github/v/release/hatamiarash7/vue-flip-clock.svg)](https://GitHub.com/hatamiarash7/vue-flip-clock/releases/)
-
 در برخی پروژه ها نیاز به طراحی و پیاده سازی ساعت دیجیتال دارید. این پروژه یک ساعت Flip برای Vue JS است که می توانید آن را در وبسایت خود استفاده کنید. نیازمندی های کمی داشته و استفاده از آن خیلی ساده است.
 
-<h1 class="center">
-<img src="../assets/img/vue-flip-clock2.png"/>
-</h1>
+![ساعت Flip برای Vue JS](../../assets/projects/vue-flip-clock/vue-flip-clock2.png)
 
 ## نصب
 

@@ -19,15 +19,6 @@ links:
     kind: download
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/Laravel-JDF/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
-<div class="center badges">
-<img src="https://poser.pugx.org/hatamiarash7/jdf/v/stable" />
-<img src="https://poser.pugx.org/hatamiarash7/jdf/downloads" />
-</div>
-
 ## نصب
 
 دستور زیر را اجرا نمایید

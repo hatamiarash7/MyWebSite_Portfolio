@@ -12,15 +12,10 @@ links:
   - label: گیت‌هاب
     url: https://github.com/hatamiarash7/Docker-downloader
     kind: repo
+  - label: پست وبلاگ
+    url: https://virgool.io/hatamiarash7/%D8%B2%DB%8C%D8%B1-%D8%AA%DB%8C%D8%BA-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-avqkbvfs9wed
+    kind: post
 ---
-
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/Docker-downloader/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
-<h2 class="center">
-{% include elements/button.html link="https://virgool.io/hatamiarash7/%D8%B2%DB%8C%D8%B1-%D8%AA%DB%8C%D8%BA-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-avqkbvfs9wed" text="پست وبلاگ" size="lg" event="Blog" %}
-</h2>
 
 اکثر ماها یه سرور مجازی / فیزیکی داریم که خارج ایران هاست شده ( اگر ندارید بخرید که به کار میاد ). خب مسلما شرایط اینترنت و سرعت دانلود و غیره و غیره روی اون سرور ها خیلی تفاوت داره با شرایطی که ما داریم. اگر بتونیم Image های خودمون رو روی اون سرور Pull کنیم و سپس دانلودش کنیم چی ؟ خب مسلما سرعت کار خیلی بالا میره
 

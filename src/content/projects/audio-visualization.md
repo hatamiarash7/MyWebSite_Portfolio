@@ -19,10 +19,6 @@ links:
     kind: demo
 ---
 
-<h1 class="center">
-<img src="../assets/img/audio.webp"/>
-</h1>
-
 این پروژه با استفاده از جاوا اسکریپت فایل های صوتی را مصور می کند و یک Visualizer دایره ای می سازد.
 
 ## اجرا

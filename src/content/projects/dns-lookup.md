@@ -21,10 +21,6 @@ links:
     kind: demo
 ---
 
-<h1 class="center">
-<img src="../assets/img/dns-lookup.webp"/>
-</h1><br>
-
 ## مقدمه
 
 کاربرد اصلی رکوردهای دی ان اس اختصاص آدرس به اعداد می‌باشد مانند یک دفترچه تلفن که به هر نام یک شماره منحصر به فرد اختصاص می‌دهد. همانطور که اطلاع دارید هر دستگاه یا میزبان هاستی که به اینترنت متصل است با یک شماره اختصاصی شناسایی می‌شود که به صورت یک آدرس آی پی می‌باشد.
@@ -48,12 +44,8 @@ links:
 
 ## نسخه اندروید
 
-<h1 class="center">
-<img src="../assets/img/dns-lookup-2.webp"/>
-</h1>
+![سامانه DNS Lookup](../../assets/projects/dns-lookup/dns-lookup-2.webp)
 
 ## نسخه تحت وب
 
-<h1 class="center">
-<img src="../assets/img/dns-lookup-3.webp"/>
-</h1>
+![سامانه DNS Lookup](../../assets/projects/dns-lookup/dns-lookup-3.webp)

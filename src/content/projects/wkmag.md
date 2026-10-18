@@ -14,55 +14,21 @@ stack:
   - Sass
 ---
 
-<h1 class="center">
-<img src="../assets/img/rah1.webp"/>
-</h1>
-
 نشریه مرزهای دانش که در حوزه معاونت فرهنگی دانشگاه ملایر به چاپ می رسد پذیرای مقالات اساتید و دانشجویان گرامی به ویژه دانشجویان مقاطع تحصیلات تکمیلی می باشد که به صورت فردی و گروهی می توانند مقالات خود را ارسال نمایند.
 
 ## تصاویر
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/rah2.webp"/>
-<figcaption>صفحه اصلی</figcaption>
-</figure>
-</h1>
+![صفحه اصلی](../../assets/projects/wkmag/rah2.webp)
+_صفحه اصلی_
 
-<hr>
+![صفحه اعضای هیئت تحریریه](../../assets/projects/wkmag/rah3.webp)
+_صفحه اعضای هیئت تحریریه_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/rah3.webp"/>
-<figcaption>صفحه اعضای هیئت تحریریه</figcaption>
-</figure>
-</h1>
+![پنجره نمایش اطلاعات عضو](../../assets/projects/wkmag/rah4.webp)
+_پنجره نمایش اطلاعات عضو_
 
-<hr>
+![صفحه درباره ما](../../assets/projects/wkmag/rah5.webp)
+_صفحه درباره ما_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/rah4.webp"/>
-<figcaption>پنجره نمایش اطلاعات عضو</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/rah5.webp"/>
-<figcaption>صفحه درباره ما</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/rah6.webp"/>
-<figcaption>صفحه تماس با ما</figcaption>
-</figure>
-</h1>
-
-<hr>
+![صفحه تماس با ما](../../assets/projects/wkmag/rah6.webp)
+_صفحه تماس با ما_

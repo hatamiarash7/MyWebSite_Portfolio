@@ -15,10 +15,6 @@ links:
     kind: repo
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/Python-WebP/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
 این کدک دو حالت فشرده‌سازی برای فشرده کردن تصاویر معمولی با پسوند jpg و تصاویر بدون افت کیفیت با پسوند png دارد که گونه‌ی اول با افت کیفیت همراه است و یک روش Lossy ( همراه با افت کیفیت ) محسوب می‌شود و گونه‌ی دوم بدون افت کیفیت یا Lossless است. در هر دو حالت وپی ( تلفظ webp به صورت weppy‌ است ) حجم تصاویر را ۳۰ تا ۷۰ درصد کمتر می‌کند! و این به معنی بارگذاری سریع‌تر وب‌سایت و مصرف ترافیک کمتر است.
 
 ## استفاده

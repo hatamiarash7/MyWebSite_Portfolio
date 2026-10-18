@@ -16,10 +16,6 @@ stack:
   - XML
 ---
 
-<h1 class="center">
-<img src="../assets/img/apkparser_1.webp"/>
-</h1>
-
 این پروژه یک API ساده و کامل جهت Parse کردن فایل های اندرویدی شما است. بدین صورت که فایل ( یا آدرس آن ) را به سامانه داده و مشخصات آن را دریافت می کنید. اطلاعاتی شامل :
 
 - name
@@ -36,18 +32,8 @@ stack:
 
 در حال حاضر این پروژه به فروش رفته و دسترسی عمومی برای آن وجود نداره. در صورت نیاز به صورت خصوصی پیاده سازی میشه.
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/apkparser_2.webp"/>
-<figcaption>مشخصات - صفحه DRF</figcaption>
-</figure>
-</h1>
+![مشخصات - صفحه DRF](../../assets/projects/apk-parser/apkparser_2.webp)
+_مشخصات - صفحه DRF_
 
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/apkparser_3.webp"/>
-<figcaption>مشخصات در قالب JSON</figcaption>
-</figure>
-</h1>
+![مشخصات در قالب JSON](../../assets/projects/apk-parser/apkparser_3.webp)
+_مشخصات در قالب JSON_

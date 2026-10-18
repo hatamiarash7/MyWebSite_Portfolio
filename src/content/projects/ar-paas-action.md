@@ -19,6 +19,4 @@ links:
     kind: repo
 ---
 
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/hatamiarash7/ar-paas-action?color=%2300baba&label=Marketplace&logo=github)](https://github.com/marketplace/actions/arvancloud-paas-action)
-
 جهت اطلاعات بیشتر در مورد پروژه به این مقاله مراجعه کنید: [استقرار در CaaS ابرآروان با استفاده از Github Actions](https://arash-hatami.ir/arvancloud-paas-action?utm_source=Portfolio)

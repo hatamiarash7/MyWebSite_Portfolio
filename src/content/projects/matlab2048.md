@@ -14,15 +14,9 @@ links:
     kind: repo
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/Matlab2048/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
 سایرولی این بازی را به عنوان پروژه آخر هفته و تنها در ۲ روز طراحی کرد و بازی در کمتر از ۱ هفته ، ۴ میلیون بیننده داشت. مبنای بازی بر حرکت خانه‌های با اعداد مشابه ( ضرایب عدد ۲ ) به سمت هم و سرانجام دست ‌یابی به عدد «۲۰۴۸» است. این بازی نوعی از پازل‌های کشویی می‌باشد و شباهت زیادی به بازی ]سه‌تایی‌ها()[ که ۱ ماه قبل از آن منتشر شد دارد.
 
-<h1 class="center">
-<img src="https://raw.githubusercontent.com/hatamiarash7/Matlab2048/master/scr.jpg"/>
-</h1>
+![بازی 2048 با Matlab](../../assets/projects/matlab2048/scr.jpg)
 
 ## اجرا
 

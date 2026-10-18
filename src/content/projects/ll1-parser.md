@@ -14,10 +14,6 @@ links:
     kind: repo
 ---
 
-<h1 class="center">
-<img src="https://socialify.git.ci/hatamiarash7/LL1_Parser/image?description=1&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Dark"/>
-</h1>
-
 > در علوم کامپیوتر، تجزیه‌کنندهٔ ال‌ال یک پارسر بالا به پایین برای یک زیرمجموعه از گرامرهای مستقل از متن است. این پارسر ورودی را از چپ به راست و بر اساس چپ ترین اشتقاق جملات می‌خواند. (از این رو LL با LR مقایسه می‌شود) به مجموعه گرامرهایی که به وسیله این روش قابل پارس هستند، گرامرهای LL می‌گویند.
 >
 > ویکی پدیا فارسی
@@ -69,7 +65,6 @@ A : {'a', 'd', 'b'}
 B : {'b', 'd'}
 C : {'d'}
 
-
 Follow
 
 S : {'$'}
@@ -89,7 +84,6 @@ Parsing Table
 ('B', 'b') => bB
 ('C', 'd') => d
 
-
 Table
 
     a   b   d
@@ -97,7 +91,6 @@ A  aA  bA   d
 B   -  bB   d
 C   -   -   d
 S  aA  bB  dC
-
 
 Top => S
 Current_Input =>  a

@@ -15,53 +15,19 @@ stack:
   - Python
 ---
 
-<h1 class="center">
-<img src="../assets/img/azadi1.webp"/>
-</h1>
-
 ## تصاویر
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/azadi1.webp"/>
-<figcaption>صفحه اصلی</figcaption>
-</figure>
-</h1>
+![صفحه اصلی](../../assets/projects/azadikhah/azadi1.webp)
+_صفحه اصلی_
 
-<hr>
+![گزارش به مردم - ایندکس و جستجوی هزاران گزارش در طول خدمت](../../assets/projects/azadikhah/azadi2.webp)
+_گزارش به مردم - ایندکس و جستجوی هزاران گزارش در طول خدمت_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/azadi2.webp"/>
-<figcaption>گزارش به مردم - ایندکس و جستجوی هزاران گزارش در طول خدمت</figcaption>
-</figure>
-</h1>
+![کتاب خدمت - دانلود کتابچه های تدوین شده](../../assets/projects/azadikhah/azadi3.webp)
+_کتاب خدمت - دانلود کتابچه های تدوین شده_
 
-<hr>
+![نقش ماندگار](../../assets/projects/azadikhah/azadi4.webp)
+_نقش ماندگار_
 
-<h1 class="center">
-<figure>
-<img src="../assets/img/azadi3.webp"/>
-<figcaption>کتاب خدمت - دانلود کتابچه های تدوین شده</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/azadi4.webp"/>
-<figcaption>نقش ماندگار</figcaption>
-</figure>
-</h1>
-
-<hr>
-
-<h1 class="center">
-<figure>
-<img src="../assets/img/azadi5.webp"/>
-<figcaption>محتوای چندرسانه ای</figcaption>
-</figure>
-</h1>
-
-<hr>
+![محتوای چندرسانه ای](../../assets/projects/azadikhah/azadi5.webp)
+_محتوای چندرسانه ای_
