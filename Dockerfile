@@ -32,6 +32,7 @@ LABEL org.opencontainers.image.title="portfolio" \
 USER root
 RUN mkdir -p /var/log/nginx/legacy && chown nginx:nginx /var/log/nginx/legacy
 USER nginx
+VOLUME /var/log/nginx/legacy
 
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY nginx/security-headers.conf nginx/redirects.map /etc/nginx/
