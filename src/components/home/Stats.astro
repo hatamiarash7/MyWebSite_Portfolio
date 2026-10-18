@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+import { profile, site } from "@/data/site";
+import { toPersianDigits } from "@/lib/format";
+
+export interface Props {
+  projectCount: number;
+  openSourceCount: number;
+}
+
+const { projectCount, openSourceCount } = Astro.props;
+const years = new Date().getFullYear() - profile.startYear;
+
+const stats = [
+  { value: `+${toPersianDigits(years)}`, label: "سال تجربه", icon: "tabler:calendar-event" },
+  { value: toPersianDigits(projectCount), label: "پروژه", icon: "tabler:folder-code" },
+  { value: toPersianDigits(openSourceCount), label: "پروژه متن‌باز", icon: "tabler:git-branch" },
+];
+---
+
+<section class="grid grid-cols-2 gap-4 md:grid-cols-4" aria-label="آمار">
+  {stats.map((stat) => (
+    <div class="tile reveal flex flex-col justify-between gap-6 p-6">
+      <Icon name={stat.icon} class="size-6 text-accent" aria-hidden="true" />
+      <p class="flex flex-col">
+        <span class="text-4xl font-black">{stat.value}</span>
+        <span class="text-sm text-fg-muted">{stat.label}</span>
+      </p>
+    </div>
+  ))}
+  <a
+    href={site.blog}
+    target="_blank"
+    rel="noopener"
+    class="tile tile-interactive reveal group flex flex-col justify-between gap-6 p-6"
+  >
+    <span class="flex items-center justify-between">
+      <Icon name="tabler:rss" class="size-6 text-accent" aria-hidden="true" />
+      <Icon
+        name="tabler:arrow-up-left"
+        class="size-5 text-fg-subtle transition-transform duration-300 group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent"
+        aria-hidden="true"
+      />
+    </span>
+    <span class="flex flex-col">
+      <span class="text-xl font-bold">وبلاگ</span>
+      <span class="text-sm text-fg-muted">نوشته‌هایی درباره DevOps و برنامه‌نویسی</span>
+    </span>
+  </a>
+</section>

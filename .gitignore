@@ -1,7 +1,29 @@
-_site
-.sass-cache
-.jekyll-cache
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+*.log
+pnpm-debug.log*
+
+# environment
+.env
+.env.*
+!.env.example
+
+# lighthouse
+.lighthouseci/
+
+# legacy jekyll output
+_site/
+.jekyll-cache/
 .jekyll-metadata
-vendor
-node_modules
+.sass-cache/
+vendor/
+
+# editors
 .vscode/*.log
+.DS_Store

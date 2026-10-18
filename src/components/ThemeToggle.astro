@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon/components";
+import { site } from "@/data/site";
+---
+
+<button
+  type="button"
+  data-theme-toggle
+  data-colors={JSON.stringify(site.themeColor)}
+  class="grid size-9 place-items-center rounded-full text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg"
+  aria-label="تغییر پوسته روشن و تاریک"
+>
+  <Icon name="tabler:sun" class="hidden size-5 dark:block" aria-hidden="true" />
+  <Icon name="tabler:moon" class="block size-5 dark:hidden" aria-hidden="true" />
+</button>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>("[data-theme-toggle]");
+  const colors = JSON.parse(button?.dataset.colors ?? "{}") as Record<string, string>;
+
+  button?.addEventListener("click", () => {
+    const root = document.documentElement;
+    const next = root.dataset.theme === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", colors[next] ?? "");
+    try {
+      localStorage.setItem("theme", next);
+    } catch {}
+  });
+</script>

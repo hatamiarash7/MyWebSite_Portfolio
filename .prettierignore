@@ -1,6 +1,18 @@
-_site
-.jekyll-cache
-.sass-cache
-vendor
+dist
+.astro
 node_modules
+pnpm-lock.yaml
+public/favicon.svg
+src/icons
+
+# legacy jekyll site, removed once the migration is complete
+_site
+_includes
+_layouts
+_projects
+_sass
+_data
+assets
+pages
+vendor
 Gemfile.lock

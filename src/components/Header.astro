@@ -1,0 +1,46 @@
+---
+import { Icon } from "astro-icon/components";
+import { nav, site } from "@/data/site";
+import ThemeToggle from "./ThemeToggle.astro";
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+---
+
+<header class="sticky top-0 z-40 border-b border-border/60 bg-bg/75 backdrop-blur-xl">
+  <div class="container-site flex h-16 items-center justify-between gap-4">
+    <a href="/" class="group flex items-center gap-3" aria-label={`${site.name} - صفحه اصلی`}>
+      <Icon name="logo" class="size-9 transition-transform duration-300 group-hover:rotate-6" aria-hidden="true" />
+      <span class="text-base font-bold whitespace-nowrap">{site.name}</span>
+    </a>
+
+    <div class="flex items-center gap-1 sm:gap-2">
+      <nav aria-label="منوی اصلی">
+        <ul class="flex items-center gap-1">
+          {nav.map((item) => {
+            const external = "external" in item && item.external;
+            const active = !external && isActive(item.href);
+            return (
+              <li class:list={["hideOnMobile" in item && item.hideOnMobile && "max-sm:hidden"]}>
+                <a
+                  href={item.href}
+                  class:list={[
+                    "inline-flex h-9 items-center gap-1 rounded-full px-2.5 text-sm font-medium whitespace-nowrap transition-colors sm:px-3",
+                    active ? "bg-surface-2 text-fg" : "text-fg-muted hover:text-fg",
+                  ]}
+                  aria-current={active ? "page" : undefined}
+                  {...(external ? { target: "_blank", rel: "noopener" } : { "data-astro-prefetch": "" })}
+                >
+                  {item.label}
+                  {external && <Icon name="tabler:arrow-up-left" class="size-3.5 opacity-60" aria-hidden="true" />}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+      <span class="mx-1 h-5 w-px bg-border max-sm:hidden" aria-hidden="true"></span>
+      <ThemeToggle />
+    </div>
+  </div>
+</header>
