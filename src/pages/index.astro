@@ -1,5 +1,4 @@
 ---
-import { getImage } from "astro:assets";
 import portrait from "@/assets/images/profile.jpg";
 import Contact from "@/components/home/Contact.astro";
 import FeaturedProjects from "@/components/home/FeaturedProjects.astro";
@@ -11,12 +10,13 @@ import { experience } from "@/data/experience";
 import { profile, site } from "@/data/site";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getProjects } from "@/lib/projects";
+import { socialImage } from "@/lib/seo";
 
 const projects = await getProjects();
 const featured = projects.filter((project) => project.data.featured);
 const openSourceCount = projects.filter((project) => project.data.openSource).length;
 const hasTimeline = experience.some((entry) => import.meta.env.DEV || !entry.placeholder);
-const portraitUrl = new URL((await getImage({ src: portrait, width: 500, format: "jpg" })).src, Astro.site);
+const portraitUrl = (await socialImage(portrait, 500)).url;
 
 const jsonLd = [
   {
@@ -36,7 +36,7 @@ const jsonLd = [
     name: site.name,
     alternateName: site.nameEn,
     url: site.url,
-    image: portraitUrl.href,
+    image: portraitUrl,
     email: `mailto:${profile.email}`,
     jobTitle: profile.role,
     description: profile.bio,

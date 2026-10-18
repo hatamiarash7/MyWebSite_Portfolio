@@ -34,6 +34,7 @@ const transitionName = `cover-${project.id}`;
       formats={["avif"]}
       fallbackFormat="webp"
       widths={[400, 640, 960, 1280].filter((width) => width <= cover.width)}
+      layout="none"
       sizes={sizes}
       loading={loading}
       fetchpriority={loading === "eager" ? "high" : "auto"}

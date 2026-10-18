@@ -116,7 +116,7 @@
 }
 
 @utility glow {
-  background: radial-gradient(circle at center, var(--glow), transparent 65%);
+  background: radial-gradient(closest-side, var(--glow), transparent);
 }
 
 @utility chip {
@@ -137,6 +137,99 @@
 
 @utility eyebrow {
   @apply font-mono text-xs tracking-wide text-fg-subtle uppercase;
+}
+
+@layer components {
+  .article {
+    @apply prose max-w-none leading-[1.95] md:prose-lg;
+    --tw-prose-body: var(--fg-muted);
+    --tw-prose-headings: var(--fg);
+    --tw-prose-lead: var(--fg-muted);
+    --tw-prose-links: var(--accent);
+    --tw-prose-bold: var(--fg);
+    --tw-prose-counters: var(--fg-subtle);
+    --tw-prose-bullets: var(--accent);
+    --tw-prose-hr: var(--border);
+    --tw-prose-quotes: var(--fg);
+    --tw-prose-quote-borders: var(--accent);
+    --tw-prose-captions: var(--fg-subtle);
+    --tw-prose-code: var(--fg);
+    --tw-prose-pre-code: var(--fg);
+    --tw-prose-pre-bg: var(--surface-2);
+    --tw-prose-th-borders: var(--border-strong);
+    --tw-prose-td-borders: var(--border);
+
+    & :where(h2, h3, h4) {
+      @apply scroll-mt-24 font-bold;
+    }
+
+    & :where(h2) {
+      @apply border-b border-border pb-3;
+    }
+
+    & :where(a) {
+      @apply font-medium underline decoration-accent/40 underline-offset-4 transition-colors hover:decoration-accent;
+    }
+
+    & :where(blockquote) {
+      @apply rounded-e-2xl border-s-2 bg-surface-2 py-1 font-normal not-italic;
+    }
+
+    & :where(blockquote p)::before,
+    & :where(blockquote p)::after {
+      content: none;
+    }
+
+    & :where(:not(pre) > code) {
+      @apply rounded-md border border-border bg-surface-2 px-1.5 py-0.5 font-mono text-[0.85em] font-normal;
+      unicode-bidi: isolate;
+    }
+
+    & :where(:not(pre) > code)::before,
+    & :where(:not(pre) > code)::after {
+      content: none;
+    }
+
+    & :where(pre) {
+      @apply relative rounded-2xl border border-border font-mono text-sm leading-7 max-sm:pt-11;
+      direction: ltr;
+      text-align: left;
+    }
+
+    & :where(table) {
+      @apply block overflow-x-auto text-sm whitespace-nowrap;
+    }
+
+    & :where(p:has(> img)) {
+      @apply my-10 text-center;
+    }
+
+    & :where(p > img) {
+      @apply mx-auto my-0 rounded-2xl border border-border bg-surface-2;
+    }
+
+    & :where(p:has(> img) > em) {
+      @apply mt-3 block text-sm text-fg-subtle not-italic;
+    }
+
+    & :where(video) {
+      @apply mx-auto my-10 h-auto max-h-[80svh] w-auto max-w-full rounded-2xl border border-border bg-surface-2;
+    }
+  }
+
+  .shiki,
+  .shiki span {
+    color: var(--shiki-light);
+  }
+
+  [data-theme="dark"] .shiki,
+  [data-theme="dark"] .shiki span {
+    color: var(--shiki-dark);
+  }
+
+  .shiki {
+    background-color: var(--surface-2);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

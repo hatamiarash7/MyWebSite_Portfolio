@@ -7,9 +7,10 @@ import ProjectCover from "./ProjectCover.astro";
 export interface Props {
   project: CollectionEntry<"projects">;
   headingLevel?: "h2" | "h3";
+  priority?: boolean;
 }
 
-const { project, headingLevel: Heading = "h3" } = Astro.props;
+const { project, headingLevel: Heading = "h3", priority = false } = Astro.props;
 const { title, description, stack, year, openSource } = project.data;
 const visibleStack = stack.slice(0, 4);
 const hiddenCount = stack.length - visibleStack.length;
@@ -19,6 +20,7 @@ const hiddenCount = stack.length - visibleStack.length;
   <ProjectCover
     project={project}
     sizes="(min-width: 1200px) 384px, (min-width: 640px) 50vw, 100vw"
+    loading={priority ? "eager" : "lazy"}
     class="border-b border-border"
   />
   <div class="flex flex-1 flex-col gap-3 p-5">

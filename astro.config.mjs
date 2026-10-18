@@ -18,6 +18,16 @@ export default defineConfig({
     prefetchAll: false,
     defaultStrategy: "hover",
   },
+  image: {
+    layout: "constrained",
+    responsiveStyles: true,
+  },
+  markdown: {
+    shikiConfig: {
+      themes: { light: "github-light", dark: "github-dark-dimmed" },
+      defaultColor: false,
+    },
+  },
   fonts: [
     {
       provider: fontProviders.local(),
