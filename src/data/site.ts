@@ -2,9 +2,9 @@ export const site = {
   url: "https://portfolio.arash-hatami.ir",
   name: "آرش حاتمی",
   nameEn: "Arash Hatami",
-  title: "آرش حاتمی | مهندس DevOps و توسعه‌دهنده بک‌اند",
+  title: "آرش حاتمی | مهندس SRE و توسعه‌دهنده بک‌اند",
   description:
-    "پورتفولیوی آرش حاتمی؛ مهندس DevOps و توسعه‌دهنده بک‌اند. پروژه‌های متن‌باز، ابزارهای زیرساخت، شبکه و سرویس‌های بک‌اند.",
+    "پورتفولیوی آرش حاتمی؛ مهندس SRE و توسعه‌دهنده بک‌اند. پروژه‌های متن‌باز، ابزارهای زیرساخت، شبکه و سرویس‌های بک‌اند.",
   locale: "fa_IR",
   repository: "https://github.com/hatamiarash7/MyWebSite_Portfolio",
   blog: "https://arash-hatami.ir?utm_source=Portfolio",
@@ -13,8 +13,8 @@ export const site = {
 } as const;
 
 export const profile = {
-  role: "مهندس DevOps و توسعه‌دهنده بک‌اند",
-  eyebrow: "DevOps · Backend",
+  role: "مهندس SRE و توسعه‌دهنده بک‌اند",
+  eyebrow: "SRE · Backend",
   bio: "برنامه‌نویسی را از سال ۱۳۹۵ با اندروید و لاراول شروع کردم و امروز بیشتر وقتم صرف خودکارسازی زیرساخت، CI/CD، کانتینرها و شبکه می‌شود. ابزارهایی که برای حل مشکلات روزمره می‌سازم را تا جای ممکن متن‌باز منتشر می‌کنم.",
   handle: "hatamiarash7",
   email: "info@arash-hatami.ir",
@@ -50,21 +50,21 @@ export const skills = [
   {
     title: "زیرساخت و DevOps",
     icon: "tabler:server-2",
-    items: ["Linux", "Docker", "Nginx", "GitHub Actions", "SaltStack", "Bash"],
+    items: ["Linux", "Docker", "Kubernetes", "SaltStack", "Bash", "Terraform", "Prometheus", "Grafana"],
   },
   {
     title: "بک‌اند",
     icon: "tabler:code",
-    items: ["Go", "Python", "PHP", "Laravel", "Django", "Node.js"],
+    items: ["Go", "Python", "Django"],
   },
   {
-    title: "داده و کش",
+    title: "داده",
     icon: "tabler:database",
-    items: ["PostgreSQL", "MySQL", "Redis", "MongoDB", "Memcached"],
+    items: ["PostgreSQL", "MySQL", "Redis", "DuckDB", "Clickhouse", "Elasticsearch", "Parquet"],
   },
   {
     title: "شبکه",
     icon: "tabler:network",
-    items: ["MikroTik", "WireGuard", "DNS", "BGP"],
+    items: ["MikroTik", "WireGuard", "DNS", "BGP", "Anycast"],
   },
 ] as const;

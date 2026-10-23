@@ -5,6 +5,7 @@ const icons: Record<string, string> = {
   CSS: "css",
   Celery: "celery",
   Django: "django",
+  DuckDB: "duckdb",
   Docker: "docker",
   FFmpeg: "ffmpeg",
   Firebase: "firebase",
@@ -22,6 +23,7 @@ const icons: Record<string, string> = {
   Jekyll: "jekyll",
   jQuery: "jquery",
   Kotlin: "kotlin",
+  Kubernetes: "kubernetes",
   Laravel: "laravel",
   Linux: "linux",
   MikroTik: "mikrotik",
@@ -33,6 +35,7 @@ const icons: Record<string, string> = {
   PHP: "php",
   Poetry: "poetry",
   PostgreSQL: "postgresql",
+  Prometheus: "prometheus",
   Python: "python",
   "Raspberry Pi": "raspberrypi",
   Redis: "redis",
@@ -45,6 +48,11 @@ const icons: Record<string, string> = {
   Webpack: "webpack",
   WireGuard: "wireguard",
   YAML: "yaml",
+  Terraform: "terraform",
+  Grafana: "grafana",
+  Clickhouse: "clickhouse",
+  Elasticsearch: "elasticsearch",
+  Parquet: "apacheparquet",
 };
 
 export function stackIcon(name: string): string | undefined {
