@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { site, socials } from "@/data/site";
+import { withUtmSource } from "@/lib/links";
 
 const year = new Intl.DateTimeFormat("fa-IR-u-ca-persian", { year: "numeric" }).format(new Date());
 ---
@@ -11,7 +12,7 @@ const year = new Intl.DateTimeFormat("fa-IR-u-ca-persian", { year: "numeric" }).
       © {year}
       {site.name}. کد منبع این سایت
       <a
-        href={site.repository}
+        href={withUtmSource(site.repository)}
         class="text-fg-muted underline decoration-border-strong underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
       >
         در گیت‌هاب
@@ -22,7 +23,7 @@ const year = new Intl.DateTimeFormat("fa-IR-u-ca-persian", { year: "numeric" }).
       {socials.map((social) => (
         <li>
           <a
-            href={social.href}
+            href={withUtmSource(social.href)}
             target="_blank"
             rel="me noopener"
             class="grid size-9 place-items-center rounded-full transition-colors hover:bg-surface-2 hover:text-fg"

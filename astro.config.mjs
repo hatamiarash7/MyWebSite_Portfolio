@@ -1,8 +1,10 @@
 // @ts-check
 import sitemap from "@astrojs/sitemap";
+import { satteri } from "@astrojs/markdown-satteri";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 import { defineConfig, fontProviders } from "astro/config";
+import { withUtmSource } from "./src/lib/links.ts";
 
 export default defineConfig({
   site: "https://portfolio.arash-hatami.ir",
@@ -23,6 +25,20 @@ export default defineConfig({
     responsiveStyles: true,
   },
   markdown: {
+    processor: satteri({
+      hastPlugins: [
+        {
+          name: "external-link-attribution",
+          element: {
+            filter: ["a"],
+            visit(node, ctx) {
+              const href = node.properties?.href;
+              if (typeof href === "string") ctx.setProperty(node, "href", withUtmSource(href));
+            },
+          },
+        },
+      ],
+    }),
     shikiConfig: {
       themes: { light: "github-light", dark: "github-dark-dimmed" },
       defaultColor: false,

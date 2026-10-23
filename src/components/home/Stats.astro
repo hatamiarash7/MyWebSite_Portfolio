@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import { profile, site } from "@/data/site";
 import { toPersianDigits } from "@/lib/format";
+import { withUtmSource } from "@/lib/links";
 
 export interface Props {
   projectCount: number;
@@ -29,7 +30,7 @@ const stats = [
     </div>
   ))}
   <a
-    href={site.blog}
+    href={withUtmSource(site.blog)}
     target="_blank"
     rel="noopener"
     class="tile tile-interactive reveal group flex flex-col justify-between gap-6 p-6"

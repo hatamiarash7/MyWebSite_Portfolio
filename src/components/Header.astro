@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { nav, site } from "@/data/site";
+import { withUtmSource } from "@/lib/links";
 import ThemeToggle from "./ThemeToggle.astro";
 
 const path = Astro.url.pathname.replace(/\/$/, "") || "/";
@@ -23,7 +24,7 @@ const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWit
             return (
               <li class:list={["hideOnMobile" in item && item.hideOnMobile && "max-sm:hidden"]}>
                 <a
-                  href={item.href}
+                  href={withUtmSource(item.href)}
                   class:list={[
                     "inline-flex h-9 items-center gap-1 rounded-full px-2.5 text-sm font-medium whitespace-nowrap transition-colors sm:px-3",
                     active ? "bg-surface-2 text-fg" : "text-fg-muted hover:text-fg",

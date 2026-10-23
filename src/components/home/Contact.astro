@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { profile, socials } from "@/data/site";
+import { withUtmSource } from "@/lib/links";
 ---
 
 <section id="contact" class="tile reveal p-7 sm:p-10" aria-labelledby="contact-title">
@@ -27,7 +28,7 @@ import { profile, socials } from "@/data/site";
       {socials.map((social) => (
         <li>
           <a
-            href={social.href}
+            href={withUtmSource(social.href)}
             target="_blank"
             rel="me noopener"
             class="grid size-12 place-items-center rounded-2xl border border-border bg-surface-2 text-fg-muted transition-colors hover:border-accent hover:text-accent"

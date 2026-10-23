@@ -8,6 +8,7 @@ import { stackIcon } from "@/data/stack-icons";
 import { site } from "@/data/site";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { toPersianDigits } from "@/lib/format";
+import { withUtmSource } from "@/lib/links";
 import { getProjects, getTags, linkMeta, type Project } from "@/lib/projects";
 import { breadcrumbJsonLd, socialImage, type Crumb } from "@/lib/seo";
 
@@ -121,7 +122,7 @@ const jsonLd = [
           <div class="mt-auto flex flex-wrap gap-2 pt-2">
             {links.map((link, index) => (
               <a
-                href={link.url}
+                href={withUtmSource(link.url)}
                 target="_blank"
                 rel="noopener"
                 class:list={[
