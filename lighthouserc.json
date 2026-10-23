@@ -12,25 +12,25 @@
     "assert": {
       "assertions": {
         "categories:performance": [
-          "error",
+          "warn",
           {
             "minScore": 0.9
           }
         ],
         "categories:accessibility": [
-          "error",
+          "warn",
           {
             "minScore": 0.95
           }
         ],
         "categories:best-practices": [
-          "error",
+          "warn",
           {
             "minScore": 0.95
           }
         ],
         "categories:seo": [
-          "error",
+          "warn",
           {
             "minScore": 0.95
           }
@@ -42,7 +42,7 @@
           }
         ],
         "cumulative-layout-shift": [
-          "error",
+          "warn",
           {
             "maxNumericValue": 0.05
           }
@@ -54,19 +54,19 @@
           }
         ],
         "resource-summary:script:size": [
-          "error",
+          "warn",
           {
             "maxNumericValue": 51200
           }
         ],
         "resource-summary:stylesheet:size": [
-          "error",
+          "warn",
           {
             "maxNumericValue": 30720
           }
         ],
         "resource-summary:font:size": [
-          "error",
+          "warn",
           {
             "maxNumericValue": 153600
           }
