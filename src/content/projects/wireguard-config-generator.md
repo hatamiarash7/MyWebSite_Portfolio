@@ -4,7 +4,7 @@ description: با استفاده از این پروژه می توانید همز
 order: 36
 year: 1401
 openSource: true
-featured: true
+featured: false
 stack:
   - Python
   - WireGuard

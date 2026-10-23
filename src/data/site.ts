@@ -53,9 +53,9 @@ export const skills = [
     items: ["Linux", "Docker", "Kubernetes", "SaltStack", "Bash", "Terraform", "Prometheus", "Grafana"],
   },
   {
-    title: "بک‌اند",
+    title: "بک‌اند و سیستم",
     icon: "tabler:code",
-    items: ["Go", "Python", "Django"],
+    items: ["Go", "Python", "Django", "C/C++", "eBPF"],
   },
   {
     title: "داده",

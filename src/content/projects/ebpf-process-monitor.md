@@ -4,7 +4,7 @@ description: ابزار خط فرمان برای مشاهدهٔ زندهٔ فر�
 order: 59
 year: 1404
 openSource: true
-featured: false
+featured: true
 stack:
   - Go
   - C

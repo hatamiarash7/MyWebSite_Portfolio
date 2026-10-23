@@ -6,6 +6,7 @@ const icons: Record<string, string> = {
   C: "cplusplus",
   CPP: "cplusplus",
   "C++": "cplusplus",
+  "C/C++": "cplusplus",
   Celery: "celery",
   Django: "django",
   DuckDB: "duckdb",
