@@ -1,0 +1,209 @@
+---
+import type { GetStaticPaths } from "astro";
+import { render } from "astro:content";
+import { Icon } from "astro-icon/components";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ProjectCover from "@/components/ProjectCover.astro";
+import { stackIcon } from "@/data/stack-icons";
+import { site } from "@/data/site";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { toPersianDigits } from "@/lib/format";
+import { withUtmSource } from "@/lib/links";
+import { getProjects, getTags, linkMeta, type Project } from "@/lib/projects";
+import { breadcrumbJsonLd, socialImage, type Crumb } from "@/lib/seo";
+
+export const getStaticPaths = (async () => {
+  const projects = await getProjects();
+  const tags = new Set(getTags(projects).map((tag) => tag.name));
+  return projects.map((project, index) => ({
+    params: { id: project.id },
+    props: { project, newer: projects[index - 1], older: projects[index + 1], tags },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  project: Project;
+  newer: Project | undefined;
+  older: Project | undefined;
+  tags: Set<string>;
+}
+
+const { project, newer, older, tags } = Astro.props;
+const { title, description, cover, year, openSource, stack, links } = project.data;
+const { Content } = await render(project);
+
+const url = `${site.url}/projects/${project.id}`;
+const crumbs: Crumb[] = [
+  { label: "خانه", href: "/" },
+  { label: "پروژه‌ها", href: "/projects" },
+  { label: title, href: `/projects/${project.id}` },
+];
+const repo = links.find((link) => link.kind === "repo");
+const coverUrl = cover ? (await socialImage(cover)).url : undefined;
+
+const jsonLd = [
+  breadcrumbJsonLd(crumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": repo ? "SoftwareSourceCode" : "CreativeWork",
+    name: title,
+    description,
+    url,
+    inLanguage: "fa-IR",
+    keywords: stack.join(", "),
+    author: { "@id": `${site.url}/#person` },
+    ...(coverUrl && { image: coverUrl }),
+    ...(repo && { codeRepository: repo.url, programmingLanguage: stack }),
+  },
+];
+---
+
+<BaseLayout title={title} description={description} image={cover} imageAlt={title} type="article" jsonLd={jsonLd}>
+  <div class="container-site pt-6 sm:pt-10">
+    <Breadcrumbs crumbs={crumbs} />
+
+    <header class="mt-6 grid gap-4 lg:grid-cols-12">
+      <div class="tile relative lg:col-span-7 lg:min-h-96">
+        <ProjectCover
+          project={project}
+          sizes="(min-width: 1200px) 700px, (min-width: 1024px) 58vw, 100vw"
+          loading="eager"
+          class="lg:absolute lg:inset-0 lg:aspect-auto"
+        />
+      </div>
+
+      <div class="tile flex flex-col gap-5 p-6 sm:p-8 lg:col-span-5">
+        <div class="flex flex-wrap items-center gap-2 text-sm text-fg-subtle">
+          <span class="inline-flex items-center gap-1.5">
+            <Icon name="tabler:calendar" class="size-4" aria-hidden="true" />
+            <span class="sr-only">سال توسعه:</span>
+            {toPersianDigits(year)}
+          </span>
+          {openSource && (
+            <span class="inline-flex items-center gap-1.5 text-accent">
+              <Icon name="tabler:lock-open-2" class="size-4" aria-hidden="true" />
+              متن‌باز
+            </span>
+          )}
+        </div>
+
+        <div>
+          <h1 class="text-3xl font-black sm:text-4xl">{title}</h1>
+          <p class="mt-3 text-fg-muted">{description}</p>
+        </div>
+
+        <ul class="flex flex-wrap gap-1.5" aria-label="تکنولوژی‌ها">
+          {stack.map((item) => {
+            const icon = stackIcon(item);
+            const content = (
+              <>
+                {icon && <Icon name={icon} class="size-3.5" aria-hidden="true" />}
+                {item}
+              </>
+            );
+            return (
+              <li dir="ltr">
+                {tags.has(item) ? (
+                  <a
+                    href={`/projects?tag=${encodeURIComponent(item)}`}
+                    class="chip transition-colors hover:border-accent hover:text-accent"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <span class="chip">{content}</span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+
+        {links.length > 0 && (
+          <div class="mt-auto flex flex-wrap gap-2 pt-2">
+            {links.map((link, index) => (
+              <a
+                href={withUtmSource(link.url)}
+                target="_blank"
+                rel="noopener"
+                class:list={[
+                  index === 0 ? "btn-primary" : "btn-ghost",
+                  "max-sm:w-full",
+                  `plausible-event-name=${linkMeta[link.kind].event}`,
+                ]}
+              >
+                <Icon name={linkMeta[link.kind].icon} class="size-4.5" aria-hidden="true" />
+                {link.label}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </header>
+
+    <article class="tile mt-4 px-5 py-8 sm:px-10 sm:py-12">
+      <div class="article mx-auto max-w-3xl">
+        <Content />
+      </div>
+    </article>
+
+    {import.meta.env.PROD && <div id="pos-article-text-107710" class="mt-4 min-h-[250px]" />}
+
+    <nav class="mt-4 grid gap-4 sm:grid-cols-2" aria-label="پروژه‌های دیگر">
+      {newer && (
+        <a
+          href={`/projects/${newer.id}`}
+          class="tile tile-interactive group flex items-center gap-4 p-5"
+          data-astro-prefetch
+        >
+          <Icon
+            name="tabler:arrow-right"
+            class="size-5 shrink-0 text-fg-subtle transition-colors group-hover:text-accent"
+            aria-hidden="true"
+          />
+          <span class="min-w-0">
+            <span class="eyebrow block vazir">پروژه جدیدتر</span>
+            <span class="mt-1 block truncate font-bold">{newer.data.title}</span>
+          </span>
+        </a>
+      )}
+      {older && (
+        <a
+          href={`/projects/${older.id}`}
+          class="tile tile-interactive group flex items-center justify-end gap-4 p-5 text-end sm:col-start-2"
+          data-astro-prefetch
+        >
+          <span class="min-w-0">
+            <span class="eyebrow block vazir">پروژه قدیمی‌تر</span>
+            <span class="mt-1 block truncate font-bold">{older.data.title}</span>
+          </span>
+          <Icon
+            name="tabler:arrow-left"
+            class="size-5 shrink-0 text-fg-subtle transition-colors group-hover:text-accent"
+            aria-hidden="true"
+          />
+        </a>
+      )}
+    </nav>
+  </div>
+</BaseLayout>
+
+<script>
+  for (const pre of document.querySelectorAll<HTMLPreElement>(".article pre")) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "relative";
+    pre.replaceWith(wrapper);
+    wrapper.append(pre);
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = "کپی";
+    button.className =
+      "absolute top-2.5 right-2.5 cursor-pointer rounded-lg border border-border-strong bg-surface px-2.5 py-0.5 font-sans text-xs text-fg-muted transition-colors hover:text-accent";
+    button.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(pre.querySelector("code")?.innerText ?? pre.innerText);
+      button.textContent = "کپی شد";
+      setTimeout(() => (button.textContent = "کپی"), 1600);
+    });
+    wrapper.append(button);
+  }
+</script>

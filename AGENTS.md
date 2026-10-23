@@ -1,29 +1,35 @@
 # Project Guidelines
 
-Personal portfolio at [portfolio.arash-hatami.ir](https://portfolio.arash-hatami.ir). Jekyll 4 site: Persian RTL content, English `html lang`. Setup for humans is in [README.md](README.md).
+Personal portfolio at [portfolio.arash-hatami.ir](https://portfolio.arash-hatami.ir). Static Astro 7 site, Persian only (`lang="fa"`, `dir="rtl"`), Tailwind CSS v4, served by nginx in Docker behind the Arvancloud CDN. Human setup and deployment are in [README.md](README.md).
 
-## Build and Test
+## Build and verify
 
-- Ruby **3.3.6** (`.ruby-version`). CI reads that file via `ruby/setup-ruby`.
-- Install: `make install` (local bundle path `vendor/bundle`, `build.ffi --enable-libffi-alloc`, then `bundle install`).
-- Serve: `make run` (`bundle exec jekyll serve --livereload --incremental --host 127.0.0.1 --port 4000`). The VS Code task `jekyll` runs `make run`.
-- Production-like build: `make build`. CI adds `--baseurl` from GitHub Pages and `JEKYLL_ENV=production`, and skips the `development` Bundler group.
-- Do not commit `_site/` or `vendor/`. There is no test suite.
-- Prettier is a CI check on `*.yml`, `*.yaml`, `*.md`, and `*.scss` (`.github/workflows/format.yml`). It does not commit. HTML, Liquid, and JS are not formatted by CI.
+- Node 24 (`.nvmrc`) and pnpm 11 (`packageManager`). `make` lists every target.
+- Before committing, all of these must pass: `pnpm format:check`, `pnpm check` (types and the content schema), and `pnpm build`. CI also runs Lighthouse CI with the budgets in `lighthouserc.json`.
+- Prettier formats everything, including `.astro`, Markdown and CSS. Run `pnpm format` rather than hand-aligning.
+- There is no test suite. Verify UI changes visually in both themes (`data-theme="dark"` / `"light"`) at mobile and desktop widths.
 
-## Architecture
+## Content
 
-- `_config.yml`: collection `projects` (`output: true`, permalink `/projects/:name`), default layout `page`. Site `permalink` is `/blog/:title`, but there is no `_posts/` directory. Do not wire new content through `_layouts/post.html`.
-- `pages/index.md` (`permalink: /`) includes `_includes/landing.html`. `pages/projects.html` includes `_includes/projects/index.html`.
-- Layout chain: `page` → `default` (navbar, content, footer, scripts). New top-level pages go in `pages/` with `layout: default`, `title`, `permalink`, and optional `weight` (navbar sorts `site.html_pages` by `weight`). Paths listed in `nav_exclude` stay out of the nav.
-- Sass entry is `assets/css/main.scss` (`@use "style"` then `@use "mine"`). Put site overrides in `_sass/_mine.scss`; leave the base theme in `_sass/_style.scss`. Output is compressed `/assets/css/main.css`.
-- JS: `assets/js/theme.js` (loaded in `<head>`, default theme is dark, `localStorage` key `theme`). `assets/js/post.js` adds copy buttons on `pre.highlight`. Vendor scripts (jQuery, Bootstrap, WOW) come from Arvancloud URLs in `_includes/scripts.html`. Bricklayer CSS and JS load only when `page.url` is `/projects/`. The projects grid must keep the `.bricklayer` wrapper.
-- Analytics and ad slots in `_includes/head.html` render only when `jekyll.environment == 'production'`.
+- A project is `src/content/projects/<slug>.md`. The file name is the URL (`/projects/<slug>`), and the schema is `src/content.config.ts`.
+- `order` is unique; higher numbers are listed first. `featured: true` puts the project on the home page.
+- Project images live in `src/assets/projects/<slug>/` and are referenced relatively (`../../assets/projects/<slug>/x.webp`) so Astro optimizes them. An image caption is an italic line directly under the image; `.article p:has(> img) > em` styles it.
+- Renaming a published slug breaks links: add the old path to `nginx/redirects.map`.
+- `src/data/experience.ts` entries flagged `placeholder` render only in `pnpm dev`.
+- Keep `url`, `repository` and author fields in `src/data/site.ts` and `astro.config.mjs` unchanged unless asked.
 
 ## Conventions
 
-- New project: add `_projects/(NN) title.md` with the next number. The listing uses `site.projects reversed`, so a higher `(NN)` appears first. Front matter the card needs: `title`, `description`, `tools` (array), `image`. Detail page (`_includes/project-info.html`) also uses `developed_date` (Jalali year), `lang`, `techs`, `open_source`. Body may mix Markdown and raw HTML; GitHub buttons use `{% include elements/button.html link="..." text="..." %}`.
-- Remote GitHub cards are names in `remote_projects` on `pages/projects.html`. They depend on `site.github`, and `jekyll-github-metadata` is not in the Gemfile, so a local build does not render those cards.
-- Liquid in includes uses `{%-` / `-%}` whitespace control. Include paths keep the `.html` extension.
-- `baseurl` is `""` locally. Asset URLs that assume a subpath will break unless you pass the same `--baseurl` CI uses.
-- Keep copy in Persian where the surrounding page is Persian. Do not change `url`, `repository`, or author fields in `_config.yml` unless asked.
+- Copy is Persian. Format numbers with `toPersianDigits` (`src/lib/format.ts`). Use logical properties (`ms-`, `pe-`, `start-`, `text-end`); use physical sides only inside LTR islands such as code blocks.
+- Mark English stack names in chips `dir="ltr"`. Leave short English labels like the eyebrows in the page direction.
+- Design tokens are CSS variables in `src/styles/global.css`, mapped to Tailwind with `@theme inline`. Define reusable classes with `@utility` so they can be `@apply`'d. In `.article`, `@apply prose` must come before the `--tw-prose-*` overrides.
+- `<Picture>`/`<Image>` in components set `layout="none"` and explicit `widths`/`sizes`. The global `image.layout: "constrained"` exists for Markdown images, and Astro's responsive-image CSS is unlayered, so it overrides Tailwind sizing and `object-position` utilities.
+- Icons go through `astro-icon` (`tabler:*`, `simple-icons:*`, local `src/icons/*.svg`). Map stack names to Simple Icons in `src/data/stack-icons.ts`.
+- Scripts stay small and progressive: content must work without JavaScript. Show JS-only UI with `[@media(scripting:enabled)]:flex` rather than unhiding it from a script, which causes layout shift (see the projects filter). Motion is CSS-only and sits behind `prefers-reduced-motion: no-preference`.
+- Outbound project links keep the Plausible class `plausible-event-name=<Event>` (`linkMeta` in `src/lib/projects.ts`). Analytics and the Yektanet slot render only when `import.meta.env.PROD`.
+
+## Serving
+
+- `build.format: "file"` emits `projects.html` and `projects/<slug>.html`. nginx maps clean URLs with `try_files $uri $uri.html` and 301s trailing slashes and `.html` to one canonical form. Keep internal links slash-less (`/projects`, not `/projects/`).
+- `add_header` in an nginx `location` replaces inherited headers. Every content location includes `nginx/security-headers.conf`; new locations must too.
+- The CSP is report-only. When adding a third-party origin, add it to `nginx/security-headers.conf`.

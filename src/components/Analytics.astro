@@ -1,0 +1,63 @@
+---
+const enabled = import.meta.env.PROD;
+---
+
+{enabled && (
+  <>
+    <script
+      is:inline
+      defer
+      data-domain="portfolio.arash-hatami.ir"
+      src="https://analytics.arash-hatami.ir/js/script.outbound-links.tagged-events.js"
+    />
+    <script is:inline>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+
+      (function () {
+        function loadDeferred() {
+          var d = new Date();
+          var yektanet = document.createElement("script");
+          window.yektanetAnalyticsObject = "yektanet";
+          window.yektanet =
+            window.yektanet ||
+            function () {
+              window.yektanet.q.push(arguments);
+            };
+          window.yektanet.q = window.yektanet.q || [];
+          yektanet.async = true;
+          yektanet.src =
+            "https://cdn.yektanet.com/superscript/HSD6obt3/native-portfolio.arash-hatami.ir-43151/yn_pub.js?v=" +
+            d.getFullYear() +
+            "0" +
+            d.getMonth() +
+            "0" +
+            d.getDate() +
+            "0" +
+            d.getHours();
+          document.head.appendChild(yektanet);
+
+          var ahrefs = document.createElement("script");
+          ahrefs.async = true;
+          ahrefs.src = "https://analytics.ahrefs.com/analytics.js";
+          ahrefs.dataset.key = "+V/Odrbv4Fn/qR2kFRMRoQ";
+          document.head.appendChild(ahrefs);
+        }
+
+        function schedule() {
+          if ("requestIdleCallback" in window) {
+            requestIdleCallback(loadDeferred, { timeout: 4000 });
+          } else {
+            setTimeout(loadDeferred, 1500);
+          }
+        }
+
+        if (document.readyState === "complete") schedule();
+        else window.addEventListener("load", schedule, { once: true });
+      })();
+    </script>
+  </>
+)}

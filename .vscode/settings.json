@@ -1,23 +1,31 @@
 {
   "cSpell.words": [
-    "disqus",
-    "endcapture",
-    "endcase",
-    "forloop",
-    "keybase",
-    "livereload",
-    "markdownify",
-    "mswin",
-    "Preproc",
+    "Ahrefs",
+    "astro",
+    "autorun",
+    "contentful",
+    "healthz",
+    "HSTS",
+    "iconify",
+    "lhci",
+    "lighthouseci",
+    "lighthouserc",
+    "maxage",
+    "plausible",
+    "satteri",
+    "shiki",
     "stackoverflow",
-    "titlecase",
+    "tabler",
     "vazir",
     "Vazirmatn",
     "webp",
-    "writeups",
+    "wght",
     "Yektanet"
   ],
-  "[html]": {
+  "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "**/nginx/*.map": "nginx"
   }
 }

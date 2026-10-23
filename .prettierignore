@@ -1,6 +1,7 @@
-_site
-.jekyll-cache
-.sass-cache
-vendor
+dist
+.astro
 node_modules
-Gemfile.lock
+pnpm-lock.yaml
+public/favicon.svg
+src/icons
+.lighthouseci

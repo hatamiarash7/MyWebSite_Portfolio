@@ -1,0 +1,43 @@
+---
+import { Icon } from "astro-icon/components";
+import { profile, socials } from "@/data/site";
+import { withUtmSource } from "@/lib/links";
+---
+
+<section id="contact" class="tile reveal p-7 sm:p-10" aria-labelledby="contact-title">
+  <div class="glow absolute -right-40 -bottom-56 size-[34rem]" aria-hidden="true"></div>
+  <div class="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title" class="mt-1 text-2xl font-black sm:text-3xl">
+        بیایید گفتگو کنیم
+      </h2>
+      <p class="mt-3 max-w-xl text-fg-muted">
+        برای همکاری، مشاوره یا گفتگو درباره پروژه‌ها، ایمیل بزنید یا در شبکه‌های اجتماعی پیام بدهید.
+      </p>
+      <a
+        href={`mailto:${profile.email}`}
+        class="mt-6 inline-flex items-center gap-3 font-mono text-lg text-fg transition-colors hover:text-accent sm:text-2xl"
+        dir="ltr"
+      >
+        <Icon name="tabler:mail" class="size-6 text-accent" aria-hidden="true" />
+        {profile.email}
+      </a>
+    </div>
+    <ul class="flex flex-wrap gap-2">
+      {socials.map((social) => (
+        <li>
+          <a
+            href={withUtmSource(social.href)}
+            target="_blank"
+            rel="me noopener"
+            class="grid size-12 place-items-center rounded-2xl border border-border bg-surface-2 text-fg-muted transition-colors hover:border-accent hover:text-accent"
+            aria-label={social.label}
+          >
+            <Icon name={social.icon} class="size-5" aria-hidden="true" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon/components";
+import { skills } from "@/data/site";
+import { stackIcon } from "@/data/stack-icons";
+---
+
+<div class="tile reveal h-full p-6 sm:p-8">
+  <p class="eyebrow">Skills</p>
+  <h2 id="skills-title" class="mt-1 text-2xl font-black">
+    مهارت‌ها و ابزارها
+  </h2>
+  <div class="mt-8 grid gap-6 sm:grid-cols-2">
+    {skills.map((group) => (
+      <div>
+        <h3 class="flex items-center gap-2 text-sm font-bold">
+          <Icon name={group.icon} class="size-5 text-accent" aria-hidden="true" />
+          {group.title}
+        </h3>
+        <ul class="mt-3 flex flex-wrap gap-2">
+          {group.items.map((item) => {
+            const icon = stackIcon(item);
+            return (
+              <li class="chip py-0.5" dir="ltr">
+                {icon && <Icon name={icon} class="size-3.5" aria-hidden="true" />}
+                {item}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </div>
+</div>

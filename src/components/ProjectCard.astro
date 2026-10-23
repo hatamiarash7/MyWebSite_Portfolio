@@ -1,0 +1,65 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Icon } from "astro-icon/components";
+import { toPersianDigits } from "@/lib/format";
+import ProjectCover from "./ProjectCover.astro";
+
+export interface Props {
+  project: CollectionEntry<"projects">;
+  headingLevel?: "h2" | "h3";
+  priority?: boolean;
+}
+
+const { project, headingLevel: Heading = "h3", priority = false } = Astro.props;
+const { title, description, stack, year, openSource } = project.data;
+const visibleStack = stack.slice(0, 4);
+const hiddenCount = stack.length - visibleStack.length;
+---
+
+<article class="tile tile-interactive group flex flex-col">
+  <ProjectCover
+    project={project}
+    sizes="(min-width: 1200px) 384px, (min-width: 640px) 50vw, 100vw"
+    loading={priority ? "eager" : "lazy"}
+    class="border-b border-border"
+  />
+  <div class="flex flex-1 flex-col gap-3 p-5">
+    <div class="flex items-center gap-2 text-xs text-fg-subtle">
+      <span>{toPersianDigits(year)}</span>
+      {openSource && (
+        <>
+          <span aria-hidden="true">•</span>
+          <span class="inline-flex items-center gap-1 text-accent">
+            <Icon name="tabler:lock-open-2" class="size-3.5" aria-hidden="true" />
+            متن‌باز
+          </span>
+        </>
+      )}
+    </div>
+    <Heading class="text-lg font-bold">
+      <a
+        href={`/projects/${project.id}`}
+        class="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
+        data-astro-prefetch
+      >
+        {title}
+      </a>
+    </Heading>
+    <p class="line-clamp-2 text-sm text-fg-muted">{description}</p>
+    <ul class="mt-auto flex flex-wrap gap-1.5 pt-2" aria-label="تکنولوژی‌ها">
+      {visibleStack.map((item) => (
+        <li class="chip" dir="ltr">
+          {item}
+        </li>
+      ))}
+      {hiddenCount > 0 && <li class="chip">+{toPersianDigits(hiddenCount)}</li>}
+    </ul>
+  </div>
+</article>
+
+<style>
+  article:has(a:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+</style>

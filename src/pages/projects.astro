@@ -1,0 +1,168 @@
+---
+import { Icon } from "astro-icon/components";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+import { site } from "@/data/site";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { toPersianDigits } from "@/lib/format";
+import { getProjects, getTags } from "@/lib/projects";
+import { breadcrumbJsonLd, type Crumb } from "@/lib/seo";
+
+const projects = await getProjects();
+const tags = getTags(projects);
+const title = "پروژه‌ها";
+const description = `${toPersianDigits(projects.length)} پروژه از اپلیکیشن‌های اندروید و وب‌سایت‌های لاراول تا ابزارهای متن‌باز DevOps، شبکه و زیرساخت.`;
+const crumbs: Crumb[] = [
+  { label: "خانه", href: "/" },
+  { label: title, href: "/projects" },
+];
+
+const normalize = (value: string) => value.toLocaleLowerCase().replaceAll("ي", "ی").replaceAll("ك", "ک");
+
+const jsonLd = [
+  breadcrumbJsonLd(crumbs),
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: title,
+    description,
+    url: `${site.url}/projects`,
+    inLanguage: "fa-IR",
+    isPartOf: { "@id": `${site.url}/#website` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: projects.length,
+      itemListElement: projects.map((project, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${site.url}/projects/${project.id}`,
+        name: project.data.title,
+      })),
+    },
+  },
+];
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-site pt-6 sm:pt-10" data-project-filter>
+    <Breadcrumbs crumbs={crumbs} />
+
+    <header class="mt-6 max-w-2xl">
+      <p class="eyebrow">Projects</p>
+      <h1 class="mt-1 text-4xl font-black sm:text-5xl">{title}</h1>
+      <p class="mt-4 text-fg-muted">{description}</p>
+    </header>
+
+    <div class="mt-8 hidden flex-col gap-4 [@media(scripting:enabled)]:flex" data-filter-controls>
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <label class="relative block w-full sm:max-w-sm">
+          <span class="sr-only">جستجو در پروژه‌ها</span>
+          <Icon
+            name="tabler:search"
+            class="pointer-events-none absolute start-4 top-1/2 size-4.5 -translate-y-1/2 text-fg-subtle"
+            aria-hidden="true"
+          />
+          <input
+            type="search"
+            placeholder="جستجو در عنوان، توضیحات یا تکنولوژی…"
+            autocomplete="off"
+            enterkeyhint="search"
+            class="h-11 w-full rounded-full border border-border bg-surface ps-11 pe-4 text-sm text-fg transition-colors placeholder:text-fg-subtle hover:border-border-strong focus:border-accent focus:outline-none"
+            data-filter-search
+          />
+        </label>
+        <p class="text-sm text-fg-subtle" role="status" aria-live="polite" data-filter-status>
+          {toPersianDigits(projects.length)} پروژه
+        </p>
+      </div>
+      <div
+        class="flex gap-2 [scrollbar-width:none] max-sm:-mx-5 max-sm:overflow-x-auto max-sm:px-5 sm:flex-wrap"
+        role="group"
+        aria-label="فیلتر بر اساس تکنولوژی"
+      >
+        <button type="button" class="filter-chip" data-filter-tag="" aria-pressed="true">
+          همه
+        </button>
+        {tags.map((tag) => (
+          <button type="button" class="filter-chip" data-filter-tag={tag.name} aria-pressed="false">
+            <span dir="ltr">{tag.name}</span>
+            <span class="text-[0.7rem] opacity-60">{toPersianDigits(tag.count)}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
+      {projects.map((project, index) => (
+        <li
+          class="reveal flex"
+          data-project
+          data-tags={project.data.stack.join("|")}
+          data-search={normalize([project.data.title, project.data.description, ...project.data.stack].join(" "))}
+        >
+          <ProjectCard project={project} headingLevel="h2" priority={index === 0} />
+        </li>
+      ))}
+    </ul>
+
+    <div class="tile mt-8 flex flex-col items-center gap-3 px-6 py-16 text-center" data-filter-empty hidden>
+      <Icon name="tabler:mood-empty" class="size-10 text-fg-subtle" aria-hidden="true" />
+      <p class="font-bold">پروژه‌ای پیدا نشد</p>
+      <p class="text-sm text-fg-muted">عبارت دیگری را جستجو کنید یا فیلتر را بردارید.</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  @reference "../styles/global.css";
+
+  .filter-chip {
+    @apply inline-flex h-9 shrink-0 cursor-pointer items-center gap-1.5 rounded-full border border-border bg-surface px-3.5 text-sm text-fg-muted transition-colors hover:border-border-strong hover:text-fg aria-pressed:border-accent aria-pressed:bg-accent aria-pressed:text-accent-fg;
+  }
+</style>
+
+<script>
+  const normalize = (value: string) => value.toLocaleLowerCase().replaceAll("ي", "ی").replaceAll("ك", "ک");
+
+  const root = document.querySelector<HTMLElement>("[data-project-filter]");
+  const search = root?.querySelector<HTMLInputElement>("[data-filter-search]");
+  const status = root?.querySelector<HTMLElement>("[data-filter-status]");
+  const empty = root?.querySelector<HTMLElement>("[data-filter-empty]");
+
+  if (root && search && status && empty) {
+    const chips = [...root.querySelectorAll<HTMLButtonElement>("[data-filter-tag]")];
+    const items = [...root.querySelectorAll<HTMLElement>("[data-project]")];
+    const digits = new Intl.NumberFormat("fa-IR");
+    const requested = new URLSearchParams(location.search).get("tag") ?? "";
+    let activeTag = chips.some((chip) => chip.dataset.filterTag === requested) ? requested : "";
+
+    const apply = () => {
+      const query = normalize(search.value.trim());
+      let visible = 0;
+      for (const item of items) {
+        const matchesTag = !activeTag || (item.dataset.tags ?? "").split("|").includes(activeTag);
+        const matchesQuery = !query || (item.dataset.search ?? "").includes(query);
+        item.hidden = !(matchesTag && matchesQuery);
+        if (!item.hidden) visible++;
+      }
+      for (const chip of chips) chip.setAttribute("aria-pressed", String(chip.dataset.filterTag === activeTag));
+      empty.hidden = visible > 0;
+      status.textContent = `${digits.format(visible)} پروژه`;
+    };
+
+    for (const chip of chips) {
+      chip.addEventListener("click", () => {
+        const tag = chip.dataset.filterTag ?? "";
+        activeTag = tag === activeTag ? "" : tag;
+        const url = new URL(location.href);
+        if (activeTag) url.searchParams.set("tag", activeTag);
+        else url.searchParams.delete("tag");
+        history.replaceState(history.state, "", url);
+        apply();
+      });
+    }
+
+    search.addEventListener("input", apply);
+    apply();
+  }
+</script>

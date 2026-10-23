@@ -2,19 +2,19 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "jekyll",
+      "label": "dev",
       "type": "shell",
-      "command": "make run",
+      "command": "make dev",
       "isBackground": true,
       "problemMatcher": {
-        "owner": "jekyll",
+        "owner": "astro",
         "pattern": {
           "regexp": "^$"
         },
         "background": {
           "activeOnStart": true,
-          "beginsPattern": ".",
-          "endsPattern": "Server address:"
+          "beginsPattern": "astro",
+          "endsPattern": "Local\\s+http"
         }
       }
     }

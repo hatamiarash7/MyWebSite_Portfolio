@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content";
+import ProjectCard from "@/components/ProjectCard.astro";
+import SectionHeading from "@/components/SectionHeading.astro";
+
+export interface Props {
+  projects: CollectionEntry<"projects">[];
+}
+
+const { projects } = Astro.props;
+---
+
+<section aria-labelledby="featured-title">
+  <SectionHeading
+    id="featured-title"
+    eyebrow="Featured Projects"
+    title="پروژه‌های منتخب"
+    link={{ href: "/projects", label: "همه پروژه‌ها" }}
+  />
+  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {projects.map((project) => (
+      <div class="reveal flex">
+        <ProjectCard project={project} />
+      </div>
+    ))}
+  </div>
+</section>

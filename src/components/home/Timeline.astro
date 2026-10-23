@@ -1,0 +1,33 @@
+---
+import { experience } from "@/data/experience";
+
+const entries = experience.filter((entry) => import.meta.env.DEV || !entry.placeholder);
+---
+
+{entries.length > 0 && (
+  <div class="tile reveal h-full p-6 sm:p-8">
+    <p class="eyebrow">Experience</p>
+    <h2 id="experience-title" class="mt-1 text-2xl font-black">
+      سوابق کاری
+    </h2>
+    <ol class="mt-8 space-y-6 border-s border-border ps-6">
+      {entries.map((entry, index) => (
+        <li class="relative">
+          <span
+            class:list={[
+              "absolute -start-[1.85rem] top-2 size-3 rounded-full border-2 border-surface",
+              index === 0 ? "bg-accent" : "bg-border-strong",
+            ]}
+            aria-hidden="true"
+          />
+          <p class="text-xs text-fg-subtle">{entry.period}</p>
+          <h3 class="mt-1 font-bold">
+            {entry.role}
+            <span class="font-normal text-fg-muted"> — {entry.company}</span>
+          </h3>
+          {entry.summary && <p class="mt-1 text-sm text-fg-muted">{entry.summary}</p>}
+        </li>
+      ))}
+    </ol>
+  </div>
+)}
