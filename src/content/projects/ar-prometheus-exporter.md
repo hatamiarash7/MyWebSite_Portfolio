@@ -137,19 +137,19 @@ scrape_configs:
 
 تعداد کل درخواست‌های یک دامنه در بازهٔ گزارش تنظیم‌شده:
 
-```promql
+```plaintext
 arvancloud_cdn_requests{domain="example.com", cache_type="total"}
 ```
 
 اندازهٔ یک باکت بر حسب بایت:
 
-```promql
+```plaintext
 arvancloud_storage_bucket_size{bucket="example-bucket"}
 ```
 
 موجودی کیف پول حساب `production`، با انتخاب واحد ریال و تبدیل آن به تومان:
 
-```promql
+```plaintext
 arvancloud_billing_wallet_balance{account="production", currency="irr"} / 10
 ```
 
@@ -171,7 +171,7 @@ arvancloud_billing_wallet_balance{account="production", currency="irr"} / 10
 
 برای Billing، متریک `arvancloud_billing_api_up` وضعیت آخرین دریافت اصلی را نشان می‌دهد و `arvancloud_billing_last_success_timestamp_seconds` زمان آخرین دریافت موفق را نگه می‌دارد. با فاصلهٔ ۳۰۰ ثانیه‌ای مثال، عبارت زیر حساب‌هایی را پیدا می‌کند که بیش از پانزده دقیقه از آخرین دریافت موفقشان گذشته است:
 
-```promql
+```plaintext
 time() - arvancloud_billing_last_success_timestamp_seconds > 900
 ```
 
