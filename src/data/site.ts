@@ -36,7 +36,6 @@ export const nav = [
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/hatamiarash7", icon: "simple-icons:github" },
-  { label: "GitLab", href: "https://gitlab.com/hatamiarash7", icon: "simple-icons:gitlab" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/hatamiarash7", icon: "simple-icons:linkedin" },
   { label: "X", href: "https://x.com/hatamiarash7", icon: "simple-icons:x" },
   {
@@ -44,6 +43,7 @@ export const socials = [
     href: "https://stackoverflow.com/users/4905220/arash-hatami",
     icon: "simple-icons:stackoverflow",
   },
+  { label: "Instagram", href: "https://instagram.com/hatamiarash7", icon: "simple-icons:instagram" },
 ] as const;
 
 export const skills = [
