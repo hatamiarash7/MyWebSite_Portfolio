@@ -105,7 +105,24 @@ docker compose pull
 docker compose up -d
 ```
 
-The container runs as an unprivileged user with a read-only root filesystem and listens on port 8080. `GET /healthz` returns `ok`.
+The container runs as an unprivileged user with a read-only root filesystem. `NGINX_PORT` sets the nginx listener and published host port, defaulting to `8080`. `GET /healthz` returns `ok`, and the container health check uses the configured port.
+
+To use a custom port, copy `.env.example` to `.env` next to `docker-compose.yml` and set `NGINX_PORT=9090`, or pass it in the environment:
+
+```sh
+NGINX_PORT=9090 docker compose up -d
+```
+
+For a locally built image:
+
+```sh
+NGINX_PORT=9090 make docker-run
+# Or run Docker directly:
+docker run --rm -e NGINX_PORT=9090 -p 127.0.0.1:9090:9090 \
+  --read-only --tmpfs /tmp hatamiarash7/portfolio:local
+```
+
+Compose loads `.env` automatically; `make docker-run` reads `NGINX_PORT` from the shell environment or a Make command-line assignment. The image entrypoint renders the nginx configuration under `/tmp`, so custom ports work with the read-only root filesystem.
 
 ### Caching and compression
 
