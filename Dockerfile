@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM node:24.18.0-trixie-slim AS build
+FROM node:24.22.1-trixie-slim AS build
 
 ENV PNPM_HOME=/pnpm \
   PATH=/pnpm:$PATH \
@@ -21,7 +21,7 @@ RUN pnpm build \
   -o -name '*.txt' -o -name '*.json' -o -name '*.webmanifest' -o -name '*.ico' \) \
   -exec gzip -9 --keep --no-name {} +
 
-FROM nginxinc/nginx-unprivileged:1.30-alpine
+FROM nginxinc/nginx-unprivileged:1.31-alpine
 
 LABEL org.opencontainers.image.title="portfolio" \
   org.opencontainers.image.description="Arash Hatami's portfolio" \
