@@ -31,7 +31,7 @@ export const profile = {
 export const nav = [
   { label: "خانه", href: "/", hideOnMobile: true },
   { label: "پروژه‌ها", href: "/projects" },
-  { label: "وبلاگ", href: site.blog, external: true },
+  { label: "وبلاگ", href: site.blog, external: true, utm_source: "Portfolio" },
 ] as const;
 
 export const socials = [
