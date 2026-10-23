@@ -1,8 +1,9 @@
 # Portfolio
 
-[![CI](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/ci.yml)
-[![Docker](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/docker.yml/badge.svg)](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/docker.yml)
+[![Checks](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/checks.yml)
+[![Release](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/docker.yml/badge.svg?branch=main)](https://github.com/hatamiarash7/MyWebSite_Portfolio/actions/workflows/docker.yml)
 [![Docker Image Size](https://img.shields.io/docker/image-size/hatamiarash7/portfolio/latest)](https://hub.docker.com/r/hatamiarash7/portfolio)
+![GitHub License](https://img.shields.io/github/license/hatamiarash7/MyWebSite_Portfolio)
 
 Personal site for Arash Hatami, published at [portfolio.arash-hatami.ir](https://portfolio.arash-hatami.ir).
 
