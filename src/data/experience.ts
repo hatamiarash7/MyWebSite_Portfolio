@@ -10,23 +10,27 @@ export interface Experience {
 // Entries flagged `placeholder` are rendered in development only.
 export const experience: Experience[] = [
   {
-    role: "عنوان شغلی",
-    company: "نام شرکت",
-    period: "۱۴۰۲ — اکنون",
-    summary: "یک جمله درباره مسئولیت‌ها و دستاوردها.",
+    role: "SRE",
+    company: "Arvancloud",
+    period: "۱۴۰۱ — اکنون",
     placeholder: true,
   },
   {
-    role: "عنوان شغلی",
-    company: "نام شرکت",
-    period: "۱۳۹۹ — ۱۴۰۲",
-    summary: "یک جمله درباره مسئولیت‌ها و دستاوردها.",
+    role: "SRE / Network Eng",
+    company: "Azhvan",
+    period: "۱۳۹۸ — ۱۴۰۱",
     placeholder: true,
   },
   {
-    role: "عنوان شغلی",
-    company: "نام شرکت",
-    period: "۱۳۹۵ — ۱۳۹۹",
+    role: "Co-Founder & CTO",
+    company: "Ateriad",
+    period: "۱۳۹۳ — ۱۳۹۸",
+    placeholder: true,
+  },
+  {
+    role: "Infrastructure Manager",
+    company: "Gozine 2",
+    period: "۱۳۹۳ — ۱۳۹۵",
     placeholder: true,
   },
 ];
