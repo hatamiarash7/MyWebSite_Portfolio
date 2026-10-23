@@ -19,27 +19,6 @@ const enabled = import.meta.env.PROD;
 
       (function () {
         function loadDeferred() {
-          var d = new Date();
-          var yektanet = document.createElement("script");
-          window.yektanetAnalyticsObject = "yektanet";
-          window.yektanet =
-            window.yektanet ||
-            function () {
-              window.yektanet.q.push(arguments);
-            };
-          window.yektanet.q = window.yektanet.q || [];
-          yektanet.async = true;
-          yektanet.src =
-            "https://cdn.yektanet.com/superscript/HSD6obt3/native-portfolio.arash-hatami.ir-43151/yn_pub.js?v=" +
-            d.getFullYear() +
-            "0" +
-            d.getMonth() +
-            "0" +
-            d.getDate() +
-            "0" +
-            d.getHours();
-          document.head.appendChild(yektanet);
-
           var ahrefs = document.createElement("script");
           ahrefs.async = true;
           ahrefs.src = "https://analytics.ahrefs.com/analytics.js";
