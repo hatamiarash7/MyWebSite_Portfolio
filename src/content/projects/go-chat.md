@@ -4,7 +4,6 @@ description: این پروژه یک چت سرور رمزنگاری شده است
 order: 41
 year: 1401
 openSource: true
-featured: true
 stack:
   - Go
   - Chat
