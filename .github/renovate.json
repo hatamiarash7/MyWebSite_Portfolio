@@ -1,54 +1,32 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    ":semanticCommits"
-  ],
-  "assignees": [
-    "hatamiarash7"
-  ],
+  "extends": ["config:recommended", ":semanticCommits"],
+  "assignees": ["hatamiarash7"],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": [
-      "before 6am on monday"
-    ]
+    "schedule": ["before 6am on monday"]
   },
   "packageRules": [
     {
-      "matchDatasources": [
-        "npm"
-      ],
+      "matchDatasources": ["npm"],
       "minimumReleaseAge": "3 days"
     },
     {
       "groupName": "astro",
-      "matchPackageNames": [
-        "astro",
-        "@astrojs/**",
-        "astro-icon",
-        "prettier-plugin-astro"
-      ]
+      "matchPackageNames": ["astro", "@astrojs/**", "astro-icon", "prettier-plugin-astro"]
     },
     {
       "groupName": "tailwind",
-      "matchPackageNames": [
-        "tailwindcss",
-        "@tailwindcss/**",
-        "prettier-plugin-tailwindcss"
-      ]
+      "matchPackageNames": ["tailwindcss", "@tailwindcss/**", "prettier-plugin-tailwindcss"]
     },
     {
       "groupName": "iconify sets",
-      "matchPackageNames": [
-        "@iconify-json/**"
-      ],
+      "matchPackageNames": ["@iconify-json/**"],
       "automerge": true
     },
     {
       "groupName": "docker images",
-      "matchDatasources": [
-        "docker"
-      ]
+      "matchDatasources": ["docker"]
     }
   ]
 }
