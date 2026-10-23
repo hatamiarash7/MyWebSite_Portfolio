@@ -2,6 +2,7 @@ PNPM ?= pnpm
 DOCKER ?= docker
 HOST ?= 127.0.0.1
 PORT ?= 4321
+NGINX_PORT ?= 8080
 IMAGE ?= hatamiarash7/portfolio
 IMAGE_TAG ?= local
 
@@ -61,8 +62,8 @@ docker-build: ## Build the nginx image as IMAGE:IMAGE_TAG
 	$(DOCKER) build --platform linux/amd64 -t $(IMAGE):$(IMAGE_TAG) .
 
 .PHONY: docker-run
-docker-run: ## Serve IMAGE:IMAGE_TAG on http://127.0.0.1:8080
-	$(DOCKER) run --rm -p 127.0.0.1:8080:8080 --read-only --tmpfs /tmp $(IMAGE):$(IMAGE_TAG)
+docker-run: ## Serve IMAGE:IMAGE_TAG on http://127.0.0.1:NGINX_PORT (default: 8080)
+	$(DOCKER) run --rm -e NGINX_PORT=$(NGINX_PORT) -p 127.0.0.1:$(NGINX_PORT):$(NGINX_PORT) --read-only --tmpfs /tmp $(IMAGE):$(IMAGE_TAG)
 
 ##@ Cleanup
 

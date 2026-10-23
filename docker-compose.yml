@@ -5,10 +5,12 @@ services:
     image: hatamiarash7/portfolio:latest
     container_name: portfolio
     restart: unless-stopped
-    # Arvancloud connects to this port. Use "127.0.0.1:8080:8080" instead when a
-    # reverse proxy on the host sits in front of the container.
+    environment:
+      NGINX_PORT: ${NGINX_PORT:-8080}
+    # Arvancloud connects to this port. Prefix the mapping with "127.0.0.1:"
+    # when a reverse proxy on the host sits in front of the container.
     ports:
-      - "8080:8080"
+      - "${NGINX_PORT:-8080}:${NGINX_PORT:-8080}"
     read_only: true
     tmpfs:
       - /tmp

@@ -23,6 +23,10 @@ RUN pnpm build \
 
 FROM nginxinc/nginx-unprivileged:1.31-alpine
 
+ENV NGINX_PORT=8080 \
+  NGINX_ENVSUBST_OUTPUT_DIR=/tmp \
+  NGINX_ENVSUBST_FILTER=^NGINX_PORT$
+
 LABEL org.opencontainers.image.title="portfolio" \
   org.opencontainers.image.description="Arash Hatami's portfolio" \
   org.opencontainers.image.url="https://portfolio.arash-hatami.ir" \
@@ -30,15 +34,17 @@ LABEL org.opencontainers.image.title="portfolio" \
   org.opencontainers.image.licenses="GPL-3.0-only"
 
 USER root
-RUN mkdir -p /var/log/nginx/legacy && chown nginx:nginx /var/log/nginx/legacy
+RUN mkdir -p /var/log/nginx/legacy \
+  && chown nginx:nginx /var/log/nginx/legacy \
+  && printf 'include /tmp/default.conf;\n' > /etc/nginx/conf.d/default.conf
 USER nginx
 VOLUME /var/log/nginx/legacy
 
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY nginx/default.conf /etc/nginx/templates/default.conf.template
 COPY nginx/security-headers.conf nginx/redirects.map /etc/nginx/
 COPY --from=build /app/dist /usr/share/nginx/html
 
-EXPOSE 8080
+EXPOSE ${NGINX_PORT}
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD wget -q --spider http://127.0.0.1:8080/healthz || exit 1
+  CMD wget -q --spider "http://127.0.0.1:${NGINX_PORT}/healthz" || exit 1
