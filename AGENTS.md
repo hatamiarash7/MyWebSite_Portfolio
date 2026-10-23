@@ -15,7 +15,7 @@ Personal portfolio at [portfolio.arash-hatami.ir](https://portfolio.arash-hatami
 - `order` is unique; higher numbers are listed first. `featured: true` puts the project on the home page.
 - Project images live in `src/assets/projects/<slug>/` and are referenced relatively (`../../assets/projects/<slug>/x.webp`) so Astro optimizes them. An image caption is an italic line directly under the image; `.article p:has(> img) > em` styles it.
 - Renaming a published slug breaks links: add the old path to `nginx/redirects.map`.
-- `src/data/experience.ts` entries flagged `placeholder` render only in `pnpm dev`.
+- All site content is production-ready and renders in both development and production.
 - Keep `url`, `repository` and author fields in `src/data/site.ts` and `astro.config.mjs` unchanged unless asked.
 
 ## Conventions
