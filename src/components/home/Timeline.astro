@@ -1,17 +1,15 @@
 ---
 import { experience } from "@/data/experience";
-
-const entries = experience.filter((entry) => import.meta.env.DEV || !entry.placeholder);
 ---
 
-{entries.length > 0 && (
+{experience.length > 0 && (
   <div class="tile reveal h-full p-6 sm:p-8">
     <p class="eyebrow">Experience</p>
     <h2 id="experience-title" class="mt-1 text-2xl font-black">
       سوابق کاری
     </h2>
     <ol class="mt-8 space-y-6 border-s border-border ps-6">
-      {entries.map((entry, index) => (
+      {experience.map((entry, index) => (
         <li class="relative">
           <span
             class:list={[

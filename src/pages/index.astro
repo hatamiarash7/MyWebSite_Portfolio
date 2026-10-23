@@ -15,7 +15,7 @@ import { socialImage } from "@/lib/seo";
 const projects = await getProjects();
 const featured = projects.filter((project) => project.data.featured);
 const openSourceCount = projects.filter((project) => project.data.openSource).length;
-const hasTimeline = experience.some((entry) => import.meta.env.DEV || !entry.placeholder);
+const hasTimeline = experience.length > 0;
 const portraitUrl = (await socialImage(portrait, 500)).url;
 
 const jsonLd = [
