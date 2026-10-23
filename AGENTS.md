@@ -26,7 +26,7 @@ Personal portfolio at [portfolio.arash-hatami.ir](https://portfolio.arash-hatami
 - `<Picture>`/`<Image>` in components set `layout="none"` and explicit `widths`/`sizes`. The global `image.layout: "constrained"` exists for Markdown images, and Astro's responsive-image CSS is unlayered, so it overrides Tailwind sizing and `object-position` utilities.
 - Icons go through `astro-icon` (`tabler:*`, `simple-icons:*`, local `src/icons/*.svg`). Map stack names to Simple Icons in `src/data/stack-icons.ts`.
 - Scripts stay small and progressive: content must work without JavaScript. Show JS-only UI with `[@media(scripting:enabled)]:flex` rather than unhiding it from a script, which causes layout shift (see the projects filter). Motion is CSS-only and sits behind `prefers-reduced-motion: no-preference`.
-- Outbound project links keep the Plausible class `plausible-event-name=<Event>` (`linkMeta` in `src/lib/projects.ts`). Analytics and the Yektanet slot render only when `import.meta.env.PROD`.
+- Outbound project links keep the Plausible class `plausible-event-name=<Event>` (`linkMeta` in `src/lib/projects.ts`). Analytics render only when `import.meta.env.PROD`.
 
 ## Serving
 

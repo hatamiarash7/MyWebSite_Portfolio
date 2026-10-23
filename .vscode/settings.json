@@ -19,8 +19,7 @@
     "vazir",
     "Vazirmatn",
     "webp",
-    "wght",
-    "Yektanet"
+    "wght"
   ],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

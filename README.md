@@ -35,7 +35,7 @@ Run `make` to list every target. The common ones:
 | `make docker-build` | Build the production image as `hatamiarash7/portfolio:local` |
 | `make docker-run`   | Serve that image on <http://127.0.0.1:8080>                  |
 
-Analytics and the ad slot render only in production builds (`make build`, the Docker image), never in `make dev`.
+Analytics render only in production builds (`make build`, the Docker image), never in `make dev`.
 
 ## Layout
 
@@ -139,7 +139,7 @@ Text files are gzipped at build time and served with `gzip_static`. The nginx im
 
 ### Security headers
 
-`nginx/security-headers.conf` sets HSTS, `nosniff`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`, COOP and a Content Security Policy. The CSP is sent as `Content-Security-Policy-Report-Only`, so violations show up in the browser console without blocking anything. Once production runs clean with Plausible, Yektanet and Ahrefs loaded, rename the header to `Content-Security-Policy`.
+`nginx/security-headers.conf` sets HSTS, `nosniff`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`, COOP and a Content Security Policy. The CSP is sent as `Content-Security-Policy-Report-Only`, so violations show up in the browser console without blocking anything. Once production runs clean with Plausible and Ahrefs loaded, rename the header to `Content-Security-Policy`.
 
 ## Legacy URLs
 
