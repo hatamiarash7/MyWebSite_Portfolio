@@ -14,7 +14,11 @@ export interface Props {
 const { project, sizes, loading = "lazy", class: className } = Astro.props;
 const { cover, title, stack, links } = project.data;
 
-const repo = links.find((link) => link.kind === "repo")?.url.replace(/^https:\/\/github\.com\//, "");
+const repo = links
+  .find((link) => link.kind === "repo")
+  ?.url.replace(/^https:\/\/github\.com\//, "")
+  .replace(/^https:\/\/gitlab\.com\//, "")
+  .replace(/^https:\/\/git\.arvancloud\.ir\//, "");
 const [owner, name] = repo ? repo.split("/") : ["~", project.id];
 const icons = stack
   .map(stackIcon)
