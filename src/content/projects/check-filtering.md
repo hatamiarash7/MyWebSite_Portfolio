@@ -4,7 +4,7 @@ description: با استفاده از این پروژه می‌توانید وض
 order: 42
 year: 1399
 openSource: true
-featured: true
+featured: false
 stack:
   - Python
   - Internet

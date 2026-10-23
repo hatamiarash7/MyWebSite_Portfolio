@@ -5,7 +5,7 @@ cover: ../../assets/projects/ar-paas-action/ar-paas-action.webp
 order: 40
 year: 1401
 openSource: true
-featured: true
+featured: false
 stack:
   - Bash
   - GitHub

@@ -5,7 +5,7 @@ cover: ../../assets/projects/mikrotik-dashboard/mikrotik-dashboard.webp
 order: 5
 year: 1398
 openSource: true
-featured: true
+featured: false
 stack:
   - PHP
   - Network

@@ -5,7 +5,7 @@ cover: ../../assets/projects/webhook-handler/webhook.webp
 order: 16
 year: 1399
 openSource: true
-featured: true
+featured: false
 stack:
   - JavaScript
   - GitHub
