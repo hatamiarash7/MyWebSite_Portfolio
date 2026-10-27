@@ -38,6 +38,16 @@ Run `make` to list every target. The common ones:
 
 Analytics render only in production builds (`make build`, the Docker image), never in `make dev`.
 
+### AI agent discovery
+
+[`/llms.txt`](https://portfolio.arash-hatami.ir/llms.txt) is a concise Markdown guide following the [llms.txt proposal](https://llmstxt.org/). It includes the public profile, main pages, and every project with its description and technology stack. Featured projects appear first; optional links point to the blog and this site's source repository. Content remains in Persian, like the website.
+
+`src/pages/llms.txt.ts` is a prerendered Astro endpoint: every `pnpm build` (including Docker builds) generates `dist/llms.txt` from `src/data/site.ts` and the same validated project collection and ordering used by the HTML pages. No separate command, external service, or generated source file is needed. Adding, editing, or removing a project automatically updates the next build's guide. The endpoint is also available during `pnpm dev`.
+
+Every HTML page advertises the guide with `<link rel="describedby" href="/llms.txt">`. In production, nginx serves it as `text/plain; charset=utf-8` with the existing one-hour `.txt` cache policy and build-time gzip compression. After deployment, verify with `curl -i https://portfolio.arash-hatami.ir/llms.txt`; purge the CDN cache if an immediate update is needed.
+
+This is an informational discovery aid, not a crawler access policy, content license, or guarantee that AI services will use it. Keep crawl directives in `public/robots.txt`; the generated guide links to canonical HTML pages and does not claim Markdown mirrors that the site does not publish.
+
 ## Layout
 
 ```text
