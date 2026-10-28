@@ -21,7 +21,7 @@ RUN pnpm build \
   -o -name '*.txt' -o -name '*.json' -o -name '*.webmanifest' -o -name '*.ico' \) \
   -exec gzip -9 --keep --no-name {} +
 
-FROM nginxinc/nginx-unprivileged:1.31-alpine
+FROM nginx/nginx-unprivileged:1.31-alpine
 
 ENV NGINX_PORT=8080 \
   NGINX_ENVSUBST_OUTPUT_DIR=/tmp \
