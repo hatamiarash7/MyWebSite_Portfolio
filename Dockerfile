@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM node:24.22.1-trixie-slim AS build
+FROM node:26.13.0-trixie-slim AS build
 
 ENV PNPM_HOME=/pnpm \
   PATH=/pnpm:$PATH \
