@@ -17,22 +17,22 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@astrojs/markdown-satteri": "^0.4.5",
-    "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.4.2",
+    "@astrojs/markdown-satteri": "^0.4.10",
+    "@astrojs/sitemap": "^3.7.5",
+    "astro": "^7.4.12",
     "astro-icon": "^1.2.0",
     "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
-    "@iconify-json/simple-icons": "^1.2.100",
-    "@iconify-json/tabler": "^1.2.42",
+    "@iconify-json/simple-icons": "^1.2.102",
+    "@iconify-json/tabler": "^1.2.45",
     "@tailwindcss/typography": "^0.5.20",
-    "@tailwindcss/vite": "^4.3.3",
-    "prettier": "^3.9.10",
-    "prettier-plugin-astro": "^1.1.1",
+    "@tailwindcss/vite": "^4.3.5",
+    "prettier": "^3.10.1",
+    "prettier-plugin-astro": "^1.1.2",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "^4.3.5",
     "typescript": "^6.0.3"
   }
 }
